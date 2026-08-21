@@ -1,0 +1,555 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { categories } from '../data/posts';
+
+// Lấy tất cả bài viết từ Content Collections
+const allPosts = await getCollection('blog');
+
+// Gom nhóm bài viết theo 6 chuyên mục
+const postsByCategory = categories.map((cat) => {
+  const catPosts = allPosts
+    .filter((post) => post.data.category === cat.slug)
+    .sort((a, b) => b.data.date.localeCompare(a.data.date));
+  return {
+    ...cat,
+    posts: catPosts,
+  };
+});
+
+function formatDate(dateStr: string) {
+  const [y, m, d] = dateStr.split('-');
+  return `${d}.${m}.${y}`;
+}
+---
+
+<BaseLayout title="Sơ đồ trang web · Đạo & Đời - Tàng thư bản đồ">
+  <main class="classic-page wrap">
+    <!-- Header Banner -->
+    <header class="page-hero">
+      <div class="page-hero__badge">
+        <span class="seal">圖</span>
+        <p class="eyebrow">TÀNG THƯ ĐỒ BẢN · SƠ ĐỒ TOÀN TRANG</p>
+      </div>
+      <h1>Mạng lưới tàng thư<br /><em>& nẻo đường dẫn lối.</em></h1>
+      <p class="page-hero__lead">
+        Toàn bộ hệ thống bài viết, lục đại chuyên mục và các trang thông tin cốt lõi được sắp xếp mạch lạc 
+        như một tấm bản đồ chỉ dẫn cho bạn đọc thong dong dạo bước.
+      </p>
+    </header>
+
+    <!-- Classical Artwork Banner -->
+    <div class="classical-art" aria-hidden="true">
+      <svg viewBox="0 0 1100 280" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="map-bg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#e2d8c7" />
+            <stop offset="100%" stop-color="#d1c4ae" />
+          </linearGradient>
+        </defs>
+        <rect width="1100" height="280" rx="8" fill="url(#map-bg)" />
+        <!-- Lưới tọa độ cổ thư & Bát quái / La bàn định vị -->
+        <g stroke="#ad624f" stroke-width="1" fill="none" opacity="0.35">
+          <circle cx="550" cy="140" r="110" />
+          <circle cx="550" cy="140" r="80" stroke-dasharray="4,4" />
+          <circle cx="550" cy="140" r="45" />
+          <line x1="410" y1="140" x2="690" y2="140" />
+          <line x1="550" y1="0" x2="550" y2="280" />
+          <line x1="450" y1="40" x2="650" y2="240" />
+          <line x1="450" y1="240" x2="650" y2="40" />
+        </g>
+        <!-- Họa tiết dòng sông / lối đi quanh co -->
+        <path d="M0 240 Q300 120 550 180 T1100 80" stroke="#24443c" stroke-width="3" fill="none" opacity="0.55" />
+        <path d="M0 260 Q320 140 570 200 T1100 100" stroke="#6b7b6a" stroke-width="1.5" fill="none" opacity="0.45" />
+        <!-- Cổ tự đề từ -->
+        <text x="60" y="248" fill="#24443c" font-family="'Noto Serif Display', serif" font-size="16" letter-spacing="4" font-style="italic">Chỉ nam dẫn lối · Tàng thư quy tụ</text>
+        <g fill="#ad624f" opacity="0.8">
+          <circle cx="550" cy="140" r="5" />
+        </g>
+      </svg>
+    </div>
+
+    <!-- Main Sitemap Hierarchy -->
+    <div class="content-sections">
+      <!-- Section 1: Trang Tĩnh Cốt Lõi -->
+      <section class="prose-card">
+        <div class="prose-card__header">
+          <span class="numeral">I</span>
+          <h2>Trang Thông Tin Cốt Lõi</h2>
+        </div>
+        <div class="sitemap-grid-links">
+          <a href="/" class="sitemap-node">
+            <span class="node-icon">⌂</span>
+            <div>
+              <strong>Trang Chủ (Hiên Trà Đạo & Đời)</strong>
+              <p>Cửa ngõ chính dẫn vào không gian chiêm nghiệm và các bài viết mới nhất.</p>
+            </div>
+          </a>
+          <a href="/gioi-thieu" class="sitemap-node">
+            <span class="node-icon">道</span>
+            <div>
+              <strong>Giới Thiệu (Duyên Khởi & Tôn Chỉ)</strong>
+              <p>Lý do thành lập, ba tôn chỉ định hướng và sáu mạch nguồn tư tưởng.</p>
+            </div>
+          </a>
+          <a href="/huong-dan" class="sitemap-node">
+            <span class="node-icon">讀</span>
+            <div>
+              <strong>Hướng Dẫn (Tâm Pháp Đọc Sách)</strong>
+              <p>Bốn bước thưởng văn như thưởng trà và phương pháp tra cứu tàng thư.</p>
+            </div>
+          </a>
+          <a href="/quy-dinh" class="sitemap-node">
+            <span class="node-icon">規</span>
+            <div>
+              <strong>Quy Định (Thanh Quy Đồng Hành)</strong>
+              <p>Văn hóa ứng xử hòa nhã, đạo lý kính văn tích tự và giới hạn tham khảo.</p>
+            </div>
+          </a>
+          <a href="/lien-he" class="sitemap-node">
+            <span class="node-icon">信</span>
+            <div>
+              <strong>Liên Hệ (Thư Phòng Tĩnh Quán)</strong>
+              <p>Hòm thư điện tử và biểu mẫu gửi gắm tâm sự, góp ý, bài viết cộng tác.</p>
+            </div>
+          </a>
+          <a href="/sitemap-index.xml" target="_blank" class="sitemap-node highlight">
+            <span class="node-icon">☵</span>
+            <div>
+              <strong>Sitemap XML (Dành cho Máy chủ & Tìm kiếm)</strong>
+              <p>Tệp chỉ mục XML chuẩn SEO theo tiêu chuẩn sitemaps.org.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Section 2: Lục Đại Chuyên Mục & Danh Mục Toàn Bài -->
+      <section class="prose-card">
+        <div class="prose-card__header">
+          <span class="numeral">II</span>
+          <h2>Lục Đại Chuyên Mục & Toàn Bộ Bài Viết</h2>
+        </div>
+        <p class="section-sub">Dưới đây là cây thư mục các chuyên mục và từng bài viết hiện có:</p>
+
+        <div class="categories-tree">
+          {postsByCategory.map((category, catIdx) => (
+            <div class="category-branch">
+              <div class="category-branch__header">
+                <span class="cat-number">0{catIdx + 1}</span>
+                <div class="cat-title-group">
+                  <h3>
+                    <a href={`/chuyen-muc/${category.slug}`}>{category.name}</a>
+                  </h3>
+                  <p class="cat-desc">{category.description}</p>
+                </div>
+                <span class="cat-count">{category.posts.length} bài</span>
+              </div>
+
+              {category.posts.length > 0 ? (
+                <ul class="articles-leaf-list">
+                  {category.posts.map((post) => (
+                    <li>
+                      <a href={`/bai-viet/${post.id}`} class="article-leaf-link">
+                        <time class="leaf-date">{formatDate(post.data.date)}</time>
+                        <span class="leaf-title">{post.data.title}</span>
+                        <span class="leaf-arrow">→</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p class="empty-hint">Chuyên mục đang trong quá trình biên soạn bài mới...</p>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <!-- Section 3: Kênh Cấp Tin Tĩnh -->
+      <section class="prose-card">
+        <div class="prose-card__header">
+          <span class="numeral">III</span>
+          <h2>Kênh Cấp Tin Độc Lập</h2>
+        </div>
+        <div class="prose-card__body">
+          <p>
+            Bạn đọc có thể cập nhật các bài viết mới thông qua kênh RSS chuẩn:
+          </p>
+          <div class="feed-badge-box">
+            <code>https://daovadoi.vn/rss.xml</code>
+            <a href="/rss.xml" class="feed-btn">Mở RSS Feed ↗</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Navigation Footer Links -->
+    <nav class="subpage-nav" aria-label="Điều hướng phụ">
+      <a href="/" class="subpage-nav__link secondary">
+        <span>Trở về</span>
+        <strong>← Về Trang Chủ Đạo & Đời</strong>
+      </a>
+      <a href="/chuyen-muc/cuoc-song" class="subpage-nav__link">
+        <span>Bắt đầu đọc</span>
+        <strong>Khám Phá Chuyên Mục Đầu Tiên →</strong>
+      </a>
+    </nav>
+  </main>
+</BaseLayout>
+
+<style>
+.classic-page {
+  padding: 80px 0 120px;
+  max-width: 920px;
+}
+
+.page-hero {
+  margin-bottom: 45px;
+}
+.page-hero__badge {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.seal {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 4px;
+  background: var(--clay);
+  color: #fff8eb;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.3), 0 2px 8px rgba(173,98,79,0.25);
+}
+.page-hero h1 {
+  font-size: clamp(38px, 5.5vw, 62px);
+  line-height: 1.1;
+  color: var(--forest);
+  margin-bottom: 24px;
+}
+.page-hero__lead {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #4f5d56;
+  max-width: 760px;
+}
+
+.classical-art {
+  margin-bottom: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(36,68,60,0.08);
+}
+.classical-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.prose-card {
+  background: #fbf7ef;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 44px 48px;
+}
+.prose-card__header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid rgba(214,203,187,0.7);
+  padding-bottom: 16px;
+}
+.numeral {
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--clay);
+  letter-spacing: 0.1em;
+}
+.prose-card__header h2 {
+  font-size: clamp(24px, 3.5vw, 30px);
+  color: var(--forest);
+  margin: 0;
+}
+.section-sub {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 17px;
+  font-style: italic;
+  color: #63716a;
+  margin: -10px 0 28px;
+}
+
+/* Sitemap Nodes Grid */
+.sitemap-grid-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.sitemap-node {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 18px 20px;
+  background: #f7f1e5;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+.sitemap-node:hover {
+  background: #ede2d0;
+  border-color: var(--clay);
+  transform: translateY(-2px);
+}
+.sitemap-node.highlight {
+  border-left: 3px solid var(--clay);
+}
+.node-icon {
+  width: 32px;
+  height: 32px;
+  background: #ede3d2;
+  color: var(--forest);
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.sitemap-node strong {
+  display: block;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 16px;
+  color: var(--forest);
+  margin-bottom: 4px;
+}
+.sitemap-node p {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #606f67;
+  margin: 0 !important;
+}
+
+/* Categories Tree */
+.categories-tree {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+.category-branch {
+  background: #f7f1e5;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 24px 28px;
+}
+.category-branch__header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px dashed var(--line);
+  padding-bottom: 14px;
+}
+.cat-number {
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--clay);
+}
+.cat-title-group {
+  flex: 1;
+}
+.cat-title-group h3 {
+  margin: 0 0 4px;
+  font-size: 20px;
+}
+.cat-title-group h3 a {
+  color: var(--forest);
+  text-decoration: none;
+}
+.cat-title-group h3 a:hover {
+  color: var(--clay);
+}
+.cat-desc {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 14px;
+  color: #6a7972;
+  margin: 0 !important;
+}
+.cat-count {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--clay);
+  background: #ede3d2;
+  padding: 3px 8px;
+  border-radius: 3px;
+}
+
+/* Articles Leaf List */
+.articles-leaf-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.article-leaf-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #fffdf9;
+  border: 1px solid rgba(214,203,187,0.6);
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+}
+.article-leaf-link:hover {
+  border-color: var(--clay);
+  background: #faf4e8;
+  padding-left: 18px;
+}
+.leaf-date {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--clay);
+  width: 100px;
+  flex-shrink: 0;
+}
+.leaf-title {
+  flex: 1;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 16px;
+  color: var(--forest);
+}
+.leaf-arrow {
+  color: var(--clay);
+  font-size: 14px;
+  margin-left: 10px;
+}
+.empty-hint {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 14px;
+  font-style: italic;
+  color: #798780;
+  margin: 8px 0 0 !important;
+}
+
+/* Feed Badge Box */
+.feed-badge-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7f1e5;
+  border: 1px solid var(--line);
+  padding: 14px 20px;
+  border-radius: 6px;
+  margin-top: 14px;
+}
+.feed-badge-box code {
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  color: var(--forest);
+}
+.feed-btn {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--clay);
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid var(--clay);
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+.feed-btn:hover {
+  background: var(--clay);
+  color: #fff;
+}
+
+/* Subpage Navigation */
+.subpage-nav {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+.subpage-nav__link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 16px 24px;
+  border-radius: 6px;
+  background: #ede3d2;
+  border: 1px solid var(--line);
+  transition: 0.2s ease;
+}
+.subpage-nav__link span {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--clay);
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.subpage-nav__link strong {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 17px;
+  color: var(--forest);
+}
+.subpage-nav__link:hover {
+  background: var(--forest);
+  border-color: var(--forest);
+}
+.subpage-nav__link:hover span {
+  color: #e4d4bd;
+}
+.subpage-nav__link:hover strong {
+  color: #f7f2e9;
+}
+.subpage-nav__link.secondary {
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .classic-page {
+    padding: 50px 0 80px;
+  }
+  .prose-card {
+    padding: 30px 20px;
+  }
+  .sitemap-grid-links {
+    grid-template-columns: 1fr;
+  }
+  .category-branch {
+    padding: 20px 16px;
+  }
+  .article-leaf-link {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .leaf-date {
+    width: auto;
+  }
+  .subpage-nav {
+    flex-direction: column;
+  }
+}
+</style>

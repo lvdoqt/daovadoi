@@ -1,8 +1,16 @@
+// Danh sách chuyên mục cố định của blog.
+// Khi thêm chuyên mục mới: bổ sung vào đây và tạo thư mục src/content/<slug>/
 export type Category = { slug: string; name: string; description: string };
-export type Post = { slug: string; title: string; excerpt: string; date: string; category: string };
+
 export const categories: Category[] = [
-  { slug: 'cuoc-song', name: 'Cuộc sống', description: 'Những ghi chép để sống chậm, sáng rõ và gần với mình hơn.' }, { slug: 'dao-va-doi', name: 'Đạo & đời', description: 'Tư tưởng phương Đông trong nhịp sống thường ngày.' }, { slug: 'phat-giao', name: 'Phật giáo', description: 'Con đường tỉnh thức qua những thực hành giản dị.' }, { slug: 'dao-duc-kinh', name: 'Đạo Đức Kinh', description: 'Đọc Lão Tử bằng một tâm thế cởi mở và hiện đại.' }, { slug: 'kinh-dich', name: 'Kinh Dịch', description: 'Quan sát biến đổi để nhận ra thời điểm và hướng đi.' }, { slug: 'thien-va-thuc-hanh', name: 'Thiền & thực hành', description: 'Các thực hành nuôi dưỡng sự có mặt trong đời thường.' },
+  { slug: 'cuoc-song',          name: 'Cuộc sống',         description: 'Những ghi chép để sống chậm, sáng rõ và gần với mình hơn.' },
+  { slug: 'dao-va-doi',         name: 'Đạo & đời',         description: 'Tư tưởng phương Đông trong nhịp sống thường ngày.' },
+  { slug: 'phat-giao',          name: 'Phật giáo',         description: 'Con đường tỉnh thức qua những thực hành giản dị.' },
+  { slug: 'dao-duc-kinh',       name: 'Đạo Đức Kinh',      description: 'Đọc Lão Tử bằng một tâm thế cởi mở và hiện đại.' },
+  { slug: 'kinh-dich',          name: 'Kinh Dịch',         description: 'Quan sát biến đổi để nhận ra thời điểm và hướng đi.' },
+  { slug: 'thien-va-thuc-hanh', name: 'Thiền & thực hành', description: 'Các thực hành nuôi dưỡng sự có mặt trong đời thường.' },
 ];
-export const posts: Post[] = [
-  { slug: 'mot-ngay-khong-voi', title: 'Làm sao để sống một ngày không vội?', excerpt: 'Chậm lại không phải là bỏ cuộc. Đó là cách ta trở về với nhịp điệu riêng.', date: '18.08.2026', category: 'cuoc-song' }, { slug: 'khoang-lang-giua-nhung-dieu-dang-dien-ra', title: 'Khoảng lặng giữa những điều đang diễn ra.', excerpt: 'Bình an không phải là đích đến, mà là một cách có mặt ngay lúc này.', date: '20.08.2026', category: 'dao-va-doi' }, { slug: 'chanh-niem-mot-hoi-tho', title: 'Chánh niệm bắt đầu từ một hơi thở', excerpt: 'Sự tỉnh thức luôn có mặt trong việc nhỏ nhất, gần nhất.', date: '12.08.2026', category: 'phat-giao' }, { slug: 'dao-duc-kinh-vo-vi', title: 'Vô vi: không phải là không làm', excerpt: 'Một cách đọc về sự thuận theo tự nhiên trong Đạo Đức Kinh.', date: '01.08.2026', category: 'dao-duc-kinh' }, { slug: 'que-can-suc-manh-khoi-dau', title: 'Quẻ Càn và sức mạnh của sự khởi đầu', excerpt: 'Một cuộc đọc về tinh thần tự cường và sự sáng tạo.', date: '06.08.2026', category: 'kinh-dich' }, { slug: 'nam-phut-ngoi-yen', title: 'Năm phút ngồi yên mỗi sáng', excerpt: 'Một nghi thức ngắn để bắt đầu ngày mới bằng sự có mặt.', date: '28.07.2026', category: 'thien-va-thuc-hanh' },
-];
+
+// Bài viết không còn khai báo thủ công ở đây.
+// Chúng được đọc tự động từ src/content/<category>/*.md
+// thông qua Astro Content Collections (getCollection('blog')).

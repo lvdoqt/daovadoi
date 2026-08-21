@@ -1,6 +1,26 @@
-const articles = [['Khoảng lặng giữa những điều đang diễn ra.', 'Ta thường đợi đến khi mọi thứ ổn thỏa mới cho phép mình bình an.', '2026-08-20', 'khoang-lang-giua-nhung-dieu-dang-dien-ra'], ['Làm sao để sống một ngày không vội?', 'Chậm lại không phải là bỏ cuộc.', '2026-08-18', 'mot-ngay-khong-voi'], ['Chánh niệm bắt đầu từ một hơi thở', 'Sự tỉnh thức luôn có mặt trong việc nhỏ nhất.', '2026-08-12', 'chanh-niem-mot-hoi-tho']];
+import { getCollection } from 'astro:content';
+
 export async function GET({ site }: { site: URL | undefined }) {
   const base = (site ?? new URL('https://daovadoi.vn')).toString().replace(/\/$/, '');
-  const items = articles.map(([title, description, date, slug]) => `    <item>\n      <title>${title}</title>\n      <link>${base}/${slug}</link>\n      <guid>${base}/${slug}</guid>\n      <description>${description}</description>\n      <pubDate>${new Date(`${date}T00:00:00Z`).toUTCString()}</pubDate>\n    </item>`).join('\n');
-  return new Response(`<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>\n  <title>Đạo &amp; Đời</title>\n  <link>${base}</link>\n  <description>Ghi chép về một đời sống tỉnh thức.</description>\n  <language>vi</language>\n${items}\n</channel></rss>`, { headers: { 'Content-Type': 'application/rss+xml; charset=utf-8' } });
+
+  const posts = await getCollection('blog');
+  const sorted = posts.sort((a, b) => b.data.date.localeCompare(a.data.date));
+
+  const items = sorted
+    .map((post) => {
+      const url = `${base}/bai-viet/${post.id}`;
+      return `    <item>
+      <title>${post.data.title}</title>
+      <link>${url}</link>
+      <guid>${url}</guid>
+      <description>${post.data.excerpt}</description>
+      <pubDate>${new Date(`${post.data.date}T00:00:00Z`).toUTCString()}</pubDate>
+    </item>`;
+    })
+    .join('\n');
+
+  return new Response(
+    `<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>\n  <title>Đạo &amp; Đời</title>\n  <link>${base}</link>\n  <description>Ghi chép về một đời sống tỉnh thức.</description>\n  <language>vi</language>\n${items}\n</channel></rss>`,
+    { headers: { 'Content-Type': 'application/rss+xml; charset=utf-8' } }
+  );
 }

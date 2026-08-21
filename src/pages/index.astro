@@ -1,11 +1,29 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { categories } from '../data/posts';
 
-const articles = [
-  { category: 'Đạo & đời', date: '18.08.2026', title: 'Làm sao để sống một ngày không vội?', excerpt: 'Chậm lại không phải là bỏ cuộc. Đó là cách ta trở về với nhịp điệu riêng của mình.', type: 'mountain' },
-  { category: 'Phật giáo', date: '12.08.2026', title: 'Chánh niệm bắt đầu từ một hơi thở', excerpt: 'Không cần tìm kiếm ở nơi xa. Sự tỉnh thức luôn có mặt trong việc nhỏ nhất.', type: 'sun' },
-  { category: 'Kinh dịch', date: '06.08.2026', title: 'Quẻ Càn và sức mạnh của sự khởi đầu', excerpt: 'Một cuộc đọc giản dị về sáu hào dương và tinh thần tự cường trong đời sống.', type: 'lines' }
-];
+// Lấy tất cả bài, sắp xếp mới nhất trước
+const allPosts = await getCollection('blog');
+const sorted = allPosts.sort((a, b) => b.data.date.localeCompare(a.data.date));
+
+// Bài nổi bật (mới nhất)
+const featured = sorted[0];
+const [fy, fm, fd] = featured.data.date.split('-');
+const featuredDate = `${fd}.${fm}.${fy}`;
+const featuredCat = categories.find((c) => c.slug === featured.data.category);
+
+// 3 bài gần đây (bỏ bài featured)
+const recent = sorted.slice(1, 4);
+const artTypes = ['mountain', 'sun', 'lines'];
+
+function formatDate(d: string) {
+  const [y, m, dd] = d.split('-');
+  return `${dd}.${m}.${y}`;
+}
+function getCatName(slug: string) {
+  return categories.find((c) => c.slug === slug)?.name ?? slug;
+}
 ---
 <BaseLayout>
   <main>
@@ -46,25 +64,26 @@ const articles = [
       <div class="wrap feature-layout">
         <div class="feature-art"><svg viewBox="0 0 600 560" xmlns="http://www.w3.org/2000/svg"><rect width="600" height="560" fill="#c9d3be"/><circle cx="301" cy="262" r="149" fill="none" stroke="#375248" stroke-width="2"/><circle cx="301" cy="262" r="105" fill="#e6c899"/><path d="M301 112v300M151 262h300" stroke="#375248" stroke-width="2"/><path d="M301 154c-20 54-19 110 0 165 21-55 20-111 0-165Zm-108 108c55-20 111-19 166 0-55 21-111 20-166 0Zm216 0c55-20 111-19 166 0-55 21-111 20-166 0Z" fill="#46675a"/><text x="300" y="505" text-anchor="middle" fill="#375248" font-size="18" font-family="serif" letter-spacing="4">TĨNH</text></svg></div>
         <article class="feature-copy">
-          <p class="eyebrow">BÀI VIẾT MỚI NHẤT · 20.08.2026</p>
-          <h2>Khoảng lặng<br />giữa những điều<br /><em>đang diễn ra.</em></h2>
-          <p>Ta thường đợi đến khi mọi thứ ổn thỏa mới cho phép mình bình an. Nhưng bình an không phải là đích đến — nó là một cách có mặt, ngay trong lúc này.</p>
-          <a class="text-link" href="/khoang-lang-giua-nhung-dieu-dang-dien-ra">ĐỌC TIẾP <span>→</span></a>
+          <p class="eyebrow">BÀI VIẾT MỚI NHẤT · {featuredDate}</p>
+          <h2>{featured.data.title}</h2>
+          <p>{featured.data.excerpt}</p>
+          <a class="text-link" href={`/bai-viet/${featured.id}`}>ĐỌC TIẾP <span>→</span></a>
         </article>
       </div>
     </section>
 
     <section class="journal wrap">
-      <div class="section-head"><div><p class="eyebrow">NHỮNG GHI CHÉP GẦN ĐÂY</p><h2>Đọc để trở về.</h2></div><a class="text-link" href="#">XEM TẤT CẢ <span>→</span></a></div>
+      <div class="section-head"><div><p class="eyebrow">NHỮNG GHI CHÉP GẦN ĐÂY</p><h2>Đọc để trở về.</h2></div><a class="text-link" href="/chuyen-muc/cuoc-song">XEM TẤT CẢ <span>→</span></a></div>
       <div class="article-grid">
-        {articles.map((article) => <article class="card">
-          <div class={`card-art ${article.type}`}>
-            {article.type === 'mountain' && <svg viewBox="0 0 340 230"><rect width="340" height="230" fill="#d4c7b1"/><circle cx="255" cy="67" r="38" fill="#f1e4c9"/><path d="M0 177 86 95l41 44 54-79 159 137v33H0Z" fill="#6b7b6a"/><path d="m0 200 116-61 43 45 65-74 116 87v33H0Z" fill="#415950"/></svg>}
-            {article.type === 'sun' && <svg viewBox="0 0 340 230"><rect width="340" height="230" fill="#b7c8bd"/><circle cx="170" cy="112" r="62" fill="#f4dc9e"/><g stroke="#486259" stroke-width="3"><path d="M170 16v36M170 172v40M74 112h36M230 112h36M102 44l26 26M212 154l27 28M238 44l-26 26M128 154l-27 28"/></g></svg>}
-            {article.type === 'lines' && <svg viewBox="0 0 340 230"><rect width="340" height="230" fill="#d8b998"/><g stroke="#473d37" stroke-width="11"><path d="M100 57h140M100 92h62m16 0h62M100 127h62m16 0h62M100 162h140"/></g><circle cx="170" cy="112" r="85" fill="none" stroke="#473d37" stroke-width="1"/></svg>}
+        {recent.map((post, i) => <article class="card">
+          <div class={`card-art ${artTypes[i]}`}>
+            {artTypes[i] === 'mountain' && <svg viewBox="0 0 340 230"><rect width="340" height="230" fill="#d4c7b1"/><circle cx="255" cy="67" r="38" fill="#f1e4c9"/><path d="M0 177 86 95l41 44 54-79 159 137v33H0Z" fill="#6b7b6a"/><path d="m0 200 116-61 43 45 65-74 116 87v33H0Z" fill="#415950"/></svg>}
+            {artTypes[i] === 'sun' && <svg viewBox="0 0 340 230"><rect width="340" height="230" fill="#b7c8bd"/><circle cx="170" cy="112" r="62" fill="#f4dc9e"/><g stroke="#486259" stroke-width="3"><path d="M170 16v36M170 172v40M74 112h36M230 112h36M102 44l26 26M212 154l27 28M238 44l-26 26M128 154l-27 28"/></g></svg>}
+            {artTypes[i] === 'lines' && <svg viewBox="0 0 340 230"><rect width="340" height="230" fill="#d8b998"/><g stroke="#473d37" stroke-width="11"><path d="M100 57h140M100 92h62m16 0h62M100 127h62m16 0h62M100 162h140"/></g><circle cx="170" cy="112" r="85" fill="none" stroke="#473d37" stroke-width="1"/></svg>}
           </div>
-          <div class="card-meta"><span>{article.category}</span><time>{article.date}</time></div>
-          <h3>{article.title}</h3><p>{article.excerpt}</p><a href={article.type === 'mountain' ? '/mot-ngay-khong-voi' : article.type === 'sun' ? '/chanh-niem-mot-hoi-tho' : '/que-can-suc-manh-khoi-dau'} aria-label={`Đọc ${article.title}`}>Đọc bài <span>→</span></a>
+          <div class="card-meta"><span>{getCatName(post.data.category)}</span><time>{formatDate(post.data.date)}</time></div>
+          <h3>{post.data.title}</h3><p>{post.data.excerpt}</p>
+          <a href={`/bai-viet/${post.id}`} aria-label={`Đọc ${post.data.title}`}>Đọc bài <span>→</span></a>
         </article>)}
       </div>
     </section>

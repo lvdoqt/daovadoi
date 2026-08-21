@@ -1,4 +1,511 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="Giới thiệu · Đạo & Đời"><main class="info-page wrap"><p class="eyebrow">VỀ ĐẠO & ĐỜI</p><h1>Một nơi để<br /><em>trở về.</em></h1><div class="info-copy"><p>Đạo & Đời là một không gian đọc chậm về đời sống tinh thần, tư tưởng phương Đông và những thực hành giúp ta sống sáng rõ hơn mỗi ngày.</p><p>Chúng tôi không tìm cách đưa ra câu trả lời cuối cùng. Mỗi bài viết là một lời mời dừng lại, quan sát và tự tìm lấy con đường phù hợp với mình.</p></div></main></BaseLayout>
+
+<BaseLayout title="Giới thiệu · Đạo & Đời - Khởi nguồn một chữ Tĩnh">
+  <main class="classic-page wrap">
+    <!-- Header Banner -->
+    <header class="page-hero">
+      <div class="page-hero__badge">
+        <span class="seal">道</span>
+        <p class="eyebrow">DUYÊN KHỞI · VỀ ĐẠO & ĐỜI</p>
+      </div>
+      <h1>Đi qua đời sống<br /><em>bằng một trái tim sáng.</em></h1>
+      <p class="page-hero__lead">
+        Một khoảng hiên trà tĩnh lặng giữa dòng đời biến chuyển, nơi ta cùng nhau lật giở từng trang cổ thư, 
+        lắng nghe hơi thở và tìm lại sự điềm đạm nguyên sơ của chính mình.
+      </p>
+    </header>
+
+    <!-- Classical Artwork Banner -->
+    <div class="classical-art" aria-hidden="true">
+      <svg viewBox="0 0 1100 280" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="art-bg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ede3d2" />
+            <stop offset="100%" stop-color="#dfd0b9" />
+          </linearGradient>
+          <linearGradient id="mist" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#24443c" stop-opacity="0.1" />
+            <stop offset="50%" stop-color="#24443c" stop-opacity="0.3" />
+            <stop offset="100%" stop-color="#24443c" stop-opacity="0.05" />
+          </linearGradient>
+        </defs>
+        <rect width="1100" height="280" rx="8" fill="url(#art-bg)" />
+        <!-- Trăng non & mây bay -->
+        <circle cx="880" cy="90" r="55" fill="#f8eed8" opacity="0.9" />
+        <path d="M720 110 Q820 80 960 115 T1060 100" stroke="#ad624f" stroke-width="1.5" fill="none" opacity="0.4" />
+        <path d="M680 130 Q790 105 910 135 T1040 120" stroke="#ad624f" stroke-width="1" fill="none" opacity="0.3" />
+        <!-- Dãy núi xa mờ -->
+        <path d="M0 280 L0 180 Q120 110 260 190 T560 140 Q700 80 860 190 T1100 160 L1100 280 Z" fill="#6b7b6a" opacity="0.5" />
+        <path d="M0 280 L0 210 Q180 140 380 220 T780 170 Q920 120 1100 200 L1100 280 Z" fill="#325349" opacity="0.75" />
+        <path d="M0 280 L0 240 Q220 180 460 250 T900 210 Q1010 185 1100 230 L1100 280 Z" fill="#24443c" />
+        <!-- Cổ tự & thiền ý -->
+        <text x="60" y="248" fill="#f5eddf" font-family="'Noto Serif Display', serif" font-size="16" letter-spacing="4" font-style="italic">Vạn vật quy tâm · An trú hiện tại</text>
+        <g stroke="#ad624f" stroke-width="1" opacity="0.6">
+          <circle cx="550" cy="140" r="40" fill="none" stroke-dasharray="3,3" />
+          <circle cx="550" cy="140" r="4" fill="#ad624f" />
+        </g>
+      </svg>
+    </div>
+
+    <!-- Main Content Flow -->
+    <div class="content-sections">
+      <!-- Section 1: Khởi nguồn -->
+      <section class="prose-card">
+        <div class="prose-card__header">
+          <span class="numeral">I</span>
+          <h2>Khởi nguồn một chữ Duyên</h2>
+        </div>
+        <div class="prose-card__body">
+          <p>
+            Trong nhịp sống hiện đại đầy hối hả, con người ta dễ bị cuốn vào những guồng quay của danh vọng, 
+            tốc độ và lượng thông tin khổng lồ nhưng lại thiếu vắng sự tĩnh lặng nội tâm. 
+            Chúng ta nói nhiều hơn nhưng lắng nghe ít đi; tích lũy nhiều hơn nhưng lòng an yên lại vơi bớt.
+          </p>
+          <p>
+            <strong>Đạo & Đời</strong> ra đời như một trạm dừng chân thuần khiết — một chiếc ghế gỗ dưới bóng cây cổ thụ, 
+            nơi bất kỳ ai cũng có thể thong dong ngồi xuống, uống một ngụm trà thanh và chiêm nghiệm về hành trình làm người. 
+            Ở đây, "Đạo" không phải là giáo điều xa xôi huyền bí, mà là dòng chảy tự nhiên của trời đất; 
+            "Đời" không phải chốn bụi trần để trốn tránh, mà chính là mảnh đất màu mỡ để ta tu dưỡng và thực chứng tâm mình.
+          </p>
+          <blockquote class="classical-quote">
+            <p>“Đạo pháp tự nhiên, tâm an vạn sự an. Sống giữa đời thường mà không để đời làm xao động, đó là chỗ khởi đầu của trí tuệ.”</p>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- Section 2: Ba Tôn Chỉ -->
+      <section class="prose-card">
+        <div class="prose-card__header">
+          <span class="numeral">II</span>
+          <h2>Tam Niệm Chỉ Hướng</h2>
+        </div>
+        <p class="section-sub">Ba nguyên tắc cốt lõi nâng đỡ từng dòng chữ và bài viết nơi Đạo & Đời:</p>
+        
+        <div class="pillars-grid">
+          <div class="pillar-box">
+            <div class="pillar-box__head">
+              <span class="seal-small">靜</span>
+              <h3>1. Độc Thư Dưỡng Khí</h3>
+            </div>
+            <p class="pillar-box__sub">Đọc chậm để nuôi dưỡng tâm hồn</p>
+            <p>
+              Không viết những bài viết câu khách hay tin tức giật gân. Mỗi áng văn được chắt lọc kỹ càng, 
+              hướng người đọc đến sự trầm tĩnh, đọc bằng sự tập trung trọn vẹn và tự chiêm nghiệm.
+            </p>
+          </div>
+
+          <div class="pillar-box">
+            <div class="pillar-box__head">
+              <span class="seal-small">明</span>
+              <h3>2. Cổ Học Tân Tri</h3>
+            </div>
+            <p class="pillar-box__sub">Soi xưa để thấu suốt việc nay</p>
+            <p>
+              Đem những tư tưởng thâm viễn của Đạo Đức Kinh, Kinh Dịch, Phật học và minh triết phương Đông 
+              diễn giải bằng ngôn ngữ bình dị, soi sáng những băn khoăn của con người thời đại mới.
+            </p>
+          </div>
+
+          <div class="pillar-box">
+            <div class="pillar-box__head">
+              <span class="seal-small">行</span>
+              <h3>3. Tri Hành Hợp Nhất</h3>
+            </div>
+            <p class="pillar-box__sub">Hiểu sâu và sống thật</p>
+            <p>
+              Triết lý chỉ có giá trị khi bước vào đời sống. Mỗi bài viết luôn gợi mở một phương pháp thực hành: 
+              từ năm phút ngồi yên, một hơi thở chánh niệm, đến cách ứng xử nhu thuận trước biến thiên.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Sáu mạch nguồn tư tưởng -->
+      <section class="prose-card">
+        <div class="prose-card__header">
+          <span class="numeral">III</span>
+          <h2>Lục Mạch Tư Tưởng</h2>
+        </div>
+        <p class="section-sub">Không gian Đạo & Đời được kết tinh qua 6 nếp chuyên mục truyền thống:</p>
+
+        <div class="topics-overview">
+          <a href="/chuyen-muc/cuoc-song" class="topic-item">
+            <span class="topic-code">01 · Cuộc sống</span>
+            <strong>Hồi quy bình nhật</strong>
+            <p>Những ghi chép vụn vặt nhưng thấm thía về nếp ăn, nếp ở, cách làm dịu bớt âu lo trong ngày thường.</p>
+          </a>
+          <a href="/chuyen-muc/dao-va-doi" class="topic-item">
+            <span class="topic-code">02 · Đạo & Đời</span>
+            <strong>Hòa quang đồng trần</strong>
+            <p>Cầu nối giữa triết lý cổ nhân và đời sống xã hội; dung hòa sự tĩnh lặng bên trong với bổn phận trần thế.</p>
+          </a>
+          <a href="/chuyen-muc/phat-giao" class="topic-item">
+            <span class="topic-code">03 · Phật giáo</span>
+            <strong>Tỉnh thức đương xứ</strong>
+            <p>Những giáo lý nhân quả, từ bi và trí tuệ được soi rọi qua góc nhìn giản dị, gần gũi với người thực hành.</p>
+          </a>
+          <a href="/chuyen-muc/dao-duc-kinh" class="topic-item">
+            <span class="topic-code">04 · Đạo Đức Kinh</span>
+            <strong>Thuận lý vô vi</strong>
+            <p>Đọc Lão Tử để hiểu về đức mềm mỏng như nước, sức mạnh của sự trống rỗng và nghệ thuật bất tranh.</p>
+          </a>
+          <a href="/chuyen-muc/kinh-dich" class="topic-item">
+            <span class="topic-code">05 · Kinh Dịch</span>
+            <strong>Tùy thời biến hóa</strong>
+            <p>Học cách quán chiếu âm dương, biến chuyển của trời đất để nhận ra thời điểm tiến thoái đúng đắn.</p>
+          </a>
+          <a href="/chuyen-muc/thien-va-thuc-hanh" class="topic-item">
+            <span class="topic-code">06 · Thiền & thực hành</span>
+            <strong>Tọa thiền chỉ quán</strong>
+            <p>Phương pháp nuôi dưỡng chánh niệm qua từng bước chân, hơi thở và thói quen sinh hoạt mỗi sớm mai.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Section 4: Lời ngỏ hữu duyên -->
+      <section class="prose-card closing-card">
+        <div class="prose-card__header">
+          <span class="numeral">IV</span>
+          <h2>Lời Ngỏ Gửi Khách Thập Phương</h2>
+        </div>
+        <div class="prose-card__body">
+          <p>
+            Đạo & Đời không tự nhận là nơi nắm giữ chân lý tuyệt đối. Nơi đây chỉ là tấm gương nhỏ phản chiếu 
+            những trải nghiệm chân thành và lòng trân quý đối với kho tàng minh triết phương Đông. 
+          </p>
+          <p>
+            Nếu một sớm mai thức dậy, bạn cảm thấy lòng mình cần một chút tĩnh lặng; hoặc sau một ngày làm việc mỏi mệt, 
+            bạn muốn tìm một câu văn xoa dịu tâm can — kính mời bạn ghé lại hiên trà này. 
+            Cầu chúc bạn luôn vững vàng và bình an trên vạn dặm đường đời.
+          </p>
+          <div class="author-sign">
+            <p class="sign-tag">Ban biên tập Đạo & Đời</p>
+            <p class="sign-note">Chắp tay kính bút</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Navigation Footer Links -->
+    <nav class="subpage-nav" aria-label="Điều hướng phụ">
+      <a href="/huong-dan" class="subpage-nav__link">
+        <span>Tiếp theo</span>
+        <strong>Hướng Dẫn Đọc & Thực Hành →</strong>
+      </a>
+      <a href="/sitemap" class="subpage-nav__link secondary">
+        <span>Khám phá</span>
+        <strong>Xem Toàn Bộ Sơ Đồ Trang (Tàng Thư) ↗</strong>
+      </a>
+    </nav>
+  </main>
+</BaseLayout>
+
+<style>
+.classic-page {
+  padding: 80px 0 120px;
+  max-width: 900px;
+}
+
+/* Page Hero */
+.page-hero {
+  margin-bottom: 45px;
+}
+.page-hero__badge {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.seal {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 4px;
+  background: var(--clay);
+  color: #fff8eb;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.3), 0 2px 8px rgba(173,98,79,0.25);
+}
+.page-hero h1 {
+  font-size: clamp(38px, 5.5vw, 62px);
+  line-height: 1.1;
+  color: var(--forest);
+  margin-bottom: 24px;
+}
+.page-hero__lead {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #4f5d56;
+  max-width: 760px;
+}
+
+/* Artwork Banner */
+.classical-art {
+  margin-bottom: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(36,68,60,0.08);
+}
+.classical-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Content Sections */
+.content-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.prose-card {
+  background: #fbf7ef;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 44px 48px;
+  position: relative;
+}
+.prose-card__header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid rgba(214,203,187,0.7);
+  padding-bottom: 16px;
+}
+.numeral {
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--clay);
+  letter-spacing: 0.1em;
+}
+.prose-card__header h2 {
+  font-size: clamp(24px, 3.5vw, 32px);
+  color: var(--forest);
+  margin: 0;
+}
+.section-sub {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 17px;
+  font-style: italic;
+  color: #63716a;
+  margin: -10px 0 28px;
+}
+.prose-card__body p {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 18px;
+  line-height: 1.85;
+  color: #384640;
+  margin: 0 0 20px;
+}
+.prose-card__body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Quotes */
+.classical-quote {
+  margin: 32px 0;
+  padding: 24px 30px;
+  background: #ede3d2;
+  border-left: 4px solid var(--clay);
+  border-radius: 0 8px 8px 0;
+}
+.classical-quote p {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 19px !important;
+  font-style: italic;
+  line-height: 1.7 !important;
+  color: var(--forest) !important;
+  margin: 0 !important;
+}
+
+/* Pillars Grid */
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+.pillar-box {
+  background: #f7f1e5;
+  border: 1px solid var(--line);
+  padding: 24px 20px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+.pillar-box__head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.seal-small {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  background: var(--forest);
+  color: #f7f2e9;
+  font-size: 13px;
+  font-family: 'Noto Serif Display', serif;
+  border-radius: 3px;
+}
+.pillar-box h3 {
+  font-size: 18px;
+  color: var(--forest);
+  margin: 0;
+}
+.pillar-box__sub {
+  font-size: 13px;
+  font-family: 'DM Mono', monospace;
+  color: var(--clay);
+  margin: 0 0 14px !important;
+  letter-spacing: 0.02em;
+}
+.pillar-box p {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #505e57;
+  margin: 0;
+}
+
+/* Topics Overview */
+.topics-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+.topic-item {
+  display: block;
+  background: #f7f1e5;
+  border: 1px solid var(--line);
+  padding: 20px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease;
+}
+.topic-item:hover {
+  background: #ede2d0;
+  border-color: var(--clay);
+  transform: translateY(-2px);
+}
+.topic-code {
+  display: block;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--clay);
+  letter-spacing: 0.08em;
+  margin-bottom: 6px;
+}
+.topic-item strong {
+  display: block;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 18px;
+  color: var(--forest);
+  margin-bottom: 8px;
+}
+.topic-item p {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #55635c;
+  margin: 0;
+}
+
+/* Closing Sign */
+.closing-card {
+  border-top: 3px solid var(--forest);
+}
+.author-sign {
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px dashed var(--line);
+  text-align: right;
+}
+.sign-tag {
+  font-family: 'Noto Serif Display', serif;
+  font-weight: 600;
+  font-size: 17px !important;
+  color: var(--forest) !important;
+  margin: 0 0 4px !important;
+}
+.sign-note {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 14px !important;
+  font-style: italic;
+  color: var(--clay) !important;
+  margin: 0 !important;
+}
+
+/* Subpage Navigation */
+.subpage-nav {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+.subpage-nav__link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 16px 24px;
+  border-radius: 6px;
+  background: #ede3d2;
+  border: 1px solid var(--line);
+  transition: 0.2s ease;
+}
+.subpage-nav__link span {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--clay);
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.subpage-nav__link strong {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 17px;
+  color: var(--forest);
+}
+.subpage-nav__link:hover {
+  background: var(--forest);
+  border-color: var(--forest);
+}
+.subpage-nav__link:hover span {
+  color: #e4d4bd;
+}
+.subpage-nav__link:hover strong {
+  color: #f7f2e9;
+}
+.subpage-nav__link.secondary {
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .classic-page {
+    padding: 50px 0 80px;
+  }
+  .prose-card {
+    padding: 30px 24px;
+  }
+  .pillars-grid {
+    grid-template-columns: 1fr;
+  }
+  .topics-overview {
+    grid-template-columns: 1fr;
+  }
+  .subpage-nav {
+    flex-direction: column;
+  }
+}
+</style>

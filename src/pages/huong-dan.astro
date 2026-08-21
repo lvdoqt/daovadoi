@@ -1,4 +1,482 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="Hướng dẫn đọc · Đạo & Đời"><main class="info-page wrap"><p class="eyebrow">HƯỚNG DẪN</p><h1>Đọc chậm,<br /><em>sống sâu.</em></h1><div class="info-copy"><p>Bạn có thể bắt đầu từ một chuyên mục mình đang quan tâm: Cuộc sống, Đạo & đời, Phật giáo, Đạo Đức Kinh hoặc Kinh Dịch.</p><p>Hãy chọn một bài, dành vài phút không bị gián đoạn và đọc với sự cởi mở. Nếu một ý tưởng chạm đến bạn, hãy ghi lại — rồi mang nó vào ngày thường.</p></div></main></BaseLayout>
+
+<BaseLayout title="Hướng dẫn đọc · Đạo & Đời - Tâm pháp thưởng văn như thưởng trà">
+  <main class="classic-page wrap">
+    <!-- Header Banner -->
+    <header class="page-hero">
+      <div class="page-hero__badge">
+        <span class="seal">讀</span>
+        <p class="eyebrow">TÂM PHÁP ĐỌC SÁCH · HƯỚNG DẪN THƯỞNG THỨC</p>
+      </div>
+      <h1>Đọc chậm,<br /><em>sống sâu.</em></h1>
+      <p class="page-hero__lead">
+        Người xưa thưởng văn như thưởng trà: không uống vội để giải tỏa cơn khát tức thì, 
+        mà nhấp từng ngụm nhỏ để nhận ra vị chát đầu môi và dư vị ngọt lành nơi cuống họng.
+      </p>
+    </header>
+
+    <!-- Classical Artwork Banner -->
+    <div class="classical-art" aria-hidden="true">
+      <svg viewBox="0 0 1100 280" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="guide-bg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#e8ded0" />
+            <stop offset="100%" stop-color="#dacab1" />
+          </linearGradient>
+        </defs>
+        <rect width="1100" height="280" rx="8" fill="url(#guide-bg)" />
+        <!-- Chiếc đèn dầu / ánh trăng đêm đọc sách -->
+        <circle cx="240" cy="130" r="45" fill="#fdf3dc" opacity="0.8" />
+        <circle cx="240" cy="130" r="70" fill="none" stroke="#ad624f" stroke-width="1" stroke-dasharray="4,4" opacity="0.4" />
+        <!-- Cuộn tre thư tịch -->
+        <g stroke="#325349" stroke-width="2" fill="none" opacity="0.6">
+          <path d="M480 80 C 520 70, 580 90, 620 80 L 620 200 C 580 210, 520 190, 480 200 Z" fill="#f3ebe0" />
+          <line x1="510" y1="88" x2="510" y2="195" />
+          <line x1="540" y1="82" x2="540" y2="190" />
+          <line x1="570" y1="84" x2="570" y2="192" />
+          <line x1="595" y1="82" x2="595" y2="194" />
+        </g>
+        <!-- Chén trà & khói hương thoang thoảng -->
+        <ellipse cx="820" cy="190" rx="45" ry="16" fill="#6b7b6a" opacity="0.7" />
+        <ellipse cx="820" cy="186" rx="38" ry="12" fill="#ad624f" opacity="0.85" />
+        <path d="M810 170 Q 800 130 825 100 T 815 60" stroke="#ad624f" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.5" />
+        <path d="M830 170 Q 845 135 830 105 T 840 70" stroke="#ad624f" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.4" />
+        <text x="60" y="248" fill="#24443c" font-family="'Noto Serif Display', serif" font-size="16" letter-spacing="4" font-style="italic">Ý tại ngôn ngoại · Trầm tư tự ngộ</text>
+      </svg>
+    </div>
+
+    <!-- Main Guide Flow -->
+    <div class="content-sections">
+      <!-- Section 1: Tứ Bộ Tâm Pháp -->
+      <section class="prose-card">
+        <div class="prose-card__header">
+          <span class="numeral">I</span>
+          <h2>Tứ Bộ Tâm Pháp (Bốn Bước Thưởng Văn)</h2>
+        </div>
+        <p class="section-sub">Một gợi ý nhỏ để mỗi phút giây đọc bài đều trở thành một thời khóa nuôi dưỡng thân tâm:</p>
+
+        <div class="steps-container">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-badge">01</div>
+            <div class="step-content">
+              <h3>Thanh Tâm Định Ý <span class="step-sub">Lắng lòng trước khi mở trang</span></h3>
+              <p>
+                Trước khi đọc, hãy gác lại những thông báo mạng xã hội và mối bận tâm đang dang dở. 
+                Rửa sạch đôi tay, rót một chén nước ấm, hít ba hơi thật sâu để tâm trí trở về nguyên vẹn với thân thể. 
+                Tâm có tĩnh thì văn mới thấm.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-badge">02</div>
+            <div class="step-content">
+              <h3>Hàm Nhai Thể Vị <span class="step-sub">Nhai kỹ nếm sâu từng câu chữ</span></h3>
+              <p>
+                Đừng đọc lướt để lấy số lượng hay đuổi theo kết luận. Hãy chậm rãi thưởng thức nhạc điệu của câu từ, 
+                dừng lại ở những chỗ làm lòng bạn rung động. Người xưa gọi đó là <em>"Ý tại ngôn ngoại"</em> — 
+                những điều quan trọng nhất thường nằm giữa các khoảng lặng chứ không chỉ trên mặt chữ.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-badge">03</div>
+            <div class="step-content">
+              <h3>Hồi Quang Phản Chiếu <span class="step-sub">Soi bóng vào chính đời mình</span></h3>
+              <p>
+                Tự hỏi bản thân: <em>"Điều này nhắc nhở ta điều gì trong cách sống, cách ứng xử hôm nay? 
+                Có nút thắt nào trong lòng ta đang được tháo gỡ?"</em>. Đọc sách chân chính là cuộc đối thoại 
+                chân thành nhất giữa bạn và chính nội tâm của mình.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-card">
+            <div class="step-badge">04</div>
+            <div class="step-content">
+              <h3>Tùy Duyên Hành Trì <span class="step-sub">Mang hạt mầm vào ngày thường</span></h3>
+              <p>
+                Gấp trang sách lại không phải là kết thúc, mà là khởi đầu. Đem một sự thấu hiểu nhỏ áp dụng vào thực tế: 
+                một lời nói dịu dàng hơn với người thân, một cái nhìn bao dung trước nghịch cảnh, 
+                hay năm phút ngồi yên để giữ mình không bị cuốn theo thị phi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Phương Pháp Tra Cứu -->
+      <section class="prose-card">
+        <div class="prose-card__header">
+          <span class="numeral">II</span>
+          <h2>Cách Thức Tra Cứu & Tầm Thư</h2>
+        </div>
+        <p class="section-sub">Những công cụ giản đơn giúp bạn dạo bước trong tàng thư:</p>
+
+        <div class="tools-grid">
+          <div class="tool-box">
+            <div class="tool-box__icon">⌕</div>
+            <h3>Kính Tầm Thư (Tìm kiếm)</h3>
+            <p>
+              Nhấp vào biểu tượng <code>⌕</code> ở góc phải thanh đầu trang hoặc nhấn phím tắt để mở khung tìm kiếm. 
+              Bạn có thể gõ từ khóa như <em>"vô vi"</em>, <em>"hơi thở"</em>, <em>"Kinh Dịch"</em> để tìm nhanh bài viết tương thích.
+            </p>
+          </div>
+
+          <div class="tool-box">
+            <div class="tool-box__icon">❖</div>
+            <h3>Lục Đại Chuyên Mục</h3>
+            <p>
+              Chọn lối đi riêng qua thanh thực đơn: 
+              <a href="/chuyen-muc/cuoc-song">Cuộc sống</a>, 
+              <a href="/chuyen-muc/dao-va-doi">Đạo & đời</a>, 
+              <a href="/chuyen-muc/phat-giao">Phật giáo</a>, 
+              <a href="/chuyen-muc/dao-duc-kinh">Đạo Đức Kinh</a>, 
+              <a href="/chuyen-muc/kinh-dich">Kinh Dịch</a>, 
+              <a href="/chuyen-muc/thien-va-thuc-hanh">Thiền & thực hành</a>.
+            </p>
+          </div>
+
+          <div class="tool-box">
+            <div class="tool-box__icon">☵</div>
+            <h3>Dòng Cấp Tin RSS</h3>
+            <p>
+              Nếu bạn dùng các trình đọc tin tĩnh tại (Feedly, NetNewsWire...), hãy đăng ký nguồn tin 
+              <a href="/rss.xml">/rss.xml</a> để nhận bài viết mới mà không bị phân tâm bởi thuật toán mạng xã hội.
+            </p>
+          </div>
+
+          <div class="tool-box">
+            <div class="tool-box__icon">🕮</div>
+            <h3>Sơ Đồ Tàng Thư</h3>
+            <p>
+              Xem toàn bộ danh mục bài viết và cấu trúc website tại trang 
+              <a href="/sitemap">Sơ đồ trang web</a> để có cái nhìn tổng quan mạch lạc nhất.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Lời Dặn Cổ Nhân -->
+      <section class="prose-card">
+        <div class="prose-card__header">
+          <span class="numeral">III</span>
+          <h2>Minh Ngôn Khuyên Đọc</h2>
+        </div>
+        <div class="prose-card__body">
+          <blockquote class="classical-quote">
+            <p>“Bế môn độc thư, như đối cổ nhân; thanh dạ thính tuyền, như văn thiên lại.”</p>
+          </blockquote>
+          <p class="quote-explain">
+            <em>(Đóng cửa đọc sách như được ngồi đối ẩm cùng cổ nhân; đêm thanh nghe suối reo như lắng nghe khúc đàn của trời đất.)</em>
+          </p>
+          <p>
+            Mong rằng mỗi lần bạn ghé lại trang viết này, lòng đều như được trút bỏ bớt một gánh nặng vô hình, 
+            đón nhận thêm một niềm tin sáng rõ vào đời sống chân thật.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Navigation Footer Links -->
+    <nav class="subpage-nav" aria-label="Điều hướng phụ">
+      <a href="/gioi-thieu" class="subpage-nav__link secondary">
+        <span>Xem lại</span>
+        <strong>← Về Khởi Nguồn & Triết Lý</strong>
+      </a>
+      <a href="/quy-dinh" class="subpage-nav__link">
+        <span>Tiếp theo</span>
+        <strong>Xem Quy Ước Đồng Hành →</strong>
+      </a>
+    </nav>
+  </main>
+</BaseLayout>
+
+<style>
+.classic-page {
+  padding: 80px 0 120px;
+  max-width: 900px;
+}
+
+.page-hero {
+  margin-bottom: 45px;
+}
+.page-hero__badge {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.seal {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 4px;
+  background: var(--clay);
+  color: #fff8eb;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.3), 0 2px 8px rgba(173,98,79,0.25);
+}
+.page-hero h1 {
+  font-size: clamp(38px, 5.5vw, 62px);
+  line-height: 1.1;
+  color: var(--forest);
+  margin-bottom: 24px;
+}
+.page-hero__lead {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #4f5d56;
+  max-width: 760px;
+}
+
+.classical-art {
+  margin-bottom: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(36,68,60,0.08);
+}
+.classical-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.prose-card {
+  background: #fbf7ef;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 44px 48px;
+}
+.prose-card__header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid rgba(214,203,187,0.7);
+  padding-bottom: 16px;
+}
+.numeral {
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--clay);
+  letter-spacing: 0.1em;
+}
+.prose-card__header h2 {
+  font-size: clamp(24px, 3.5vw, 32px);
+  color: var(--forest);
+  margin: 0;
+}
+.section-sub {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 17px;
+  font-style: italic;
+  color: #63716a;
+  margin: -10px 0 28px;
+}
+
+/* Steps Container */
+.steps-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.step-card {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 22px;
+  background: #f7f1e5;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 26px 28px;
+  align-items: start;
+}
+.step-badge {
+  font-family: 'DM Mono', monospace;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--clay);
+  border: 1px solid var(--clay);
+  border-radius: 4px;
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  background: #fdfaf4;
+}
+.step-content h3 {
+  font-size: 20px;
+  color: var(--forest);
+  margin: 0 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 10px;
+}
+.step-sub {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+  color: var(--clay);
+}
+.step-content p {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4a5750;
+  margin: 0;
+}
+
+/* Tools Grid */
+.tools-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.tool-box {
+  background: #f7f1e5;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 24px 22px;
+}
+.tool-box__icon {
+  font-size: 22px;
+  color: var(--clay);
+  margin-bottom: 12px;
+}
+.tool-box h3 {
+  font-size: 18px;
+  color: var(--forest);
+  margin: 0 0 10px;
+}
+.tool-box p {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #55635c;
+  margin: 0;
+}
+.tool-box a {
+  color: var(--clay);
+  font-weight: 500;
+}
+.tool-box code {
+  background: #ede3d2;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+}
+
+/* Quotes */
+.classical-quote {
+  margin: 20px 0 12px;
+  padding: 24px 30px;
+  background: #ede3d2;
+  border-left: 4px solid var(--clay);
+  border-radius: 0 8px 8px 0;
+}
+.classical-quote p {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 19px !important;
+  font-style: italic;
+  line-height: 1.7 !important;
+  color: var(--forest) !important;
+  margin: 0 !important;
+}
+.quote-explain {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 15px;
+  color: #6a7871;
+  margin-bottom: 20px !important;
+}
+.prose-card__body p {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 18px;
+  line-height: 1.85;
+  color: #384640;
+  margin: 0 0 18px;
+}
+
+/* Subpage Navigation */
+.subpage-nav {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+.subpage-nav__link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 16px 24px;
+  border-radius: 6px;
+  background: #ede3d2;
+  border: 1px solid var(--line);
+  transition: 0.2s ease;
+}
+.subpage-nav__link span {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--clay);
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.subpage-nav__link strong {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 17px;
+  color: var(--forest);
+}
+.subpage-nav__link:hover {
+  background: var(--forest);
+  border-color: var(--forest);
+}
+.subpage-nav__link:hover span {
+  color: #e4d4bd;
+}
+.subpage-nav__link:hover strong {
+  color: #f7f2e9;
+}
+.subpage-nav__link.secondary {
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .classic-page {
+    padding: 50px 0 80px;
+  }
+  .prose-card {
+    padding: 30px 24px;
+  }
+  .step-card {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+  .subpage-nav {
+    flex-direction: column;
+  }
+}
+</style>

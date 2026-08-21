@@ -1,0 +1,87 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { categories } from '../../data/posts';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  // post.id = "cuoc-song/mot-ngay-khong-voi" (từ glob loader)
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+// Tìm tên chuyên mục
+const cat = categories.find((c) => c.slug === post.data.category);
+const catName = cat ? cat.name : post.data.category;
+
+// Format date YYYY-MM-DD → DD.MM.YYYY
+const [y, m, d] = post.data.date.split('-');
+const displayDate = `${d}.${m}.${y}`;
+
+// Điều hướng bài trước / tiếp trong cùng chuyên mục
+const allPosts = await getCollection('blog');
+const sameCat = allPosts
+  .filter((p) => p.data.category === post.data.category)
+  .sort((a, b) => b.data.date.localeCompare(a.data.date));
+const idx = sameCat.findIndex((p) => p.id === post.id);
+const prevPost = sameCat[idx + 1];
+const nextPost = sameCat[idx - 1];
+---
+
+<BaseLayout title={`${post.data.title} · Đạo & Đời`}>
+  <main class="article-page wrap">
+    <header class="article-heading">
+      <p class="eyebrow">{catName.toUpperCase()} · {displayDate}</p>
+      <h1>{post.data.title}</h1>
+      <p class="article-lead">{post.data.excerpt}</p>
+    </header>
+
+    <article class="article-body prose">
+      <Content />
+    </article>
+
+    <nav class="article-nav">
+      {prevPost
+        ? <a href={`/bai-viet/${prevPost.id}`}>← Bài trước</a>
+        : <a href={`/chuyen-muc/${post.data.category}`}>← {catName}</a>
+      }
+      {nextPost
+        ? <a href={`/bai-viet/${nextPost.id}`}>Bài tiếp theo →</a>
+        : <a href="/">Về trang chủ →</a>
+      }
+    </nav>
+  </main>
+</BaseLayout>
+
+<style>
+.prose {
+  max-width: 68ch;
+  margin: 0 auto;
+  padding: 2.5rem 0 3rem;
+}
+.prose p {
+  margin-bottom: 1.4em;
+  line-height: 1.85;
+}
+.prose h2 {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  margin: 2.2em 0 0.8em;
+  color: var(--color-text);
+}
+.prose blockquote {
+  border-left: 3px solid var(--color-accent);
+  margin: 2em 0;
+  padding: 0.8em 1.4em;
+  background: var(--color-surface, #f8f5f0);
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+  color: var(--color-text-muted, #5a5347);
+}
+.prose blockquote p { margin: 0; }
+</style>

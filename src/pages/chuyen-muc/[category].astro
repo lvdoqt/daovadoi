@@ -1,8 +1,54 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { categories, posts } from '../../data/posts';
-export function getStaticPaths() { return categories.map((category) => ({ params: { category: category.slug }, props: { category } })); }
+import { getCollection } from 'astro:content';
+import { categories } from '../../data/posts';
+
+export async function getStaticPaths() {
+  return categories.map((category) => ({
+    params: { category: category.slug },
+    props: { category },
+  }));
+}
+
 const { category } = Astro.props;
-const categoryPosts = posts.filter((post) => post.category === category.slug);
+
+// Lấy bài từ Content Collections thay vì posts.ts thủ công
+const allPosts = await getCollection('blog');
+const categoryPosts = allPosts
+  .filter((post) => post.data.category === category.slug)
+  .sort((a, b) => b.data.date.localeCompare(a.data.date));
+
+function formatDate(dateStr: string) {
+  const [y, m, d] = dateStr.split('-');
+  return `${d}.${m}.${y}`;
+}
 ---
-<BaseLayout title={`${category.name} · Đạo & Đời`}><main class="category-page wrap"><header><p class="eyebrow">CHUYÊN MỤC</p><h1>{category.name}</h1><p>{category.description}</p></header><div class="category-list">{categoryPosts.map((post, index) => <a class={`category-card thumbnail-${index + 1}`} href={`/${post.slug}`}><span>0{index + 1}</span><div class="thumbnail" aria-hidden="true"><svg viewBox="0 0 160 112"><rect width="160" height="112" fill="currentColor"/><circle cx="112" cy="35" r="19" fill="#f3e3bb"/><path d="M0 83 41 45l27 26 31-43 61 64v20H0Z" fill="#325349"/></svg></div><div class="category-card__copy"><p class="eyebrow">{post.date}</p><h2>{post.title}</h2><p>{post.excerpt}</p></div><b aria-hidden="true">↗</b></a>)}</div></main></BaseLayout>
+<BaseLayout title={`${category.name} · Đạo & Đời`}>
+  <main class="category-page wrap">
+    <header>
+      <p class="eyebrow">CHUYÊN MỤC</p>
+      <h1>{category.name}</h1>
+      <p>{category.description}</p>
+    </header>
+    <div class="category-list">
+      {categoryPosts.map((post, index) => (
+        <a class={`category-card thumbnail-${index + 1}`} href={`/bai-viet/${post.id}`}>
+          <span>0{index + 1}</span>
+          <div class="thumbnail" aria-hidden="true">
+            <svg viewBox="0 0 160 112">
+              <rect width="160" height="112" fill="currentColor"/>
+              <circle cx="112" cy="35" r="19" fill="#f3e3bb"/>
+              <path d="M0 83 41 45l27 26 31-43 61 64v20H0Z" fill="#325349"/>
+            </svg>
+          </div>
+          <div class="category-card__copy">
+            <p class="eyebrow">{formatDate(post.data.date)}</p>
+            <h2>{post.data.title}</h2>
+            <p>{post.data.excerpt}</p>
+          </div>
+          <b aria-hidden="true">↗</b>
+        </a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>

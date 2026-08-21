@@ -1,4 +1,398 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="Quy định · Đạo & Đời"><main class="info-page wrap"><p class="eyebrow">QUY ĐỊNH</p><h1>Giữ một không gian<br /><em>tử tế.</em></h1><div class="info-copy"><p>Nội dung trên Đạo & Đời dành cho mục đích tham khảo và chiêm nghiệm cá nhân, không thay thế cho tư vấn chuyên môn về sức khỏe, pháp lý hay tài chính.</p><p>Vui lòng ghi nguồn và đặt liên kết đến bài viết gốc khi trích dẫn. Những cuộc trao đổi được khuyến khích trên tinh thần tôn trọng, lắng nghe và không phán xét.</p></div></main></BaseLayout>
+
+<BaseLayout title="Quy định · Đạo & Đời - Thanh quy đồng hành giữa đời thường">
+  <main class="classic-page wrap">
+    <!-- Header Banner -->
+    <header class="page-hero">
+      <div class="page-hero__badge">
+        <span class="seal">規</span>
+        <p class="eyebrow">THANH QUY ĐỒNG HÀNH · QUY ƯỚC KHÔNG GIAN</p>
+      </div>
+      <h1>Giữ một không gian<br /><em>thanh tịnh & tử tế.</em></h1>
+      <p class="page-hero__lead">
+        Để nơi đây mãi là một bến đỗ an yên cho mọi tâm hồn dừng chân, 
+        kính mời quý bạn hữu cùng giữ gìn những quy ước tao nhã và chuẩn mực ứng xử theo nếp người xưa.
+      </p>
+    </header>
+
+    <!-- Classical Artwork Banner -->
+    <div class="classical-art" aria-hidden="true">
+      <svg viewBox="0 0 1100 280" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="rules-bg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#dfd9cb" />
+            <stop offset="100%" stop-color="#cec2b0" />
+          </linearGradient>
+        </defs>
+        <rect width="1100" height="280" rx="8" fill="url(#rules-bg)" />
+        <!-- Vòng tròn Thái cực / Thiền Enso thanh thoát -->
+        <circle cx="550" cy="140" r="85" fill="none" stroke="#24443c" stroke-width="4" stroke-linecap="round" stroke-dasharray="420, 70" opacity="0.65" />
+        <!-- Ba phiến đá thiền xếp chồng (Thế cân bằng tĩnh tại) -->
+        <ellipse cx="280" cy="200" rx="60" ry="20" fill="#24443c" opacity="0.8" />
+        <ellipse cx="280" cy="168" rx="45" ry="16" fill="#325349" opacity="0.85" />
+        <ellipse cx="280" cy="140" rx="30" ry="12" fill="#ad624f" opacity="0.9" />
+        <!-- Lá sen & giọt sương -->
+        <path d="M780 180 C820 140, 920 140, 960 180 C920 220, 820 220, 780 180 Z" fill="#6b7b6a" opacity="0.6" />
+        <circle cx="870" cy="180" r="8" fill="#fdfaf4" opacity="0.9" />
+        <!-- Chữ triện đề từ -->
+        <text x="60" y="248" fill="#24443c" font-family="'Noto Serif Display', serif" font-size="16" letter-spacing="4" font-style="italic">Hòa nhi bất đồng · Kính văn tích tự</text>
+      </svg>
+    </div>
+
+    <!-- Main Content Flow -->
+    <div class="content-sections">
+      <!-- Section 1: Hòa nhi bất đồng -->
+      <section class="prose-card">
+        <div class="prose-card__header">
+          <span class="numeral">I</span>
+          <h2>Hòa Nhi Bất Đồng (Văn Hóa Ứng Xử)</h2>
+        </div>
+        <div class="prose-card__body">
+          <p>
+            Người xưa dạy: <em>"Quân tử hòa nhi bất đồng, tiểu nhân đồng nhi bất hòa."</em> 
+            Mỗi người chúng ta đến với cuộc đời từ những hoàn cảnh, trải nghiệm và nhân duyên khác biệt. 
+            Sự bất đồng trong suy nghĩ là điều tự nhiên của trời đất.
+          </p>
+          <p>
+            Tại Đạo & Đời, chúng tôi trân trọng mọi góc nhìn chân thành. Khi trao đổi, đàm luận hay gửi phản hồi, 
+            xin hãy giữ cho ngôn từ sự hòa nhã, tôn trọng và không phán xét. Chúng ta gặp nhau để học hỏi và soi sáng lẫn nhau, 
+            chứ không phải để tranh đoạt phần thắng bại hay chứng tỏ sự hơn người.
+          </p>
+          <blockquote class="classical-quote">
+            <p>“Thiện ngôn một câu ấm ba mùa đông; ác ngữ nửa lời buốt lạnh tháng sáu.”</p>
+          </blockquote>
+        </div>
+      </section>
+
+      <!-- Section 2: Kính văn tích tự (Bản quyền & Chia sẻ) -->
+      <section class="prose-card">
+        <div class="prose-card__header">
+          <span class="numeral">II</span>
+          <h2>Kính Văn Tích Tự (Tác Quyền & Chia Sẻ)</h2>
+        </div>
+        <div class="prose-card__body">
+          <p>
+            Mỗi bài viết, hình ảnh minh họa và cấu trúc nội dung trên website là tâm huyết chiêm nghiệm, 
+            nghiên cứu và trước tác của ban biên tập Đạo & Đời cùng các tác giả cộng tác.
+          </p>
+          <div class="policy-grid">
+            <div class="policy-box">
+              <div class="policy-box__icon">✔</div>
+              <h3>Được hoan nghênh</h3>
+              <p>
+                Trích dẫn, chia sẻ các bài viết vì mục đích học tập, chiêm nghiệm phi thương mại hoặc lan tỏa điều lành đến bạn bè, 
+                với điều kiện <strong>ghi rõ nguồn "Đạo & Đời"</strong> và đính kèm liên kết nguyên bản bài viết.
+              </p>
+            </div>
+            <div class="policy-box warning">
+              <div class="policy-box__icon">✘</div>
+              <h3>Không được phép</h3>
+              <p>
+                Sao chép toàn bộ trang, tự ý biên tập cắt xén làm sai lệch ý nghĩa, thương mại hóa bài viết 
+                hoặc sử dụng vào các mục đích trục lợi cá nhân khi chưa có sự chấp thuận bằng văn bản.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 3: Minh định giới hạn -->
+      <section class="prose-card">
+        <div class="prose-card__header">
+          <span class="numeral">III</span>
+          <h2>Minh Định Giới Hạn (Miễn Trừ Trách Nhiệm)</h2>
+        </div>
+        <div class="prose-card__body">
+          <p>
+            Các bài viết tại Đạo & Đời mang tính chất chia sẻ triết lý sống, kinh nghiệm quán chiếu nội tâm 
+            và cảm ngộ văn hóa truyền thống.
+          </p>
+          <ul class="custom-list">
+            <li>
+              <strong>Không thay thế chuyên môn:</strong> Nội dung không mang tính chất chỉ định y khoa, tâm lý trị liệu lâm sàng, 
+              tư vấn pháp lý hay đầu tư tài chính. Bạn đọc cần lắng nghe bản thân và tham khảo ý kiến chuyên gia khi đối diện những vấn đề sức khỏe thực tế.
+            </li>
+            <li>
+              <strong>Trách nhiệm cá nhân:</strong> Mỗi phương pháp thực hành (như tọa thiền, điều tức) nên được áp dụng tùy theo thể trạng 
+              và căn cơ của từng người với sự tỉnh giác tự thân.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Section 4: Giữ gìn thanh tịnh -->
+      <section class="prose-card">
+        <div class="prose-card__header">
+          <span class="numeral">IV</span>
+          <h2>Bảo Toàn Sự Thanh Tịnh</h2>
+        </div>
+        <div class="prose-card__body">
+          <p>
+            Đạo & Đời cam kết không đặt quảng cáo xâm lấn, không mua bán trao đổi dữ liệu cá nhân của độc giả, 
+            và không thỏa hiệp với các nội dung giật gân, độc hại.
+          </p>
+          <p>
+            Sự hiện diện điềm đạm của bạn là niềm vinh hạnh của chúng tôi. Cùng nhau gìn giữ không gian này, 
+            chúng ta đang bồi đắp một ốc đảo tinh thần trong trẻo giữa thế giới bộn bề.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Navigation Footer Links -->
+    <nav class="subpage-nav" aria-label="Điều hướng phụ">
+      <a href="/huong-dan" class="subpage-nav__link secondary">
+        <span>Xem lại</span>
+        <strong>← Hướng Dẫn Đọc & Thực Hành</strong>
+      </a>
+      <a href="/lien-he" class="subpage-nav__link">
+        <span>Tiếp theo</span>
+        <strong>Gửi Lời Nhắn Về Thư Phòng →</strong>
+      </a>
+    </nav>
+  </main>
+</BaseLayout>
+
+<style>
+.classic-page {
+  padding: 80px 0 120px;
+  max-width: 900px;
+}
+
+.page-hero {
+  margin-bottom: 45px;
+}
+.page-hero__badge {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.seal {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 4px;
+  background: var(--clay);
+  color: #fff8eb;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.3), 0 2px 8px rgba(173,98,79,0.25);
+}
+.page-hero h1 {
+  font-size: clamp(38px, 5.5vw, 62px);
+  line-height: 1.1;
+  color: var(--forest);
+  margin-bottom: 24px;
+}
+.page-hero__lead {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #4f5d56;
+  max-width: 760px;
+}
+
+.classical-art {
+  margin-bottom: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(36,68,60,0.08);
+}
+.classical-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.prose-card {
+  background: #fbf7ef;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 44px 48px;
+}
+.prose-card__header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid rgba(214,203,187,0.7);
+  padding-bottom: 16px;
+}
+.numeral {
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--clay);
+  letter-spacing: 0.1em;
+}
+.prose-card__header h2 {
+  font-size: clamp(24px, 3.5vw, 32px);
+  color: var(--forest);
+  margin: 0;
+}
+.prose-card__body p {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 18px;
+  line-height: 1.85;
+  color: #384640;
+  margin: 0 0 20px;
+}
+.prose-card__body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Quotes */
+.classical-quote {
+  margin: 28px 0;
+  padding: 24px 30px;
+  background: #ede3d2;
+  border-left: 4px solid var(--clay);
+  border-radius: 0 8px 8px 0;
+}
+.classical-quote p {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 19px !important;
+  font-style: italic;
+  line-height: 1.7 !important;
+  color: var(--forest) !important;
+  margin: 0 !important;
+}
+
+/* Policy Grid */
+.policy-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 24px;
+}
+.policy-box {
+  background: #f7f1e5;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 22px 20px;
+  border-top: 3px solid var(--forest);
+}
+.policy-box.warning {
+  border-top: 3px solid var(--clay);
+}
+.policy-box__icon {
+  font-family: 'DM Mono', monospace;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--forest);
+  margin-bottom: 8px;
+}
+.policy-box.warning .policy-box__icon {
+  color: var(--clay);
+}
+.policy-box h3 {
+  font-size: 18px;
+  color: var(--forest);
+  margin: 0 0 10px;
+}
+.policy-box p {
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  color: #526059 !important;
+  margin: 0 !important;
+}
+
+/* Custom List */
+.custom-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.custom-list li {
+  position: relative;
+  padding-left: 26px;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #404f48;
+}
+.custom-list li::before {
+  content: "✦";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--clay);
+  font-size: 14px;
+}
+.custom-list strong {
+  color: var(--forest);
+}
+
+/* Subpage Navigation */
+.subpage-nav {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+.subpage-nav__link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 16px 24px;
+  border-radius: 6px;
+  background: #ede3d2;
+  border: 1px solid var(--line);
+  transition: 0.2s ease;
+}
+.subpage-nav__link span {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--clay);
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.subpage-nav__link strong {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 17px;
+  color: var(--forest);
+}
+.subpage-nav__link:hover {
+  background: var(--forest);
+  border-color: var(--forest);
+}
+.subpage-nav__link:hover span {
+  color: #e4d4bd;
+}
+.subpage-nav__link:hover strong {
+  color: #f7f2e9;
+}
+.subpage-nav__link.secondary {
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .classic-page {
+    padding: 50px 0 80px;
+  }
+  .prose-card {
+    padding: 30px 24px;
+  }
+  .policy-grid {
+    grid-template-columns: 1fr;
+  }
+  .subpage-nav {
+    flex-direction: column;
+  }
+}
+</style>

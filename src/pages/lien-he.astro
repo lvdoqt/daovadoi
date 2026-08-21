@@ -1,4 +1,449 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<BaseLayout title="Liên hệ · Đạo & Đời"><main class="info-page wrap"><p class="eyebrow">LIÊN HỆ</p><h1>Một lời nhắn<br /><em>gửi về.</em></h1><div class="info-copy"><p>Chúng tôi luôn vui khi nhận được một câu chuyện, một gợi ý chủ đề hay phản hồi từ bạn.</p><p>Viết cho Đạo & Đời tại <a href="mailto:hello@daovadoi.vn">hello@daovadoi.vn</a>. Chúng tôi sẽ hồi đáp trong những ngày làm việc gần nhất.</p></div></main></BaseLayout>
+
+<BaseLayout title="Liên hệ · Đạo & Đời - Thư phòng gửi trao vạn dặm">
+  <main class="classic-page wrap">
+    <!-- Header Banner -->
+    <header class="page-hero">
+      <div class="page-hero__badge">
+        <span class="seal">信</span>
+        <p class="eyebrow">TAO NGỘ HỮU DUYÊN · LIÊN HỆ THƯ PHÒNG</p>
+      </div>
+      <h1>Một lời nhắn<br /><em>gửi về hiên trà.</em></h1>
+      <p class="page-hero__lead">
+        Người xưa nói: "Hữu duyên thiên lý năng tương ngộ." Nếu bạn có một câu chuyện muốn sẻ chia, 
+        một góc nhìn muốn đàm luận hay chỉ đơn giản là gửi một lời chào — thư phòng luôn mở rộng cửa lắng nghe.
+      </p>
+    </header>
+
+    <!-- Classical Artwork Banner -->
+    <div class="classical-art" aria-hidden="true">
+      <svg viewBox="0 0 1100 280" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="contact-bg" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#ded8cc" />
+            <stop offset="100%" stop-color="#cfc4b2" />
+          </linearGradient>
+        </defs>
+        <rect width="1100" height="280" rx="8" fill="url(#contact-bg)" />
+        <!-- Nhành mai / cành trúc thanh mảnh -->
+        <path d="M120 280 Q220 180 340 160 T600 90" stroke="#24443c" stroke-width="2.5" fill="none" opacity="0.6" />
+        <path d="M340 160 Q400 130 460 140" stroke="#24443c" stroke-width="1.5" fill="none" opacity="0.5" />
+        <!-- Những nụ hoa mai điểm xuyết -->
+        <circle cx="280" cy="185" r="7" fill="#ad624f" opacity="0.85" />
+        <circle cx="340" cy="160" r="8" fill="#ad624f" opacity="0.9" />
+        <circle cx="420" cy="135" r="6" fill="#ad624f" opacity="0.8" />
+        <circle cx="480" cy="115" r="7" fill="#ad624f" opacity="0.85" />
+        <circle cx="580" cy="92" r="8" fill="#ad624f" opacity="0.95" />
+        <!-- Bức thư phong & ấn triện son -->
+        <g transform="translate(760, 70)" opacity="0.85">
+          <rect width="180" height="120" rx="4" fill="#f7f2e9" stroke="#6b7b6a" stroke-width="1.5" />
+          <path d="M0 0 L90 65 L180 0" fill="none" stroke="#6b7b6a" stroke-width="1.5" />
+          <circle cx="90" cy="65" r="14" fill="#ad624f" />
+          <text x="90" y="70" fill="#fff" font-family="'Noto Serif Display', serif" font-size="12" text-anchor="middle">信</text>
+        </g>
+        <!-- Chữ đề từ -->
+        <text x="60" y="248" fill="#24443c" font-family="'Noto Serif Display', serif" font-size="16" letter-spacing="4" font-style="italic">Chữ gửi người xa · Tình sâu ý đượm</text>
+      </svg>
+    </div>
+
+    <!-- Main Content & Contact Form -->
+    <div class="content-sections">
+      <!-- Section 1: Hòm thư & Cách thức liên lạc -->
+      <div class="contact-dual-grid">
+        <!-- Info Column -->
+        <section class="prose-card">
+          <div class="prose-card__header">
+            <span class="numeral">I</span>
+            <h2>Thư Phòng Tĩnh Quán</h2>
+          </div>
+          <div class="prose-card__body">
+            <p>
+              Mỗi dòng tâm sự gửi về đều được chúng tôi đón nhận bằng sự trân quý. 
+              Bạn có thể gửi thư trực tiếp qua hòm thư điện tử hoặc điền biểu mẫu bên cạnh.
+            </p>
+
+            <div class="contact-info-list">
+              <div class="contact-info-item">
+                <span class="info-label">Điện thư tiếp nhận:</span>
+                <a href="mailto:hello@daovadoi.vn" class="info-value email-link">hello@daovadoi.vn</a>
+              </div>
+              <div class="contact-info-item">
+                <span class="info-label">Nhịp điệu hồi âm:</span>
+                <span class="info-value">Trong vòng 24 - 48 giờ tĩnh dưỡng</span>
+              </div>
+              <div class="contact-info-item">
+                <span class="info-label">Chủ đề đón nhận:</span>
+                <span class="info-value">Cảm ngộ đời sống, bản thảo cộng tác, đàm đạo cổ học</span>
+              </div>
+            </div>
+
+            <blockquote class="classical-quote">
+              <p>“Tri âm ngàn dặm như đối mặt; một chữ chân thành tỏa ngát hương.”</p>
+            </blockquote>
+          </div>
+        </section>
+
+        <!-- Form Column -->
+        <section class="prose-card">
+          <div class="prose-card__header">
+            <span class="numeral">II</span>
+            <h2>Gửi Lời Nhắn Trực Tiếp</h2>
+          </div>
+          <form class="classic-form" id="contact-form">
+            <label class="form-group">
+              <span class="form-label">Tôn danh / Quý danh <em>*</em></span>
+              <input type="text" name="name" required placeholder="Ví dụ: Minh Tâm, Tuệ An…" class="form-input" />
+            </label>
+
+            <label class="form-group">
+              <span class="form-label">Địa chỉ điện thư (Email) <em>*</em></span>
+              <input type="email" name="email" required placeholder="diachi@email.com" class="form-input" />
+            </label>
+
+            <label class="form-group">
+              <span class="form-label">Cơ duyên tương ngộ (Chủ đề)</span>
+              <select name="subject" class="form-input form-select">
+                <option value="chia-se">Chia sẻ cảm ngộ sau khi đọc</option>
+                <option value="gop-y">Góp ý bản thảo & trang web</option>
+                <option value="cong-tac">Gửi bài viết cộng tác</option>
+                <option value="khac">Đàm đạo vấn đề khác</option>
+              </select>
+            </label>
+
+            <label class="form-group">
+              <span class="form-label">Tâm sự / Lời nhắn gửi <em>*</em></span>
+              <textarea name="message" rows="5" required placeholder="Kính gửi ban biên tập Đạo & Đời…" class="form-input form-textarea"></textarea>
+            </label>
+
+            <button type="submit" class="submit-btn">
+              <span>Gửi Thư Đi</span>
+              <i>↗</i>
+            </button>
+            <div id="form-feedback" class="form-feedback" hidden>
+              Thư đã được gửi vào hòm thư tĩnh quán. Kính chúc bạn một ngày an lành!
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+
+    <!-- Navigation Footer Links -->
+    <nav class="subpage-nav" aria-label="Điều hướng phụ">
+      <a href="/gioi-thieu" class="subpage-nav__link secondary">
+        <span>Tìm hiểu thêm</span>
+        <strong>← Về Không Gian Đạo & Đời</strong>
+      </a>
+      <a href="/sitemap" class="subpage-nav__link">
+        <span>Toàn cảnh</span>
+        <strong>Xem Sơ Đồ Tàng Thư Web →</strong>
+      </a>
+    </nav>
+  </main>
+</BaseLayout>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement | null;
+  const feedback = document.getElementById('form-feedback');
+  if (form && feedback) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      feedback.hidden = false;
+      form.reset();
+      setTimeout(() => {
+        feedback.hidden = true;
+      }, 6000);
+    });
+  }
+</script>
+
+<style>
+.classic-page {
+  padding: 80px 0 120px;
+  max-width: 960px;
+}
+
+.page-hero {
+  margin-bottom: 45px;
+}
+.page-hero__badge {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+.seal {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 4px;
+  background: var(--clay);
+  color: #fff8eb;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 20px;
+  font-weight: 600;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.3), 0 2px 8px rgba(173,98,79,0.25);
+}
+.page-hero h1 {
+  font-size: clamp(38px, 5.5vw, 62px);
+  line-height: 1.1;
+  color: var(--forest);
+  margin-bottom: 24px;
+}
+.page-hero__lead {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 20px;
+  line-height: 1.7;
+  color: #4f5d56;
+  max-width: 760px;
+}
+
+.classical-art {
+  margin-bottom: 60px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(36,68,60,0.08);
+}
+.classical-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact-dual-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 28px;
+}
+.prose-card {
+  background: #fbf7ef;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 38px 36px;
+}
+.prose-card__header {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid rgba(214,203,187,0.7);
+  padding-bottom: 14px;
+}
+.numeral {
+  font-family: 'DM Mono', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--clay);
+  letter-spacing: 0.1em;
+}
+.prose-card__header h2 {
+  font-size: clamp(22px, 3vw, 26px);
+  color: var(--forest);
+  margin: 0;
+}
+.prose-card__body p {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #43524a;
+  margin: 0 0 20px;
+}
+
+/* Contact Info List */
+.contact-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 26px 0;
+  padding: 20px;
+  background: #f7f1e5;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+.contact-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.info-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--clay);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.info-value {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 16px;
+  color: var(--forest);
+}
+.email-link {
+  color: var(--clay);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 17px;
+}
+.email-link:hover {
+  text-decoration: underline;
+}
+
+.classical-quote {
+  margin: 24px 0 0;
+  padding: 18px 22px;
+  background: #ede3d2;
+  border-left: 3px solid var(--clay);
+  border-radius: 0 6px 6px 0;
+}
+.classical-quote p {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 16px !important;
+  font-style: italic;
+  line-height: 1.6 !important;
+  color: var(--forest) !important;
+  margin: 0 !important;
+}
+
+/* Classic Form */
+.classic-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.form-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--forest);
+  font-weight: 500;
+}
+.form-label em {
+  color: var(--clay);
+  font-style: normal;
+}
+.form-input {
+  background: #fffdf9;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 12px 14px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+.form-input:focus {
+  border-color: var(--clay);
+  box-shadow: 0 0 0 2px rgba(173,98,79,0.12);
+}
+.form-textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+.form-select {
+  cursor: pointer;
+}
+.submit-btn {
+  background: var(--forest);
+  color: #f7f2e9;
+  border: 0;
+  border-radius: 4px;
+  padding: 14px 24px;
+  font-family: 'DM Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+  margin-top: 6px;
+}
+.submit-btn:hover {
+  background: #19312b;
+  transform: translateY(-1px);
+}
+.form-feedback {
+  background: #e1edd8;
+  color: #2b4e28;
+  border: 1px solid #c2deba;
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 14px;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Subpage Navigation */
+.subpage-nav {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 30px;
+  border-top: 1px solid var(--line);
+}
+.subpage-nav__link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 16px 24px;
+  border-radius: 6px;
+  background: #ede3d2;
+  border: 1px solid var(--line);
+  transition: 0.2s ease;
+}
+.subpage-nav__link span {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  color: var(--clay);
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+.subpage-nav__link strong {
+  font-family: 'Noto Serif Display', serif;
+  font-size: 17px;
+  color: var(--forest);
+}
+.subpage-nav__link:hover {
+  background: var(--forest);
+  border-color: var(--forest);
+}
+.subpage-nav__link:hover span {
+  color: #e4d4bd;
+}
+.subpage-nav__link:hover strong {
+  color: #f7f2e9;
+}
+.subpage-nav__link.secondary {
+  background: transparent;
+}
+
+@media (max-width: 840px) {
+  .contact-dual-grid {
+    grid-template-columns: 1fr;
+  }
+  .classic-page {
+    padding: 50px 0 80px;
+  }
+  .prose-card {
+    padding: 30px 24px;
+  }
+  .subpage-nav {
+    flex-direction: column;
+  }
+}
+</style>
