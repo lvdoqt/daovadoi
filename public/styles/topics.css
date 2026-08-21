@@ -1,0 +1,1 @@
+.topic-grid{grid-template-columns:repeat(6,1fr)}@media(max-width:720px){.topic-grid{grid-template-columns:1fr 1fr}}
