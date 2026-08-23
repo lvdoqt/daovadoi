@@ -1,0 +1,11 @@
+---
+import type { Video } from '../data/video';
+interface Props { videos: Video[]; currentPage: number; totalPages: number; }
+const { videos, currentPage, totalPages } = Astro.props;
+const newest = currentPage === 1 ? videos[0] : undefined;
+const remainingVideos = currentPage === 1 ? videos.slice(1) : videos;
+const formatDate = (date: string) => new Intl.DateTimeFormat('vi-VN').format(new Date(`${date}T00:00:00`));
+---
+{newest && <section class="video-player-section wrap" aria-label="Video mới nhất"><div class="video-player"><iframe src={newest.embedUrl} title={newest.title} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><div class="video-featured-meta"><div><p class="eyebrow">VIDEO MỚI NHẤT · {formatDate(newest.date)}</p><h2>{newest.title}</h2></div><a class="text-link" href={newest.url} target="_blank" rel="noopener noreferrer">MỞ TRÊN YOUTUBE <span>↗</span></a></div></section>}
+{remainingVideos.length > 0 && <section class="video-list wrap" aria-label="Các video khác"><div class="video-list__heading"><p class="eyebrow">{currentPage === 1 ? 'XEM THÊM' : `TRANG ${currentPage}`}</p><h2>Những khoảng lắng nghe khác.</h2></div><div class="video-grid">{remainingVideos.map((video) => <article class="video-item"><a href={video.url} target="_blank" rel="noopener noreferrer" class="video-item__thumbnail"><img src={video.thumbnailUrl} alt={`Xem video ${video.title}`} loading="lazy" /><span aria-hidden="true">▶</span></a><p>{formatDate(video.date)}</p><h3><a href={video.url} target="_blank" rel="noopener noreferrer">{video.title}</a></h3></article>)}</div></section>}
+{totalPages > 1 && <nav class="video-pagination wrap" aria-label="Phân trang video">{Array.from({ length: totalPages }, (_, index) => index + 1).map((page) => <a href={page === 1 ? '/video' : `/video/trang/${page}`} aria-current={page === currentPage ? 'page' : undefined}>{page}</a>)}</nav>}

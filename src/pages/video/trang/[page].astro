@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import VideoLibrary from '../../../components/VideoLibrary.astro';
+import { getVideos } from '../../../data/video';
+const videosPerPage = 10;
+export function getStaticPaths() {
+  return getVideos().then((videos) => Array.from({ length: Math.max(0, Math.ceil(videos.length / 10) - 1) }, (_, index) => ({ params: { page: String(index + 2) } })));
+}
+const sortedVideos = await getVideos();
+const currentPage = Number(Astro.params.page);
+const totalPages = Math.ceil(sortedVideos.length / videosPerPage);
+const pageVideos = sortedVideos.slice((currentPage - 1) * videosPerPage, currentPage * videosPerPage);
+---
+<BaseLayout title={`Video · Trang ${currentPage} | Đạo & Đời`}>
+  <main class="video-page"><section class="video-page__intro wrap"><p class="eyebrow">MỘT KHOẢNG LẮNG NGHE</p><h1>Những cuộc <em>trò chuyện chậm.</em></h1><p>Danh sách video · trang {currentPage}.</p></section><VideoLibrary videos={pageVideos} currentPage={currentPage} totalPages={totalPages} /></main>
+</BaseLayout>

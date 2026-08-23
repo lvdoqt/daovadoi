@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import VideoLibrary from '../components/VideoLibrary.astro';
+import { getVideos } from '../data/video';
+
+const videosPerPage = 10;
+const sortedVideos = await getVideos();
+const pageVideos = sortedVideos.slice(0, videosPerPage);
+const totalPages = Math.ceil(sortedVideos.length / videosPerPage);
+---
+<BaseLayout title="Video | Đạo & Đời">
+  <main class="video-page">
+    <section class="video-page__intro wrap">
+      <p class="eyebrow">MỘT KHOẢNG LẮNG NGHE</p>
+      <h1>Những cuộc <em>trò chuyện chậm.</em></h1>
+      <p>Video và những khoảng dừng dành cho một buổi chiều lắng lại.</p>
+    </section>
+    <VideoLibrary videos={pageVideos} currentPage={1} totalPages={totalPages} />
+  </main>
+</BaseLayout>
