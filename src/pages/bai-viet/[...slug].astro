@@ -23,14 +23,17 @@ const catName = cat ? cat.name : post.data.category;
 const [y, m, d] = post.data.date.split('-');
 const displayDate = `${d}.${m}.${y}`;
 
-// Điều hướng bài trước / tiếp trong cùng chuyên mục
+// Điều hướng bài trước / tiếp trong cùng chuyên mục hoặc cùng chuỗi chương.
 const allPosts = await getCollection('blog');
-const sameCat = allPosts
-  .filter((p) => p.data.category === post.data.category)
-  .sort((a, b) => b.data.date.localeCompare(a.data.date));
-const idx = sameCat.findIndex((p) => p.id === post.id);
-const prevPost = sameCat[idx + 1];
-const nextPost = sameCat[idx - 1];
+const isDaoDucKinhSeries = post.data.series === 'dao-duc-kinh-de-hieu';
+const relatedPosts = allPosts
+  .filter((p) => isDaoDucKinhSeries ? p.data.series === 'dao-duc-kinh-de-hieu' : p.data.category === post.data.category)
+  .sort((a, b) => isDaoDucKinhSeries
+    ? (a.data.chapter ?? 0) - (b.data.chapter ?? 0)
+    : b.data.date.localeCompare(a.data.date));
+const idx = relatedPosts.findIndex((p) => p.id === post.id);
+const prevPost = isDaoDucKinhSeries ? relatedPosts[idx - 1] : relatedPosts[idx + 1];
+const nextPost = isDaoDucKinhSeries ? relatedPosts[idx + 1] : relatedPosts[idx - 1];
 ---
 
 <BaseLayout title={`${post.data.title} · Đạo & Đời`}>
@@ -45,14 +48,20 @@ const nextPost = sameCat[idx - 1];
       <Content />
     </article>
 
+    {isDaoDucKinhSeries && <aside class="series-box">
+      <p class="eyebrow">ĐẠO ĐỨC KINH DỄ HIỂU · CHƯƠNG {post.data.chapter}/81</p>
+      {post.data.tags.length > 0 && <div class="tag-list">{post.data.tags.map((tag) => <a href="/dao-duc-kinh">#{tag}</a>)}</div>}
+      <a href="/dao-duc-kinh">Xem sơ đồ 81 chương →</a>
+    </aside>}
+
     <nav class="article-nav">
       {prevPost
         ? <a href={`/bai-viet/${prevPost.id}`}>← Bài trước</a>
-        : <a href={`/chuyen-muc/${post.data.category}`}>← {catName}</a>
+        : <a href={isDaoDucKinhSeries ? '/dao-duc-kinh' : `/chuyen-muc/${post.data.category}`}>← {isDaoDucKinhSeries ? 'Sơ đồ chương' : catName}</a>
       }
       {nextPost
         ? <a href={`/bai-viet/${nextPost.id}`}>Bài tiếp theo →</a>
-        : <a href="/">Về trang chủ →</a>
+        : <a href={isDaoDucKinhSeries ? '/dao-duc-kinh' : '/'}>{isDaoDucKinhSeries ? 'Xem sơ đồ chương →' : 'Về trang chủ →'}</a>
       }
     </nav>
   </main>
@@ -84,4 +93,8 @@ const nextPost = sameCat[idx - 1];
   color: var(--color-text-muted, #5a5347);
 }
 .prose blockquote p { margin: 0; }
+.series-box { max-width: 68ch; margin: 0 auto 2rem; padding: 1.25rem 1.4rem; border: 1px solid var(--line); background: #eee4d4; }
+.series-box > a { color: var(--forest); font: 500 12px 'DM Mono', monospace; text-decoration: none; border-bottom: 1px solid currentColor; }
+.tag-list { display: flex; flex-wrap: wrap; gap: .5rem; margin: -.25rem 0 1rem; }
+.tag-list a { border: 1px solid #c6b79e; border-radius: 999px; color: var(--forest); font-size: .78rem; padding: .25rem .6rem; text-decoration: none; }
 </style>

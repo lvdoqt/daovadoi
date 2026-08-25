@@ -1,0 +1,63 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const posts = await getCollection('blog');
+const guides = posts.filter((post) => post.data.tags.includes('nhap-mon') || post.data.tags.includes('tieu-su'));
+const chapters = posts
+  .filter((post) => post.data.series === 'dao-duc-kinh-de-hieu')
+  .sort((a, b) => (a.data.chapter ?? 0) - (b.data.chapter ?? 0));
+const published = new Map(chapters.map((post) => [post.data.chapter, post]));
+const chapterNumbers = Array.from({ length: 81 }, (_, index) => index + 1);
+const groups = Array.from({ length: 27 }, (_, index) => chapterNumbers.slice(index * 3, index * 3 + 3));
+---
+
+<BaseLayout title="Đạo Đức Kinh dễ hiểu · Đạo & Đời">
+  <main class="ddk wrap">
+    <header class="ddk-hero">
+      <p class="eyebrow">ĐỌC CHẬM 81 CHƯƠNG</p>
+      <h1>Đạo Đức Kinh<br /><em>dễ hiểu, gần đời.</em></h1>
+      <p>Hành trình 27 ngày, mỗi ngày ba chương. Mỗi bài giữ một ý chính, một ví dụ đời thường và một thực tập nhỏ để ta đọc rồi sống được.</p>
+      <div class="ddk-stats"><strong>{chapters.length}<span>/81</span></strong><span>chương đã xuất bản</span><a href="#so-do">XEM SƠ ĐỒ →</a></div>
+    </header>
+
+    <section class="guides" aria-label="Bài nhập môn">
+      {guides.map((post) => <a href={`/bai-viet/${post.id}`}><span>{post.data.tags.includes('tieu-su') ? 'VỀ TÁC GIẢ' : 'NHẬP MÔN'}</span><strong>{post.data.title}</strong><i>→</i></a>)}
+    </section>
+
+    <section class="today" aria-labelledby="hom-nay">
+      <div><p class="eyebrow">NGÀY 01 · 25.08.2026</p><h2 id="hom-nay">Ba chương khởi đầu</h2></div>
+      <div class="today-list">{chapters.slice(0, 3).map((post) => <a href={`/bai-viet/${post.id}`}><span>CH.{post.data.chapter}</span><strong>{post.data.title}</strong><i>→</i></a>)}</div>
+    </section>
+
+    <section id="so-do" class="chapter-map" aria-labelledby="so-do-title">
+      <div class="section-intro"><p class="eyebrow">SƠ ĐỒ 81 CHƯƠNG</p><h2 id="so-do-title">Đi từng chặng ba chương</h2><p>Mỗi hàng là một ngày xuất bản. Ô màu xanh đã có bài để đọc; ô viền mảnh là chương sắp đến.</p></div>
+      <div class="map-legend"><span><i class="done"></i> Đã xuất bản</span><span><i></i> Sắp xuất bản</span></div>
+      <ol class="chapter-graph">{groups.map((group, groupIndex) => <li><span class="day">NGÀY {String(groupIndex + 1).padStart(2, '0')}</span><div class="nodes">{group.map((chapter) => {
+        const post = published.get(chapter);
+        return post ? <a class="node published" href={`/bai-viet/${post.id}`} title={post.data.title}> {chapter} </a> : <span class="node" title={`Chương ${chapter}`}>{chapter}</span>;
+      })}</div><span class="range">Ch. {group[0]}–{group[2]}</span></li>)}</ol>
+    </section>
+
+    <section class="all-chapters" aria-labelledby="danh-sach-title">
+      <p class="eyebrow">DANH SÁCH ĐÃ ĐĂNG</p><h2 id="danh-sach-title">Mở một chương để bắt đầu</h2>
+      {chapters.length > 0 ? <div class="chapter-cards">{chapters.map((post) => <a href={`/bai-viet/${post.id}`}><span>CHƯƠNG {String(post.data.chapter).padStart(2, '0')}</span><h3>{post.data.title}</h3><p>{post.data.excerpt}</p><b>ĐỌC CHƯƠNG →</b></a>)}</div> : <p>Ba chương đầu sẽ sớm được mở tại đây.</p>}
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+.ddk { padding: 5.5rem 0 7rem; }
+.ddk-hero { max-width: 760px; padding-bottom: 4rem; }
+.ddk h1,.ddk h2,.ddk h3 { font-family: 'Noto Serif Display', serif; color: var(--forest); }
+.ddk h1 { font-size: clamp(3rem, 7vw, 5.8rem); font-weight: 500; line-height: 1; letter-spacing: -.055em; margin: 0; }
+.ddk-hero > p:not(.eyebrow) { max-width: 590px; font: 1.15rem/1.8 'Noto Serif Display',serif; margin: 1.75rem 0; }
+.ddk-stats { display: flex; align-items: center; gap: 1rem; font: 11px 'DM Mono', monospace; color: var(--clay); }
+.ddk-stats strong { font: 2.5rem 'Noto Serif Display',serif; color: var(--forest); }.ddk-stats strong span { font-size: 1.1rem; color: var(--clay); }
+.ddk-stats a { margin-left: auto; color: var(--forest); text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: .3rem; }
+.guides { display:grid; grid-template-columns:repeat(2,1fr); margin:-1rem 0 4rem; border:1px solid var(--line); }.guides a { display:grid; grid-template-columns:1fr 20px; gap:1rem; padding:1.25rem 1.4rem; color:var(--forest); text-decoration:none; border-right:1px solid var(--line); }.guides a:last-child { border:0; }.guides a:hover { background:#eee4d4; }.guides span { grid-column:1/-1; color:var(--clay); font:10px 'DM Mono',monospace; }.guides strong { font:500 1.2rem/1.25 'Noto Serif Display',serif; }.guides i { color:var(--clay); font-style:normal; }
+.today { display: grid; grid-template-columns: .8fr 1.2fr; gap: 3rem; background: var(--forest); color: #f6efe3; padding: 2.5rem 3rem; margin-bottom: 6rem; }.today h2 { color: #f6efe3; font-size: 2.4rem; font-weight: 500; margin: 0; }.today-list { border-top: 1px solid #698179; }.today-list a { color: inherit; display:grid; grid-template-columns:70px 1fr 20px; gap:1rem; padding:1rem 0; border-bottom:1px solid #698179; text-decoration:none; align-items:center; }.today-list span,.today-list i { color:#e1b490; font:11px 'DM Mono',monospace; font-style:normal; }.today-list strong { font:500 1.1rem 'Noto Serif Display',serif; }
+.section-intro h2,.all-chapters h2 { font-size: 2.7rem; font-weight:500; margin:0 0 .75rem; }.section-intro p:not(.eyebrow) { max-width:580px; line-height:1.7; color:#5c665e; }.map-legend { display:flex; gap:1.5rem; justify-content:flex-end; font:11px 'DM Mono',monospace; color:#667066; }.map-legend i { display:inline-block; width:10px; height:10px; border:1px solid #9b9f94; margin-right:.4rem; }.map-legend .done { background:var(--forest); border-color:var(--forest); }
+.chapter-graph { list-style:none; padding:2rem 0 0; margin:1.25rem 0 6rem; border-top:1px solid var(--line); }.chapter-graph li { display:grid; grid-template-columns:90px 1fr 90px; gap:1rem; align-items:center; min-height:58px; border-bottom:1px solid var(--line); }.day,.range { font:10px 'DM Mono',monospace; color:var(--clay); }.range { text-align:right; }.nodes { display:flex; gap:.7rem; position:relative; }.nodes:before { content:""; height:1px; background:#c9bdab; position:absolute; left:15px; right:15px; top:50%; z-index:0; }.node { position:relative; z-index:1; display:grid; place-items:center; width:30px; height:30px; border:1px solid #aaa695; border-radius:50%; color:#74766d; background:var(--paper); font:10px 'DM Mono',monospace; }.node.published { color:#f7f2e9; background:var(--forest); border-color:var(--forest); text-decoration:none; }.all-chapters { border-top:1px solid var(--line); padding-top:4rem; }.chapter-cards { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin-top:2rem; }.chapter-cards a { color:var(--forest); border:1px solid var(--line); padding:1.4rem; text-decoration:none; }.chapter-cards a:hover { background:#eee4d4; }.chapter-cards span,.chapter-cards b { font:10px 'DM Mono',monospace; color:var(--clay); }.chapter-cards h3 { font-size:1.45rem; font-weight:500; line-height:1.2; margin:.85rem 0; }.chapter-cards p { color:#5c665e; font:14px/1.6 'Noto Serif Display',serif; }.chapter-cards b { color:var(--forest); }
+@media(max-width:720px) { .ddk { padding-top:3rem; }.ddk-stats { flex-wrap:wrap; }.ddk-stats a { margin-left:0; }.guides { grid-template-columns:1fr; }.guides a { border-right:0; border-bottom:1px solid var(--line); }.guides a:last-child { border-bottom:0; }.today { grid-template-columns:1fr; padding:2rem 1.4rem; margin-bottom:4rem; }.chapter-graph li { grid-template-columns:65px 1fr; }.range { display:none; }.chapter-cards { grid-template-columns:1fr; }.map-legend { justify-content:flex-start; margin-top:1.5rem; } }
+</style>

@@ -60,6 +60,11 @@ function getCatName(slug: string) {
       </div>
     </section>
 
+    <section class="ddk-home wrap" aria-labelledby="ddk-home-title">
+      <div><p class="eyebrow">HÀNH TRÌNH ĐẠO ĐỨC KINH</p><h2 id="ddk-home-title">81 chương,<br /><em>đọc để sống được.</em></h2></div>
+      <div><p>Mỗi ngày ba chương được diễn giải bằng tiếng Việt gần gũi, nối với những câu hỏi của đời sống hôm nay.</p><a class="text-link" href="/dao-duc-kinh">XEM SƠ ĐỒ CHƯƠNG <span>→</span></a></div>
+    </section>
+
     <section class="featured" id="bai-viet">
       <div class="wrap feature-layout">
         <div class="feature-art"><svg viewBox="0 0 600 560" xmlns="http://www.w3.org/2000/svg"><rect width="600" height="560" fill="#c9d3be"/><circle cx="301" cy="262" r="149" fill="none" stroke="#375248" stroke-width="2"/><circle cx="301" cy="262" r="105" fill="#e6c899"/><path d="M301 112v300M151 262h300" stroke="#375248" stroke-width="2"/><path d="M301 154c-20 54-19 110 0 165 21-55 20-111 0-165Zm-108 108c55-20 111-19 166 0-55 21-111 20-166 0Zm216 0c55-20 111-19 166 0-55 21-111 20-166 0Z" fill="#46675a"/><text x="300" y="505" text-anchor="middle" fill="#375248" font-size="18" font-family="serif" letter-spacing="4">TĨNH</text></svg></div>
@@ -91,3 +96,9 @@ function getCatName(slug: string) {
     <section class="video-section" id="video"><div class="wrap video-wrap"><div><p class="eyebrow">MỘT KHOẢNG LẮNG NGHE</p><h2>Những cuộc<br /><em>trò chuyện chậm.</em></h2><p>Video, âm thanh và những mẩu đối thoại dành cho một buổi chiều lắng lại.</p><a class="text-link" href="/video">XEM VIDEO <span>→</span></a></div><a class="video-card" href="/video" aria-label="Xem video mới nhất"><svg viewBox="0 0 500 310" xmlns="http://www.w3.org/2000/svg"><rect width="500" height="310" fill="#5a766b"/><circle cx="252" cy="151" r="100" fill="#d8c18f"/><path d="M252 51v200M152 151h200" stroke="#f2e9d5" stroke-width="1"/><path d="M214 120l66 31-66 39Z" fill="#fff8e9"/></svg><span class="play" aria-hidden="true">▶</span><span>Nhấn để xem video</span></a></div></section>
   </main>
 </BaseLayout>
+
+<style>
+.ddk-home { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:end; padding:5rem 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+.ddk-home h2 { font-size:clamp(2.7rem,4.5vw,4rem); }.ddk-home p:not(.eyebrow) { max-width:420px; font:1.1rem/1.75 'Noto Serif Display',serif; margin:0 0 1.5rem; color:#59645c; }
+@media(max-width:720px) { .ddk-home { grid-template-columns:1fr; gap:1.5rem; padding:3.5rem 0; } }
+</style>

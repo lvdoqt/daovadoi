@@ -10,6 +10,9 @@ const blog = defineCollection({
     excerpt: z.string(),
     date: z.string(), // YYYY-MM-DD
     category: z.string(), // slug chuyên mục
+    tags: z.array(z.string()).default([]),
+    series: z.string().optional(),
+    chapter: z.number().int().positive().optional(),
   }),
 });
 
