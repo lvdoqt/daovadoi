@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://daovadoi.vn',
+  site: 'https://daodoivn.com',
 });

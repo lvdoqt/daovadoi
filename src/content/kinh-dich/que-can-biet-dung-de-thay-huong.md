@@ -3,6 +3,9 @@ title: "Quẻ Cấn: biết dừng để thấy hướng"
 excerpt: "Quẻ Cấn gợi một sự dừng lại có tỉnh thức: không bị động, mà để nhận ra bước đi phù hợp tiếp theo."
 date: "2026-08-23"
 category: "kinh-dich"
+series: "kinh-dich-64-que"
+chapter: 52
+tags: ["kinh-dich", "que-can", "biet-dung"]
 ---
 
 Trong Kinh Dịch, quẻ Cấn gắn với hình tượng núi. Núi đứng yên, nhưng không chết lặng. Nó giữ hình dáng qua mưa nắng, làm chỗ tựa cho mây dừng, cho dòng nước đổi hướng. Hình tượng ấy nhắc ta về một khả năng ngày càng hiếm trong nhịp sống nhanh: biết dừng lại mà không thấy mình vô dụng.

@@ -3,6 +3,9 @@ title: "Quẻ Tốn: sức mạnh của sự thấm sâu"
 excerpt: "Quẻ Tốn gợi hình ảnh gió và sự thâm nhập mềm mại: không phô trương lực, nhưng bền bỉ làm đổi thay từ bên trong."
 date: "2026-08-24"
 category: "kinh-dich"
+series: "kinh-dich-64-que"
+chapter: 57
+tags: ["kinh-dich", "que-ton", "tham-sau"]
 ---
 
 Gió không đẩy cánh cửa như một cơn bão vào mọi lúc. Có khi nó chỉ lùa qua khe nhỏ, làm rèm lay, mang mùi đất sau mưa vào căn phòng. Nhưng chính thứ tưởng nhẹ ấy có thể đi rất xa, thấm vào những nơi bàn tay khó với tới. Quẻ Tốn trong Kinh Dịch thường được gắn với hình tượng gió và ý nghĩa của sự thuận nhập: mềm, kiên trì, biết tìm đường.

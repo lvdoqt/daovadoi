@@ -26,14 +26,18 @@ const displayDate = `${d}.${m}.${y}`;
 // Điều hướng bài trước / tiếp trong cùng chuyên mục hoặc cùng chuỗi chương.
 const allPosts = await getCollection('blog');
 const isDaoDucKinhSeries = post.data.series === 'dao-duc-kinh-de-hieu';
+const isKinhDichSeries = post.data.series === 'kinh-dich-64-que';
+const isGuidedSeries = isDaoDucKinhSeries || isKinhDichSeries;
 const relatedPosts = allPosts
-  .filter((p) => isDaoDucKinhSeries ? p.data.series === 'dao-duc-kinh-de-hieu' : p.data.category === post.data.category)
-  .sort((a, b) => isDaoDucKinhSeries
+  .filter((p) => isGuidedSeries ? p.data.series === post.data.series : p.data.category === post.data.category)
+  .sort((a, b) => isGuidedSeries
     ? (a.data.chapter ?? 0) - (b.data.chapter ?? 0)
     : b.data.date.localeCompare(a.data.date));
 const idx = relatedPosts.findIndex((p) => p.id === post.id);
-const prevPost = isDaoDucKinhSeries ? relatedPosts[idx - 1] : relatedPosts[idx + 1];
-const nextPost = isDaoDucKinhSeries ? relatedPosts[idx + 1] : relatedPosts[idx - 1];
+const prevPost = isGuidedSeries ? relatedPosts[idx - 1] : relatedPosts[idx + 1];
+const nextPost = isGuidedSeries ? relatedPosts[idx + 1] : relatedPosts[idx - 1];
+const seriesPath = isDaoDucKinhSeries ? '/dao-duc-kinh' : '/kinh-dich';
+const seriesLabel = isDaoDucKinhSeries ? 'ĐẠO ĐỨC KINH DỄ HIỂU · CHƯƠNG' : 'KINH DỊCH DỄ HIỂU · QUẺ';
 ---
 
 <BaseLayout title={`${post.data.title} · Đạo & Đời`}>
@@ -53,15 +57,20 @@ const nextPost = isDaoDucKinhSeries ? relatedPosts[idx + 1] : relatedPosts[idx -
       {post.data.tags.length > 0 && <div class="tag-list">{post.data.tags.map((tag) => <a href="/dao-duc-kinh">#{tag}</a>)}</div>}
       <a href="/dao-duc-kinh">Xem sơ đồ 81 chương →</a>
     </aside>}
+    {isKinhDichSeries && <aside class="series-box">
+      <p class="eyebrow">{seriesLabel} {post.data.chapter}/64</p>
+      {post.data.tags.length > 0 && <div class="tag-list">{post.data.tags.map((tag) => <a href="/kinh-dich">#{tag}</a>)}</div>}
+      <a href="/kinh-dich">Xem sơ đồ 64 quẻ →</a>
+    </aside>}
 
     <nav class="article-nav">
       {prevPost
         ? <a href={`/bai-viet/${prevPost.id}`}>← Bài trước</a>
-        : <a href={isDaoDucKinhSeries ? '/dao-duc-kinh' : `/chuyen-muc/${post.data.category}`}>← {isDaoDucKinhSeries ? 'Sơ đồ chương' : catName}</a>
+        : <a href={isGuidedSeries ? seriesPath : `/chuyen-muc/${post.data.category}`}>← {isGuidedSeries ? 'Sơ đồ bài viết' : catName}</a>
       }
       {nextPost
         ? <a href={`/bai-viet/${nextPost.id}`}>Bài tiếp theo →</a>
-        : <a href={isDaoDucKinhSeries ? '/dao-duc-kinh' : '/'}>{isDaoDucKinhSeries ? 'Xem sơ đồ chương →' : 'Về trang chủ →'}</a>
+        : <a href={isGuidedSeries ? seriesPath : '/'}>{isGuidedSeries ? 'Xem sơ đồ bài viết →' : 'Về trang chủ →'}</a>
       }
     </nav>
   </main>

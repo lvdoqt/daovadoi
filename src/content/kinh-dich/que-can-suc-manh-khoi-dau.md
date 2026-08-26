@@ -3,6 +3,9 @@ title: "Quẻ Càn và sức mạnh của sự khởi đầu"
 excerpt: "Một cuộc đọc về tinh thần tự cường và sự sáng tạo."
 date: "2026-08-06"
 category: "kinh-dich"
+series: "kinh-dich-64-que"
+chapter: 1
+tags: ["kinh-dich", "que-can", "khoi-dau"]
 ---
 
 Quẻ Càn mở đầu Kinh Dịch bằng hình tượng trời: vận động bền bỉ, sáng tạo và không ngừng tự đổi mới. Đó không phải lời thúc ép phải luôn mạnh mẽ, mà là lời nhắc về năng lực bắt đầu trong mỗi con người.

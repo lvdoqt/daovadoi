@@ -1,0 +1,58 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const posts = await getCollection('blog');
+const guides = posts.filter((post) => post.data.category === 'kinh-dich' && (post.data.tags.includes('nhap-mon') || post.data.tags.includes('tieu-su')));
+const published = posts.filter((post) => post.data.series === 'kinh-dich-64-que');
+const publishedByChapter = new Map(published.map((post) => [post.data.chapter, post]));
+const quers = [
+  'Càn', 'Khôn', 'Truân', 'Mông', 'Nhu', 'Tụng', 'Sư', 'Tỷ',
+  'Tiểu Súc', 'Lý', 'Thái', 'Bĩ', 'Đồng Nhân', 'Đại Hữu', 'Khiêm', 'Dự',
+  'Tùy', 'Cổ', 'Lâm', 'Quan', 'Phệ Hạp', 'Bí', 'Bác', 'Phục',
+  'Vô Vọng', 'Đại Súc', 'Di', 'Đại Quá', 'Khảm', 'Ly', 'Hàm', 'Hằng',
+  'Độn', 'Đại Tráng', 'Tấn', 'Minh Di', 'Gia Nhân', 'Khuê', 'Kiển', 'Giải',
+  'Tổn', 'Ích', 'Quải', 'Cấu', 'Tụy', 'Thăng', 'Khốn', 'Tỉnh',
+  'Cách', 'Đỉnh', 'Chấn', 'Cấn', 'Tiệm', 'Quy Muội', 'Phong', 'Lữ',
+  'Tốn', 'Đoài', 'Hoán', 'Tiết', 'Trung Phu', 'Tiểu Quá', 'Ký Tế', 'Vị Tế',
+];
+const parts = [
+  ['PHẦN 01', 'Nền tảng của biến đổi'], ['PHẦN 02', 'Đi qua va chạm'],
+  ['PHẦN 03', 'Tu dưỡng và gặp gỡ'], ['PHẦN 04', 'Giữa thời thế lớn'],
+  ['PHẦN 05', 'Tổn thất và hồi phục'], ['PHẦN 06', 'Đổi mới có chừng mực'],
+  ['PHẦN 07', 'Quyết định và cộng đồng'], ['PHẦN 08', 'Hoàn tất và mở tiếp'],
+];
+---
+
+<BaseLayout title="Kinh Dịch dễ hiểu · Đạo & Đời">
+  <main class="iching wrap">
+    <header class="hero">
+      <p class="eyebrow">ĐỌC CHẬM 64 QUẺ</p>
+      <h1>Kinh Dịch<br /><em>đọc để hiểu thời.</em></h1>
+      <p>Không phải một cẩm nang đoán định tương lai, mà là hành trình quan sát biến đổi: nhận ra tình thế, biết chừng mực và lựa chọn bước đi có trách nhiệm.</p>
+      <div class="stats"><strong>{published.length}<span>/64</span></strong><span>quẻ đã xuất bản</span><a href="#so-do">XEM SƠ ĐỒ →</a></div>
+    </header>
+
+    <section class="guides" aria-label="Bài nhập môn">
+      {guides.map((post) => <a href={`/bai-viet/${post.id}`}><span>{post.data.tags.includes('tieu-su') ? 'VỀ TÁC GIẢ' : 'NHẬP MÔN'}</span><strong>{post.data.title}</strong><i>→</i></a>)}
+    </section>
+
+    <section class="plan" aria-labelledby="ke-hoach">
+      <p class="eyebrow">KẾ HOẠCH VIẾT BÀI</p><h2 id="ke-hoach">Tám chặng, mỗi chặng tám quẻ</h2>
+      <p>Mỗi bài sẽ đi từ hình tượng của quẻ đến bối cảnh đời sống, nêu một điểm cần dè dặt khi diễn giải và khép lại bằng một thực hành nhỏ. Trình tự là lộ trình học của Đạo &amp; Đời, không thay thế trật tự hay chú giải truyền thống.</p>
+    </section>
+
+    <section id="so-do" class="map" aria-labelledby="so-do-title">
+      <div class="map-heading"><div><p class="eyebrow">SƠ ĐỒ 64 QUẺ</p><h2 id="so-do-title">Đi từng phần, không vội</h2></div><div class="legend"><span><i class="done"></i> Đã xuất bản</span><span><i></i> Trong kế hoạch</span></div></div>
+      <ol>{parts.map(([code, title], partIndex) => <li><header><span>{code} · QUẺ {partIndex * 8 + 1}–{partIndex * 8 + 8}</span><h3>{title}</h3></header><div class="nodes">{quers.slice(partIndex * 8, partIndex * 8 + 8).map((name, offset) => {
+        const number = partIndex * 8 + offset + 1;
+        const post = publishedByChapter.get(number);
+        return post ? <a class="node published" href={`/bai-viet/${post.id}`} title={post.data.title}>{number}<small>{name}</small></a> : <span class="node" title={`Quẻ ${number}: ${name}`}>{number}<small>{name}</small></span>;
+      })}</div></li>)}</ol>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+.iching { padding:5.5rem 0 7rem; }.hero { max-width:760px; padding-bottom:3rem; }.iching h1,.iching h2,.iching h3 { font-family:'Noto Serif Display',serif; color:var(--forest); }.iching h1 { font-size:clamp(3rem,7vw,5.8rem); font-weight:500; line-height:1; letter-spacing:-.055em; margin:0; }.hero>p:not(.eyebrow) { max-width:610px; font:1.15rem/1.8 'Noto Serif Display',serif; margin:1.75rem 0; }.stats { display:flex; align-items:center; gap:1rem; font:11px 'DM Mono',monospace; color:var(--clay); }.stats strong { font:2.5rem 'Noto Serif Display',serif; color:var(--forest); }.stats strong span { font-size:1.1rem; color:var(--clay); }.stats a { margin-left:auto; color:var(--forest); text-decoration:none; border-bottom:1px solid currentColor; padding-bottom:.3rem; }.guides { display:grid; grid-template-columns:repeat(2,1fr); margin:-1rem 0 5rem; border:1px solid var(--line); }.guides a { display:grid; grid-template-columns:1fr 20px; gap:1rem; padding:1.25rem 1.4rem; color:var(--forest); text-decoration:none; border-right:1px solid var(--line); }.guides a:last-child { border:0; }.guides a:hover { background:#eee4d4; }.guides span { grid-column:1/-1; color:var(--clay); font:10px 'DM Mono',monospace; }.guides strong { font:500 1.2rem/1.25 'Noto Serif Display',serif; }.guides i { color:var(--clay); font-style:normal; }.plan { max-width:680px; margin-bottom:4rem; }.plan h2,.map h2 { font-size:2.7rem; font-weight:500; margin:0 0 .75rem; }.plan p:not(.eyebrow) { line-height:1.8; color:#5c665e; }.map { border-top:1px solid var(--line); padding-top:3.5rem; }.map-heading { display:flex; justify-content:space-between; gap:2rem; align-items:end; }.legend { display:flex; gap:1.2rem; font:10px 'DM Mono',monospace; color:var(--clay); white-space:nowrap; }.legend i { display:inline-block; width:10px; height:10px; border:1px solid #9b9f94; margin-right:.35rem; }.legend .done { background:var(--forest); border-color:var(--forest); }.map ol { list-style:none; padding:0; margin:2rem 0 0; border-top:1px solid var(--line); }.map li { display:grid; grid-template-columns:220px 1fr; gap:2rem; padding:1.4rem 0; border-bottom:1px solid var(--line); }.map header span { color:var(--clay); font:10px 'DM Mono',monospace; }.map h3 { font-size:1.35rem; font-weight:500; margin:.4rem 0 0; }.nodes { display:grid; grid-template-columns:repeat(8,1fr); gap:.45rem; align-items:start; }.node { min-height:54px; display:flex; flex-direction:column; justify-content:center; align-items:center; border:1px solid #aaa695; color:#74766d; background:var(--paper); font:11px 'DM Mono',monospace; }.node small { font:9px 'DM Mono',monospace; margin-top:.25rem; text-align:center; }.node.published { color:#f7f2e9; background:var(--forest); border-color:var(--forest); text-decoration:none; }.node.published:hover { background:#355b51; } @media(max-width:720px) { .iching{padding-top:3rem}.stats{flex-wrap:wrap}.stats a{margin-left:0}.guides{grid-template-columns:1fr}.guides a{border-right:0;border-bottom:1px solid var(--line)}.guides a:last-child{border-bottom:0}.map-heading,.map li{display:block}.legend{margin-top:1.5rem;white-space:normal}.map li header{margin-bottom:1.1rem}.nodes{grid-template-columns:repeat(4,1fr)} }
+</style>
