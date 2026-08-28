@@ -3,6 +3,8 @@ title: "Quẻ Ly: ánh sáng của sự nhận biết"
 excerpt: "Quẻ Ly gợi ánh sáng biết soi rõ sự việc, để ta thấy mà không bị cuốn vào điều mình thấy."
 date: "2026-08-26"
 category: "kinh-dich"
+series: "kinh-dich-64-que"
+chapter: 30
 tags: ["Kinh Dịch", "quẻ Ly", "nhận biết"]
 ---
 

@@ -3,6 +3,8 @@ title: "Quẻ Khôn: đón nhận để cùng vun bồi"
 excerpt: "Sự mềm mại của đất nhắc ta biết lắng nghe, tiếp nhận và tạo chỗ cho điều tốt lành lớn lên."
 date: "2026-08-26"
 category: "kinh-dich"
+series: "kinh-dich-64-que"
+chapter: 2
 tags: ["Kinh Dịch", "quẻ Khôn", "lắng nghe"]
 ---
 

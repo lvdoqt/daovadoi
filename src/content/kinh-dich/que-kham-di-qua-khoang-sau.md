@@ -3,6 +3,8 @@ title: "Quẻ Khảm: đi qua khoảng sâu"
 excerpt: "Khi gặp đoạn đường khó, sự thận trọng và từng bước nhỏ giúp ta giữ được hướng đi mà không cần gồng mình vượt qua tất cả."
 date: "2026-08-26"
 category: "kinh-dich"
+series: "kinh-dich-64-que"
+chapter: 29
 tags: ["Kinh Dịch", "quẻ Khảm", "vững tâm"]
 ---
 

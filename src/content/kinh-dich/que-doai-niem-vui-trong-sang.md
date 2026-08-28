@@ -3,6 +3,8 @@ title: "Quẻ Đoài: niềm vui trong sáng"
 excerpt: "Niềm vui chân thật không cần ồn ào; nó lớn lên từ sự chân thành, biết đủ và khả năng sẻ chia trong hiện tại."
 date: "2026-08-26"
 category: "kinh-dich"
+series: "kinh-dich-64-que"
+chapter: 58
 tags: ["Kinh Dịch", "quẻ Đoài", "niềm vui"]
 ---
 
