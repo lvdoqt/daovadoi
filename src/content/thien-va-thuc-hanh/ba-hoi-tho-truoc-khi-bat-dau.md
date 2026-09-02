@@ -1,7 +1,7 @@
 ---
 title: "Ba hơi thở trước khi bắt đầu"
 excerpt: "Một nghi thức ngắn trước khi vào việc giúp ta mang sự có mặt vào điều mình sắp làm."
-date: "2026-08-22"
+date: "2026-09-04"
 category: "thien-va-thuc-hanh"
 ---
 

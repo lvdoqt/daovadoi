@@ -1,7 +1,7 @@
 ---
 title: "Thuận nhịp không đồng nghĩa buông xuôi"
 excerpt: "Đi cùng nhịp của đời sống không phải là đứng yên trước khó khăn, mà là biết dùng sức đúng lúc."
-date: "2026-08-23"
+date: "2026-09-02"
 category: "dao-va-doi"
 ---
 

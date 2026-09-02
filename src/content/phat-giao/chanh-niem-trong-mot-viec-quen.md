@@ -1,7 +1,7 @@
 ---
 title: "Chánh niệm trong một việc quen"
 excerpt: "Một việc nhỏ như rửa bát hay pha trà cũng có thể trở thành nơi ta trở về với thân và tâm."
-date: "2026-08-23"
+date: "2026-09-03"
 category: "phat-giao"
 ---
 

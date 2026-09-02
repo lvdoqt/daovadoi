@@ -1,7 +1,7 @@
 ---
 title: "Bắt đầu một ngày mà không tự thúc ép"
 excerpt: "Một buổi sáng vừa đủ không cần bắt đầu bằng mệnh lệnh; nó có thể mở ra từ vài phút lắng nghe nhịp của mình."
-date: "2026-08-22"
+date: "2026-09-01"
 category: "cuoc-song"
 ---
 

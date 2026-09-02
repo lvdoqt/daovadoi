@@ -1,7 +1,7 @@
 ---
 title: "Dừng lại khi lòng muốn nhanh"
 excerpt: "Có những việc không cần một quyết định nhanh hơn, mà cần một cái nhìn bớt bị thúc đẩy hơn."
-date: "2026-08-28"
+date: "2026-09-02"
 category: "dao-va-doi"
 tags: ["đạo-và-đời", "đủng-đỉnh", "quyết-định"]
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Năm phút ngồi yên mỗi sáng"
 excerpt: "Một nghi thức ngắn để bắt đầu ngày mới bằng sự có mặt."
-date: "2026-07-28"
+date: "2026-09-04"
 category: "thien-va-thuc-hanh"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Tinh tấn không phải là tự ép mình"
 excerpt: "Nỗ lực đúng trong lời Phật dạy đi cùng tỉnh thức và quân bình; nó nuôi điều lành mà không biến sự tu tập thành một cuộc trừng phạt."
-date: "2026-09-01"
+date: "2026-09-03"
 category: "phat-giao"
 tags: ["tinh tấn", "trung đạo", "tu tập", "từ bi với chính mình"]
 ---

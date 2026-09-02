@@ -1,49 +1,59 @@
-# Kế Hoạch Nội Dung 30 Ngày
+# Kế Hoạch Nội Dung Tháng 9/2026
 
-**Giai đoạn:** 22/08/2026 – 20/09/2026
-**Nhịp xuất bản:** 4 bài/ngày: Cuộc sống, Đạo & đời, Phật giáo, Thiền & thực hành.
-**Phạm vi:** Kế hoạch này không bao gồm **Đạo Đức Kinh** và **Kinh Dịch**; hai chuyên mục được biên soạn theo kế hoạch riêng.
-**Mục tiêu:** Xây nền nội dung đều đặn, với giọng văn điềm tĩnh, sâu lắng và một mạch suy tưởng xuyên suốt mỗi ngày.
+**Giai đoạn:** 01/09/2026 – 30/09/2026
 
-Mỗi dòng là bốn bài độc lập. Khi triển khai, giữ độ dài khoảng 600–1.000 từ, mở bằng một cảnh đời thường, phát triển 2–3 ý chính và khép lại bằng một gợi ý thực hành nhỏ.
+**Nhịp xuất bản:** 2 bài/ngày, cùng thuộc một chuyên mục.
 
-| Ngày | Trục chung | Cuộc sống | Đạo & đời | Phật giáo | Thiền & thực hành |
-|---|---|---|---|---|---|
-| 22/08 | Khởi đầu | Bắt đầu một ngày mà không tự thúc ép | Cái mới luôn bắt đầu từ chỗ rất nhỏ | Phát nguyện nhỏ để nuôi tâm lớn | Ba hơi thở trước khi bắt đầu |
-| 23/08 | Nhịp chậm | Không cần vội để sống có ích | Thuận nhịp không đồng nghĩa buông xuôi | Chánh niệm trong một việc quen | Đi bộ mười phút không mục đích |
-| 24/08 | Lắng nghe | Nghe người khác khi chưa cần trả lời | Im lặng cũng là một cách hiểu | Lắng nghe với tâm không phán xét | Thực tập nghe âm thanh ba phút |
-| 25/08 | Buông bớt | Bớt một việc để ngày rộng hơn | Biết đủ giữa một đời nhiều hơn | Buông chấp không phải trốn tránh | Dọn một góc nhỏ, dọn một khoảng tâm |
-| 26/08 | Hiện diện | Một bữa cơm không điện thoại | Đời sống chỉ đi qua một lần | Thân hành niệm: biết mình đang ở đâu | Quét cơ thể trong năm phút |
-| 27/08 | Thay đổi | Khi kế hoạch không đi theo ý mình | Biến đổi là cách đời sống thở | Vô thường không chỉ là mất mát | Ngồi cùng một cảm xúc đang đổi |
-| 28/08 | Quan hệ | Đừng đòi người khác đọc được lòng mình | Gặp nhau bằng phần chân thật | Từ bi bắt đầu từ cách ta nói | Gửi một lời hỏi thăm có mặt |
-| 29/08 | Nghỉ ngơi | Nghỉ không phải phần thưởng sau kiệt sức | Khoảng trống làm nên hình dáng chiếc bình | An trú thay vì chạy trốn | Buổi tối không màn hình 30 phút |
-| 30/08 | Biết ơn | Những điều bình thường đang nâng đỡ ta | Ân nghĩa nằm trong điều không gọi tên | Quán niệm về bốn ân | Viết ba điều biết ơn trước khi ngủ |
-| 31/08 | Tự hiểu | Đừng vội sửa mình khi chưa hiểu mình | Biết mình là đầu mối của mọi đường đi | Nhìn cảm thọ mà không đồng hóa | Ghi chép cảm xúc trong một ngày |
-| 01/09 | Lao động | Làm việc mà không đánh mất mình | Việc nhỏ làm với tâm trọn vẹn | Chánh niệm nơi bàn làm việc | Pomodoro tĩnh: 25 phút một việc |
-| 02/09 | Can đảm | Can đảm nói không với điều không hợp | Điều khó thường dạy ta điều cần học | Dũng lực từ tâm không sợ hãi | Ngồi với nỗi sợ trong ba phút |
-| 03/09 | Cô đơn | Một buổi chiều ở một mình không buồn | Độc cư và sự chín của nội tâm | Tự mình là một hòn đảo bình an | Pha trà trong im lặng |
-| 04/09 | Gia đình | Một câu hỏi dịu dàng dành cho người thân | Nhà là nơi ta học cách trở về | Hiếu kính không chỉ là bổn phận | Ăn chậm cùng gia đình |
-| 05/09 | Tiền bạc | Tiêu tiền theo điều mình thật sự quý | Giàu không chỉ là có nhiều | Bố thí và tâm không nắm giữ | Dừng một nhịp trước khi mua |
-| 06/09 | Tha thứ | Tha thứ không xóa đi ranh giới | Buông oán để tay mình được nhẹ | Từ bi với người làm ta đau | Viết thư không gửi để đặt xuống |
-| 07/09 | Thiên nhiên | Một buổi sáng nhìn cây thay vì nhìn tin | Học sự thong thả từ mùa cây | Tương tức: ta không tách khỏi thiên nhiên | Ngồi dưới trời trong mười phút |
-| 08/09 | Học hỏi | Học điều mới mà không tự chê mình | Người biết hỏi luôn còn đường đi | Chánh kiến cần được nuôi mỗi ngày | Đọc chậm một trang sách |
-| 09/09 | Lời nói | Một ngày nói ít nhưng nói thật | Lời nói có thể mở hoặc khép một cánh cửa | Chánh ngữ trong lúc bất đồng | Dừng ba nhịp trước khi phản hồi |
-| 10/09 | Kiên nhẫn | Có những việc cần thời gian thành hình | Đường dài đi bằng bước vừa sức | Nhẫn không phải chịu đựng mù quáng | Thở cùng lúc chờ đợi |
-| 11/09 | Thất bại | Một lần không thành không định nghĩa cả mình | Mất phương hướng cũng là một đoạn đường | Khổ đau như người thầy khó tính | Ghi điều học được sau lỗi lầm |
-| 12/09 | Niềm vui | Niềm vui nhỏ không cần lý do lớn | Vui mà không bám víu | Hỷ trong bốn tâm vô lượng | Mỉm cười với một điều bình dị |
-| 13/09 | Chọn lựa | Không phải lựa chọn nào cũng cần hoàn hảo | Biết điều mình không chọn | Chánh tư duy trước ngã rẽ | Viết hai cột: muốn và cần |
-| 14/09 | Cân bằng | Một ngày không cần tối ưu mọi thứ | Âm dương trong nhịp sống thường ngày | Trung đạo giữa hai cực | Năm phút cân bằng hơi thở |
-| 15/09 | Sáng tạo | Khi ý tưởng chưa đến, hãy sống trước | Sáng tạo là để điều cũ đi qua mình | Tâm rộng thì ý tưởng có chỗ nảy mầm | Vẽ hoặc viết tự do mười phút |
-| 16/09 | Trách nhiệm | Nhận phần việc của mình mà không ôm cả thế giới | Tự do luôn đi cùng trách nhiệm | Nghiệp là hành động đang được gieo | Dừng hỏi: việc này nuôi gì? |
-| 17/09 | Phục hồi | Sau một ngày mệt, đừng bắt mình phải vui | Tái tạo từ chỗ lặng | Từ bi với thân đang mỏi | Thư giãn thân thể trước giấc ngủ |
-| 18/09 | Cộng đồng | Một việc tốt nhỏ giữa khu phố | Ta lớn lên trong sự nương tựa lẫn nhau | Tăng thân trong đời thường | Một hành động giúp người kín đáo |
-| 19/09 | Đối diện bất an | Khi lòng không yên, đừng vội tìm đáp án | Bất an nhắc ta nhìn điều đang lệch | Nhận diện lo âu bằng hơi thở | Thực hành 5-4-3-2-1 với giác quan |
-| 20/09 | Tổng kết | Một tháng sống chậm đã dạy ta điều gì | Đi xa rồi trở về với điều cốt lõi | Hồi hướng điều lành từ thực tập nhỏ | Ngồi yên 15 phút, không mục tiêu |
+**Phạm vi:** Cuộc sống, Đạo & đời, Phật giáo, Thiền & thực hành. Đạo Đức Kinh và Kinh Dịch được biên soạn theo kế hoạch riêng, không nằm trong lịch này.
+
+**Mục tiêu:** Mỗi ngày đi sâu vào một trục nội dung trong cùng một chuyên mục, để hai bài bổ sung cho nhau mà không lặp lại.
+
+Mỗi bài dài khoảng 600–1.000 từ, mở bằng một cảnh đời thường, phát triển 2–3 ý chính và khép lại bằng một gợi ý thực hành nhỏ.
+
+| Ngày | Chuyên mục | Trục chung | Bài 1 | Bài 2 |
+|---|---|---|---|---|
+| 01/09 | Cuộc sống | Khởi đầu vừa đủ | Bắt đầu một ngày mà không tự thúc ép | Bắt đầu tháng mới bằng một việc vừa đủ |
+| 02/09 | Đạo & đời | Nhịp chậm | Thuận nhịp không đồng nghĩa buông xuôi | Dừng lại khi lòng muốn nhanh |
+| 03/09 | Phật giáo | Chánh niệm | Chánh niệm trong một việc quen | Tinh tấn không phải là tự ép mình |
+| 04/09 | Thiền & thực hành | Có mặt | Ba hơi thở trước khi bắt đầu | Năm phút ngồi yên mỗi sáng |
+| 05/09 | Cuộc sống | Lắng nghe | Nghe người khác khi chưa cần trả lời | Một buổi chiều để lại cho mình |
+| 06/09 | Đạo & đời | Thay đổi | Biến đổi là cách đời sống thở | Cái mới luôn bắt đầu từ chỗ rất nhỏ |
+| 07/09 | Phật giáo | Buông bớt | Buông chấp không phải trốn tránh | Từ bi với phần mình chưa làm được |
+| 08/09 | Thiền & thực hành | Dọn chỗ | Dọn một góc nhỏ, dọn một khoảng tâm | Đi bộ mười phút không mục đích |
+| 09/09 | Cuộc sống | Hiện diện | Một bữa cơm không điện thoại | Một buổi sáng không vội vàng |
+| 10/09 | Đạo & đời | Khoảng trống | Khoảng lặng giữa những điều đang diễn ra | Chừa chỗ để điều mới có thể đến |
+| 11/09 | Phật giáo | Lòng biết ơn | Quán niệm về bốn ân | Phát nguyện nhỏ để nuôi tâm lớn |
+| 12/09 | Thiền & thực hành | Trở về thân | Quét cơ thể trong năm phút | Năm phút nghỉ mắt giữa ngày |
+| 13/09 | Cuộc sống | Can đảm | Khi kế hoạch không đi theo ý mình | Những điều bình thường đang nâng đỡ ta |
+| 14/09 | Đạo & đời | Biết đủ | Biết đủ giữa một đời nhiều hơn | Khi biết mình đã đủ, ta có thể dừng lại |
+| 15/09 | Phật giáo | Tỉnh thức | Nhận ra tâm đang phán xét | Biết lỗi sai và con đường quay lại |
+| 16/09 | Thiền & thực hành | Đi cùng cảm xúc | Ngồi cùng một cảm xúc đang đổi | Đặt tay lên ngực trước khi phản ứng |
+| 17/09 | Cuộc sống | Gia đình | Một câu hỏi dịu dàng dành cho người thân | Ăn chậm cùng gia đình |
+| 18/09 | Đạo & đời | Tự do | Đời sống chỉ đi qua một lần | Khi không cần giải thích mình ngay |
+| 19/09 | Phật giáo | Tha thứ | Từ bi với người làm ta đau | Chánh niệm bắt đầu từ một hơi thở |
+| 20/09 | Thiền & thực hành | Lời nói | Thực tập nghe âm thanh ba phút | Dừng ba nhịp trước khi phản hồi |
+| 21/09 | Cuộc sống | Thiên nhiên | Một buổi sáng nhìn cây thay vì nhìn tin | Khi thiên nhiên nhắc ta đi chậm |
+| 22/09 | Đạo & đời | Kiên nhẫn | Im lặng cũng là một cách hiểu | Khi không cần giải thích mình ngay |
+| 23/09 | Phật giáo | Học hỏi | Chánh kiến cần được nuôi mỗi ngày | Hỷ trong bốn tâm vô lượng |
+| 24/09 | Thiền & thực hành | Cân bằng | Năm phút cân bằng hơi thở | Thư giãn thân thể trước giấc ngủ |
+| 25/09 | Cuộc sống | Sáng tạo | Khi ý tưởng chưa đến, hãy sống trước | Một việc nhỏ làm với tâm trọn vẹn |
+| 26/09 | Đạo & đời | Trách nhiệm | Tự do luôn đi cùng trách nhiệm | Điều khó thường dạy ta điều cần học |
+| 27/09 | Phật giáo | Phục hồi | Từ bi với thân đang mỏi | Khổ đau như người thầy khó tính |
+| 28/09 | Thiền & thực hành | Cộng đồng | Một hành động giúp người kín đáo | Ngồi yên cùng sự biết ơn |
+| 29/09 | Cuộc sống | Đối diện bất an | Khi lòng không yên, đừng vội tìm đáp án | Thực hành 5-4-3-2-1 với giác quan |
+| 30/09 | Đạo & đời | Tổng kết | Đi xa rồi trở về với điều cốt lõi | Một tháng sống chậm đã dạy ta điều gì |
+
+## Triển khai ngay các ngày đầu lịch
+
+- **01/09 – Cuộc sống:** đã có đủ hai bài theo lịch mới.
+- **02/09 – Đạo & đời:** đã có đủ hai bài theo lịch mới.
+- **03/09 – Phật giáo:** đã sắp hai bài theo trục chánh niệm.
+- **04/09 – Thiền & thực hành:** đã sắp hai bài thực tập trở về với thân và hơi thở.
 
 ## Nhịp sản xuất đề xuất
 
-1. **Trước 7 ngày:** Chốt bốn tiêu đề theo trục ngày; riêng Đạo Đức Kinh và Kinh Dịch theo lịch biên soạn riêng.
-2. **Trước 3 ngày:** Viết nháp theo từng chuyên mục, bảo đảm mỗi bài có góc nhìn riêng nhưng vẫn gặp nhau ở trục chung.
+1. **Trước 7 ngày:** Chốt hai tiêu đề trong cùng chuyên mục và cùng trục ngày.
+2. **Trước 3 ngày:** Viết nháp, để hai bài có góc nhìn riêng nhưng nâng đỡ nhau.
 3. **Trước 1 ngày:** Biên tập, kiểm tra frontmatter, liên kết nội bộ và ngày xuất bản.
 4. **Ngày xuất bản:** Tạo Markdown tại `src/content/<category>/<slug>.md`, sau đó chạy `npm run build`.
 
