@@ -3,7 +3,7 @@ title: "Chương 48: Bớt đi trên đường học Đạo"
 excerpt: "Học thường là thêm vào; thực hành Đạo nhiều khi là gỡ bớt những điều khiến tâm và việc trở nên rối."
 date: "2026-09-04"
 category: "dao-duc-kinh"
-series: "Đọc Đạo Đức Kinh"
+series: "dao-duc-kinh-de-hieu"
 chapter: 48
 tags: ["Đạo Đức Kinh", "Lão Tử", "vô vi", "đơn giản"]
 ---
@@ -19,4 +19,3 @@ Lão Tử nói đến vô vi: hành động mà không cưỡng làm. Người t
 Khi bớt được sự chen lấn của cái tôi, công việc đôi khi trôi chảy hơn. Ta có chỗ để nghe tình hình, điều chỉnh và để người khác cùng góp phần.
 
 > "Không phải điều gì thêm vào cũng làm đời rộng hơn; có những khoảng trống mới là nơi việc lành được thành."
-

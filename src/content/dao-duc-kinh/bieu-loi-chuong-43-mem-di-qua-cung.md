@@ -3,7 +3,7 @@ title: "Chương 43: Mềm đi qua cứng"
 excerpt: "Lời gợi mở từ Đạo Đức Kinh về sức mạnh của điều không phô trương và cách hành động không cần cưỡng ép."
 date: "2026-09-04"
 category: "dao-duc-kinh"
-series: "Đọc Đạo Đức Kinh"
+series: "dao-duc-kinh-de-hieu"
 chapter: 43
 tags: ["Đạo Đức Kinh", "Lão Tử", "vô vi", "mềm mại"]
 ---
@@ -19,4 +19,3 @@ Lời dạy ấy không ca ngợi sự yếu đuối. Nó nhắc ta rằng sức
 Trong đời thường, “mềm” có thể là nói một câu vừa đủ thay vì hơn thua đến cùng; là đổi một thói quen nhỏ thay vì hứa thay đổi cả đời; là biết dừng khi lòng đang nóng. Điều mềm không ồn ào, nhưng nó giữ cho ta không tự làm cứng mình.
 
 > "Có những cánh cửa không mở vì ta đẩy mạnh hơn, mà vì ta biết đặt bàn tay xuống nhẹ hơn."
-

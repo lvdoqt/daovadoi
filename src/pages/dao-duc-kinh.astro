@@ -10,6 +10,12 @@ const chapters = posts
 const published = new Map(chapters.map((post) => [post.data.chapter, post]));
 const chapterNumbers = Array.from({ length: 81 }, (_, index) => index + 1);
 const groups = Array.from({ length: 27 }, (_, index) => chapterNumbers.slice(index * 3, index * 3 + 3));
+const latestChapter = chapters.at(-1)?.data.chapter ?? 0;
+const latestGroupIndex = Math.max(0, Math.ceil(latestChapter / 3) - 1);
+const latestGroup = groups[latestGroupIndex];
+const latestPosts = latestGroup.map((chapter) => published.get(chapter)).filter(Boolean);
+const latestDate = latestPosts[0]?.data.date;
+const formatDate = (date?: string) => date ? date.split('-').reverse().join('.') : '';
 ---
 
 <BaseLayout title="Đạo Đức Kinh dễ hiểu · Đạo & Đời">
@@ -26,8 +32,8 @@ const groups = Array.from({ length: 27 }, (_, index) => chapterNumbers.slice(ind
     </section>
 
     <section class="today" aria-labelledby="hom-nay">
-      <div><p class="eyebrow">NGÀY 01 · 25.08.2026</p><h2 id="hom-nay">Ba chương khởi đầu</h2></div>
-      <div class="today-list">{chapters.slice(0, 3).map((post) => <a href={`/bai-viet/${post.id}`}><span>CH.{post.data.chapter}</span><strong>{post.data.title}</strong><i>→</i></a>)}</div>
+      <div><p class="eyebrow">NGÀY {String(latestGroupIndex + 1).padStart(2, '0')} · {formatDate(latestDate)}</p><h2 id="hom-nay">Ba chương mới nhất</h2></div>
+      <div class="today-list">{latestPosts.map((post) => <a href={`/bai-viet/${post.id}`}><span>CH.{post.data.chapter}</span><strong>{post.data.title}</strong><i>→</i></a>)}</div>
     </section>
 
     <section id="so-do" class="chapter-map" aria-labelledby="so-do-title">

@@ -1,8 +1,9 @@
 ---
 title: "Nghe người khác khi chưa cần trả lời"
 excerpt: "Một khoảng lặng trong đối thoại không làm ta kém sắc bén; nó giúp ta gặp được điều người kia thực sự muốn nói."
-date: "2026-08-24"
+date: "2026-09-05"
 category: "cuoc-song"
+tags: ["lắng nghe", "đối thoại", "sống chậm"]
 ---
 
 Có những cuộc trò chuyện bắt đầu rất nhanh. Người kia mới nói được nửa câu, trong đầu ta đã có câu trả lời, một ví dụ tương tự, hoặc một lời khuyên tưởng là hữu ích. Ta chờ họ ngừng lấy hơi để đưa điều mình biết vào. Cuộc nói chuyện vẫn tiếp diễn, nhưng đôi khi hai người chỉ thay nhau phát biểu, chứ chưa thật sự gặp nhau.

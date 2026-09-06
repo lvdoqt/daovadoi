@@ -3,7 +3,7 @@ title: "Chương 44: Danh và thân, điều nào gần hơn?"
 excerpt: "Một câu hỏi của Lão Tử giúp ta nhìn lại cái giá của việc chạy theo danh lợi và biết dừng cho đúng lúc."
 date: "2026-09-04"
 category: "dao-duc-kinh"
-series: "Đọc Đạo Đức Kinh"
+series: "dao-duc-kinh-de-hieu"
 chapter: 44
 tags: ["Đạo Đức Kinh", "Lão Tử", "biết đủ", "danh lợi"]
 ---
@@ -19,4 +19,3 @@ Lão Tử nói người biết đủ không nhục, biết dừng không nguy. B
 Trước một lựa chọn, ta có thể tự hỏi: nếu có thêm điều này, mình có bình an hơn không? Câu hỏi ấy không cho sẵn đáp án, nhưng nó đưa ta về gần với thước đo bên trong.
 
 > "Có những thứ càng giữ chặt càng hao; biết dừng lại là cách gìn giữ mình."
-

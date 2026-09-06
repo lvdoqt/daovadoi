@@ -3,7 +3,7 @@ title: "Chương 46: Biết đủ thì không nghèo"
 excerpt: "Lão Tử nhìn nguồn gốc của bất an không chỉ ở sự thiếu thốn, mà còn ở ham muốn không biết điểm dừng."
 date: "2026-09-04"
 category: "dao-duc-kinh"
-series: "Đọc Đạo Đức Kinh"
+series: "dao-duc-kinh-de-hieu"
 chapter: 46
 tags: ["Đạo Đức Kinh", "Lão Tử", "tri túc", "an ổn"]
 ---
@@ -19,4 +19,3 @@ Biết đủ không khiến đời sống đứng yên. Nó giúp ta hành độ
 Khi thấy được cái đủ, lòng bớt biến mọi cuộc gặp thành so sánh và mọi thành tựu thành cuộc đua mới.
 
 > "Giàu có không chỉ là có thêm, mà là còn nhận ra điều đang nuôi mình."
-

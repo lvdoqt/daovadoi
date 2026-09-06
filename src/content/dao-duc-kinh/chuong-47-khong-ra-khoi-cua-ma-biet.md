@@ -3,7 +3,7 @@ title: "Chương 47: Không ra khỏi cửa mà biết"
 excerpt: "Càng chạy theo vô số thông tin, ta càng cần trở về với khả năng quan sát điều đang ở rất gần."
 date: "2026-09-04"
 category: "dao-duc-kinh"
-series: "Đọc Đạo Đức Kinh"
+series: "dao-duc-kinh-de-hieu"
 chapter: 47
 tags: ["Đạo Đức Kinh", "Lão Tử", "quan sát", "tĩnh tâm"]
 ---
@@ -19,4 +19,3 @@ Trong một ngày đầy thông báo, thực hành của chương này có thể
 Không phải cứ biết nhiều là thấy rõ. Khi tâm chạy quá xa, những điều gần gũi cũng trở nên mờ. Trở về với hiện tại giúp ta có một cái biết ít ồn ào hơn nhưng thiết thực hơn.
 
 > "Đi thật xa có thể cho ta thêm cảnh; quay vào trong giúp ta nhận ra đường."
-

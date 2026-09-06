@@ -1,7 +1,7 @@
 ---
 title: "Biến đổi là cách đời sống thở"
 excerpt: "Mùa chuyển, lòng người đổi và những điều từng quen thuộc rời đi; trong nhịp ấy, ta có thể học cách sống cùng thay đổi."
-date: "2026-08-27"
+date: "2026-09-06"
 category: "dao-va-doi"
 tags: ["thay đổi", "thuận theo", "đời sống"]
 ---
@@ -15,6 +15,12 @@ Có lẽ đời sống không hứa với ta sự bất biến. Điều nó vẫ
 Thuận theo thay đổi không có nghĩa là gật đầu với mọi điều xảy đến. Khi một điều bất công cần được nói ra, ta vẫn nói. Khi một hoàn cảnh làm mình tổn hại, ta vẫn tìm cách rời đi hoặc nhờ giúp đỡ. Nhưng giữa việc hành động và việc chống cự vô ích có một ranh giới tinh tế: ta có thể làm phần của mình mà không bắt đời phải trở lại nguyên vẹn như cũ.
 
 Người biết thuận theo thường không vội hỏi “Làm sao để mọi thứ như trước?” Họ hỏi “Trong hoàn cảnh này, điều gì là bước đi đúng và vừa sức?” Câu hỏi thứ hai không làm nỗi buồn biến mất ngay, nhưng nó trả ta về với khả năng lựa chọn.
+
+## Khi chưa kịp quen với điều mới
+
+Có những thay đổi đến quá nhanh: một tin nhắn làm đảo lộn dự định, một quyết định từ nơi làm việc, một người thân bỗng cần ta nhiều hơn. Lúc ấy, đừng buộc mình phải bình thản ngay. Sự bối rối là phản ứng tự nhiên khi nền đất quen thuộc dịch chuyển. Ta có thể cho mình một khoảng ngắn để thở, để hỏi thêm thông tin, hoặc để nói với ai đó rằng mình cần thời gian.
+
+Đi cùng thay đổi cũng cần sự phân biệt. Có điều ta không thể quyết định, như thời gian hay lựa chọn của người khác. Nhưng ta còn có thể chọn cách sắp xếp một ngày, một lời nói tử tế, hay việc tìm sự giúp đỡ đúng lúc. Nhận ra phần nào thuộc về mình không làm hoàn cảnh nhẹ đi ngay, nhưng nó giúp ta không tiêu hết sức vào việc cố nắm điều ngoài tầm tay.
 
 ## Cho cái cũ một lời chào
 

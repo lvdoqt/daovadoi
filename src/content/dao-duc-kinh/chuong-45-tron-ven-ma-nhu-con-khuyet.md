@@ -3,7 +3,7 @@ title: "Chương 45: Trọn vẹn mà như còn khuyết"
 excerpt: "Cái đầy đặn nhất không cần phô bày sự hoàn hảo; nó chừa chỗ cho sự sống tiếp tục vận hành."
 date: "2026-09-04"
 category: "dao-duc-kinh"
-series: "Đọc Đạo Đức Kinh"
+series: "dao-duc-kinh-de-hieu"
 chapter: 45
 tags: ["Đạo Đức Kinh", "Lão Tử", "trọn vẹn", "khiêm nhường"]
 ---
@@ -19,4 +19,3 @@ Ta không phải giấu mọi thiếu sót, cũng không cần lấy thiếu só
 Sự trọn vẹn sâu hơn không nằm ở chỗ đời không có vết khuyết. Nó nằm ở khả năng ôm được cả những phần chưa tròn mà vẫn tiếp tục sống tử tế.
 
 > "Chỗ còn khuyết không luôn là điều phải che đi; đôi khi đó là nơi ánh sáng và sự học hỏi đi vào."
-

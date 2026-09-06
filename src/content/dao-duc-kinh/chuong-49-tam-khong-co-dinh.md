@@ -3,7 +3,7 @@ title: "Chương 49: Tâm không có định kiến cố định"
 excerpt: "Người có Đạo giữ tâm rộng mở để có thể tin, hiểu và đối đãi tử tế với nhiều kiểu người khác nhau."
 date: "2026-09-04"
 category: "dao-duc-kinh"
-series: "Đọc Đạo Đức Kinh"
+series: "dao-duc-kinh-de-hieu"
 chapter: 49
 tags: ["Đạo Đức Kinh", "Lão Tử", "từ ái", "không định kiến"]
 ---
@@ -19,4 +19,3 @@ Mở lòng không đồng nghĩa với dễ dãi. Ta vẫn cần ranh giới, v�
 Khi gặp một người khác mình, ta có thể tập nhìn họ trước khi vội xếp họ vào một nhãn nào đó. Mỗi lần làm được như vậy, tâm ta rộng thêm một chút — và chính mình cũng có thêm cơ hội được người khác nhìn bằng sự rộng lượng ấy.
 
 > "Tâm rộng không làm ta mất phương hướng; nó giúp ta không đánh mất người trong khi giữ điều mình tin."
-
