@@ -147,6 +147,13 @@
 | 26 | 19/09 | 76–78 |
 | 27 | 20/09 | 79–81 |
 
+## Tiến độ biên soạn cập nhật 08/09/2026
+
+- Đã có bài chương 1–55; bổ sung sáu bài chương **56–61**, đưa chuỗi lên **61/81 chương** đã có nội dung.
+- Ngày bài theo lịch: chương **56–57: 12/09/2026**, chương **58–60: 13/09/2026**, chương **61: 14/09/2026**.
+- Sáu bài mới có nguyên văn theo bản Vương Bật trên Wikisource, phiên âm Hán Việt, bản dịch tiếng Việt tự biên soạn, diễn giải và thực tập. Nguồn và lưu ý văn bản được ghi trong từng bài.
+- Phần tiếp theo bắt đầu từ **chương 62**. Ngày trên là lịch nội dung, không phải xác nhận đã triển khai lên website.
+
 ## Chuỗi hỗ trợ xuất bản
 
 Ngoài bài chính, mỗi tuần nên có một nội dung ngắn để đưa người đọc trở lại bài dài:

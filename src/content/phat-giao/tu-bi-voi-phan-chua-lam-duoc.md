@@ -1,25 +1,35 @@
----
+﻿---
 title: "Từ bi với phần mình chưa làm được"
-excerpt: "Nhìn nhận điều chưa trọn vẹn bằng sự thành thật và dịu dàng giúp ta có sức để đi tiếp."
-date: "2026-08-28"
+excerpt: "Một việc còn dang dở cần được nhìn rõ, cùng với những khó khăn phía sau nó, để ta tìm được bước tiếp theo vừa sức."
+date: "2026-09-07"
 category: "phat-giao"
 tags: ["từ-bi", "chánh-niệm", "tự-thương"]
 ---
 
-Ai cũng có những việc đã hẹn với mình mà chưa làm được: một thói quen muốn bắt đầu, một lời xin lỗi còn để đó, một công việc cứ lần lữa. Khi nhìn vào chúng, ta dễ dùng những lời rất nặng với bản thân. Nhưng tự trách nhiều không nhất thiết làm ta tiến nhanh hơn; đôi khi nó chỉ khiến ta mệt và muốn lảng tránh.
+Đã gần giờ ngủ, ta mở lại danh sách viết từ buổi sáng. Còn ba ô chưa đánh dấu. Cuộc gọi cho mẹ vẫn chưa thực hiện, tài liệu mới đọc một nửa, góc bếp định dọn vẫn nguyên như cũ. Những việc đã làm bỗng mờ đi. Trong đầu chỉ còn câu quen thuộc: “Có từng ấy việc mà mình cũng không xong.”
 
-Trong thực hành Phật giáo, từ bi không phải là bỏ qua mọi điều. Từ bi bắt đầu bằng việc thấy đúng sự thật mà không thêm vào đó sự khinh ghét. Ta có thể nói: “Việc này mình chưa làm được. Mình đang gặp khó ở đây.” Câu nói ấy vừa rõ ràng vừa để lại một cánh cửa cho thay đổi.
+Câu nói xuất hiện nhanh đến mức ta tưởng nó là sự thật đầy đủ. Nhưng một ngày còn có những cuộc gọi bất ngờ, việc phát sinh, lúc thân mệt và những lần phải chăm sóc người khác. Nhìn lại các điều kiện ấy giúp ta hiểu ngày vừa qua. Từ sự hiểu đó, ta mới biết nên sửa cách sắp xếp, nhờ hỗ trợ hay cho mình nghỉ.
 
-## Thấy điều kiện thay vì chỉ kết án
+## Gọi tên sự việc mà không kết án mình
 
-Một việc chưa xong hiếm khi chỉ vì ta thiếu ý chí. Có thể ta đang quá mệt, chưa biết cách bắt đầu, hoặc đã đặt mục tiêu lớn hơn sức mình. Thay vì hỏi “sao mình kém thế?”, hãy thử hỏi “điều kiện nào đang thiếu?” Câu hỏi sau không làm nhẹ trách nhiệm, nhưng đưa ta về nơi có thể hành động.
+Ta có thể bắt đầu bằng một câu cụ thể hơn: “Hôm nay mình chưa gọi cho mẹ.” Câu ấy chỉ vào một việc có thể làm tiếp. Còn “mình thật vô tâm” biến việc chưa xong thành nhận xét về cả con người. Khi tin vào nhận xét ấy, đôi khi ta càng ngại gọi, vì không muốn chạm vào cảm giác có lỗi.
 
-Nếu cần học thêm, hãy học một phần nhỏ. Nếu đang kiệt sức, hãy nghỉ cho đủ trước khi đòi mình bền bỉ. Nếu sợ bắt đầu, hãy giảm công việc xuống mức chỉ mất năm phút. Chánh niệm giúp ta nhận ra những điều kiện ấy thay vì biến một thất bại nhỏ thành bản án về con người mình.
+Thực tập lòng từ bi với mình có thể bắt đầu từ việc nhận ra sự khó chịu đó và bớt thêm lời cay nghiệt. Ta thừa nhận mình đang tiếc, đang xấu hổ hoặc đang sợ bị trách. Không cần vội bảo rằng mọi chuyện chẳng đáng gì. Điều làm ta bận lòng vẫn có ý nghĩa; chỉ là nó cần một cách chăm sóc giúp ta đủ sức hành động.
 
-> “Ta không lớn lên nhờ bị ép đến gãy, mà nhờ được nhìn bằng một ánh mắt sáng và lành.”
+Thử tưởng tượng một người thân đang kể đúng chuyện ấy. Có lẽ ta sẽ hỏi họ đã trải qua ngày thế nào, thay vì lập tức kết luận họ kém cỏi. Ta cũng có thể dành cho mình một câu hỏi tương tự. Sự dịu dàng ở đây nằm trong cách nhìn: đủ gần để thấy khó khăn, đủ rõ để thấy việc còn cần làm.
 
-## Một lời nguyện vừa sức
+## Tìm điều kiện cho bước tiếp theo
 
-Tối nay, chọn một điều bạn còn dang dở. Đừng hứa sẽ làm thật nhiều vào ngày mai. Chỉ phát một nguyện nhỏ, cụ thể: mở tài liệu trong mười phút, gọi một cuộc điện thoại, hoặc đi bộ một vòng ngắn. Sau đó, khi làm được, hãy ghi nhận nó.
+Một việc cứ bị hoãn thường cần được xem kỹ hơn. Ta chưa biết bắt đầu ở đâu, hay đang đòi lần đầu phải làm thật tốt? Thời gian dự tính có thực tế không? Có phần nào phụ thuộc vào người khác? Mỗi câu trả lời sẽ dẫn đến một cách xử lý khác, thay vì cùng quy về việc phải cố thêm.
 
-Từ bi với mình không làm con đường ngắn hơn. Nó làm con đường có thể đi được. Và người biết nâng đỡ chính mình bằng sự tỉnh táo thường cũng có nhiều kiên nhẫn hơn để nâng đỡ người khác.
+Nếu tài liệu quá dài, ta có thể chọn đọc riêng phần đang cần cho cuộc họp. Nếu lời xin lỗi khó nói, ta có thể viết trước điều mình muốn nhận trách nhiệm. Nếu cuối ngày luôn hết sức, một việc quan trọng có thể cần chuyển sang buổi sáng. Điều chỉnh như vậy giúp lời hứa có chỗ đứng trong một ngày thật, với sức lực thật.
+
+Với những việc ảnh hưởng đến người khác, lòng dịu dàng cần đi cùng sự rõ ràng. Hãy báo sớm rằng mình chưa hoàn thành, nói phần đã làm được và đưa ra thời hạn có thể giữ. Người đang chờ cần thông tin để sắp xếp phần việc của họ. Chăm sóc mình và tôn trọng họ có thể cùng hiện diện trong một lời nói thành thật.
+
+Nếu nhận ra đã nhận quá nhiều việc, ta cũng có thể xem lại lời hứa ban đầu. Có cam kết cần thương lượng lại. Có mong muốn chỉ thuộc về một thời điểm đã qua. Bỏ bớt một mục tiêu sau khi cân nhắc có thể giúp ta dành sức cho điều còn thực sự quan trọng.
+
+## Khép ngày bằng một lời hẹn nhỏ
+
+Trước khi ngủ, chọn một việc dang dở và viết ba câu ngắn: việc gì chưa xong, điều gì đã cản trở, ngày mai sẽ làm bước nào. Hãy chọn bước đủ cụ thể để biết khi nào đã hoàn thành: gọi hỏi thăm trong giờ nghỉ, đọc hai trang, hoặc gửi lời hẹn mới. Sau đó, ghi nhận một việc mình đã chăm sóc được hôm nay.
+
+Nếu ngày mai vẫn lỡ hẹn, hãy trở lại xem điều kiện nào chưa phù hợp. Bạn có thể đọc thêm [Buông chấp không phải trốn tránh](/bai-viet/phat-giao/buong-chap-khong-phai-tron-tranh) để nhìn phần trách nhiệm và phần đòi hỏi đang giữ trong lòng. Tối nay, khi đã ghi lại bước tiếp theo, hãy cho ngày được khép lại. Điều chưa trọn vẹn vẫn có thể được tiếp tục bằng một bàn tay nhẹ hơn.

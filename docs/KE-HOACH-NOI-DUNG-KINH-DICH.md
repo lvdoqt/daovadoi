@@ -54,6 +54,24 @@ Với các ngày 22–26/08, ba bài đã được hoàn thiện. Từ 27/08 tr�
 | 19/09 | Đối diện bất an | Quẻ Khảm: đi qua vùng nước sâu | Thận trọng, chuẩn bị và tín tâm trong giai đoạn không chắc chắn. | Chưa viết |
 | 20/09 | Tổng kết | Quẻ Phục và vòng trở về | Khép một chu kỳ để nhận ra điều cốt lõi và mở một khởi đầu mới. | Chưa viết |
 
+## Đợt bổ sung 6 bài và sơ đồ — 08/09/2026
+
+Đợt này bổ sung theo khoảng trống của sơ đồ 64 quẻ, không thay cho việc hoàn thiện ba góc bài mỗi ngày trong lịch phía trên.
+
+| Quẻ | Bài mới | Vai trò |
+|---:|---|---|
+| 53 · Tiệm | `que-tiem-tien-dan-tung-buoc` | Bài chính, bổ sung ô còn thiếu |
+| 54 · Quy Muội | `que-quy-muoi-nhin-ro-vai-tro-truoc-khi-nhan-loi` | Bài chính, bổ sung ô còn thiếu |
+| 55 · Phong | `que-phong-giu-sang-trong-luc-du-day` | Bài chính, bổ sung ô còn thiếu |
+| 56 · Lữ | `que-lu-giu-minh-khi-o-cho-chua-quen` | Bài chính, bổ sung ô còn thiếu |
+| 57 · Tốn | `que-ton-giu-mot-loi-nhac-du-hien` | Bài thực hành mới, giữ bài chính hiện có |
+| 58 · Đoài | `que-doai-vui-cung-nhau-ma-khong-lam-ai-nho-lai` | Bài thực hành mới, giữ bài chính hiện có |
+
+- Cả sáu bài mang ngày `2026-09-08`, có nguồn đối chiếu nguyên văn và thực hành riêng.
+- Bài chính dùng `series: "kinh-dich-64-que"`; bài bổ sung dùng `series: "kinh-dich-thuc-hanh"`. Trường `chapter` là số quẻ liên quan.
+- Sơ đồ đã có bài cho **64/64 quẻ**. Số đếm lấy theo số quẻ riêng biệt; khi nhiều bài chính cùng số quẻ, ô chính chọn bài có ngày mới nhất, các bài còn lại được giữ trong liên kết đọc thêm.
+- Liên kết đọc thêm cũng hiển thị các bài thực hành theo đúng số quẻ. Trạng thái hoàn tất tự tính từ nội dung, không ghi cố định.
+
 ## Kiểm tra trước khi xuất bản
 
 1. Frontmatter có đủ `title`, `excerpt`, `date`, `category` và `tags`.

@@ -49,6 +49,10 @@ Mỗi bài dài khoảng 600–1.000 từ, mở bằng một cảnh đời thư�
 - **02/09 – Đạo & đời:** đã có đủ hai bài theo lịch mới.
 - **03/09 – Phật giáo:** đã sắp hai bài theo trục chánh niệm.
 - **04/09 – Thiền & thực hành:** đã sắp hai bài thực tập trở về với thân và hơi thở.
+- **05/09 – Cuộc sống:** đã có đủ hai bài theo trục lắng nghe.
+- **06/09 – Đạo & đời:** đã có đủ hai bài theo trục thay đổi.
+- **07/09 – Phật giáo:** đã viết hoàn chỉnh hai bài theo trục buông bớt, cập nhật ngày xuất bản từ bản ngắn tháng 8 và giữ nguyên đường dẫn.
+- **08/09 – Thiền & thực hành:** đã viết hoàn chỉnh hai bài theo trục dọn chỗ, cập nhật ngày xuất bản từ bản ngắn tháng 8 và giữ nguyên đường dẫn.
 
 ## Nhịp sản xuất đề xuất
 
