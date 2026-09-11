@@ -10,12 +10,9 @@ const chapters = posts
 const published = new Map(chapters.map((post) => [post.data.chapter, post]));
 const chapterNumbers = Array.from({ length: 81 }, (_, index) => index + 1);
 const groups = Array.from({ length: 27 }, (_, index) => chapterNumbers.slice(index * 3, index * 3 + 3));
-const latestChapter = chapters.at(-1)?.data.chapter ?? 0;
-const latestGroupIndex = Math.max(0, Math.ceil(latestChapter / 3) - 1);
-const latestGroup = groups[latestGroupIndex];
-const latestPosts = latestGroup.map((chapter) => published.get(chapter)).filter(Boolean);
-const latestDate = latestPosts[0]?.data.date;
-const formatDate = (date?: string) => date ? date.split('-').reverse().join('.') : '';
+const latestPosts = chapters.slice(-3);
+const latestStart = latestPosts[0]?.data.chapter;
+const latestEnd = latestPosts.at(-1)?.data.chapter;
 ---
 
 <BaseLayout title="Đạo Đức Kinh dễ hiểu · Đạo & Đời">
@@ -31,10 +28,10 @@ const formatDate = (date?: string) => date ? date.split('-').reverse().join('.')
       {guides.map((post) => <a href={`/bai-viet/${post.id}`}><span>{post.data.tags.includes('tieu-su') ? 'VỀ TÁC GIẢ' : 'NHẬP MÔN'}</span><strong>{post.data.title}</strong><i>→</i></a>)}
     </section>
 
-    <section class="today" aria-labelledby="hom-nay">
-      <div><p class="eyebrow">NGÀY {String(latestGroupIndex + 1).padStart(2, '0')} · {formatDate(latestDate)}</p><h2 id="hom-nay">Ba chương mới nhất</h2></div>
+    {latestPosts.length > 0 && <section class="today" aria-labelledby="hom-nay">
+      <div><p class="eyebrow">ĐỌC TIẾP · CHƯƠNG {latestStart}{latestStart !== latestEnd && `–${latestEnd}`}</p><h2 id="hom-nay">{latestPosts.length === 3 ? 'Ba chương mới nhất' : 'Chương mới nhất'}</h2></div>
       <div class="today-list">{latestPosts.map((post) => <a href={`/bai-viet/${post.id}`}><span>CH.{post.data.chapter}</span><strong>{post.data.title}</strong><i>→</i></a>)}</div>
-    </section>
+    </section>}
 
     <section id="so-do" class="chapter-map" aria-labelledby="so-do-title">
       <div class="section-intro"><p class="eyebrow">SƠ ĐỒ 81 CHƯƠNG</p><h2 id="so-do-title">Đi từng chặng ba chương</h2><p>Mỗi hàng là một ngày xuất bản. Ô màu xanh đã có bài để đọc; ô viền mảnh là chương sắp đến.</p></div>

@@ -54,6 +54,10 @@ Mỗi bài dài khoảng 600–1.000 từ, mở bằng một cảnh đời thư�
 - **07/09 – Phật giáo:** đã viết hoàn chỉnh hai bài theo trục buông bớt, cập nhật ngày xuất bản từ bản ngắn tháng 8 và giữ nguyên đường dẫn.
 - **08/09 – Thiền & thực hành:** đã viết hoàn chỉnh hai bài theo trục dọn chỗ, cập nhật ngày xuất bản từ bản ngắn tháng 8 và giữ nguyên đường dẫn.
 
+- **09/09 – Cuộc sống:** đã viết hoàn chỉnh hai bài theo trục hiện diện, cập nhật ngày xuất bản từ bản ngắn tháng 8 và giữ nguyên đường dẫn.
+- **10/09 – Đạo & đời:** đã viết hoàn chỉnh hai bài theo trục khoảng trống, cập nhật ngày xuất bản thành 10/09/2026 và giữ nguyên đường dẫn.
+- **11/09 – Phật giáo:** đã viết hoàn chỉnh hai bài theo trục lòng biết ơn, cập nhật ngày xuất bản từ bản tháng 8 thành 11/09/2026 và giữ nguyên đường dẫn; bài bốn ân có nguồn tham khảo về cách phân nhóm.
+
 ## Nhịp sản xuất đề xuất
 
 1. **Trước 7 ngày:** Chốt hai tiêu đề trong cùng chuyên mục và cùng trục ngày.

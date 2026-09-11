@@ -147,12 +147,13 @@
 | 26 | 19/09 | 76–78 |
 | 27 | 20/09 | 79–81 |
 
-## Tiến độ biên soạn cập nhật 08/09/2026
+## Tiến độ biên soạn cập nhật 09/09/2026
 
-- Đã có bài chương 1–55; bổ sung sáu bài chương **56–61**, đưa chuỗi lên **61/81 chương** đã có nội dung.
-- Ngày bài theo lịch: chương **56–57: 12/09/2026**, chương **58–60: 13/09/2026**, chương **61: 14/09/2026**.
+- Đã có bài chương 1–61; bổ sung sáu bài chương **62–67**, đưa chuỗi lên **67/81 chương** đã có nội dung.
+- Ngày bài theo lịch: chương **62–63: 14/09/2026**, chương **64–66: 15/09/2026**, chương **67: 16/09/2026**.
 - Sáu bài mới có nguyên văn theo bản Vương Bật trên Wikisource, phiên âm Hán Việt, bản dịch tiếng Việt tự biên soạn, diễn giải và thực tập. Nguồn và lưu ý văn bản được ghi trong từng bài.
-- Phần tiếp theo bắt đầu từ **chương 62**. Ngày trên là lịch nội dung, không phải xác nhận đã triển khai lên website.
+- Sơ đồ `/dao-duc-kinh#so-do` tự mở các ô chương 62–67 từ Content Collections. Mục “Ba chương mới nhất” lấy ba chương cuối đã có bài (65–67), kể cả khi đợt biên soạn kết thúc giữa một nhóm ba chương.
+- Phần tiếp theo bắt đầu từ **chương 68**. Ngày trên là lịch nội dung, không phải xác nhận đã triển khai lên website.
 
 ## Chuỗi hỗ trợ xuất bản
 
