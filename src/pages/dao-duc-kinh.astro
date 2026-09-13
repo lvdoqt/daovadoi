@@ -20,7 +20,7 @@ const latestEnd = latestPosts.at(-1)?.data.chapter;
     <header class="ddk-hero">
       <p class="eyebrow">ĐỌC CHẬM 81 CHƯƠNG</p>
       <h1>Đạo Đức Kinh<br /><em>dễ hiểu, gần đời.</em></h1>
-      <p>Hành trình 27 ngày, mỗi ngày ba chương. Mỗi bài giữ một ý chính, một ví dụ đời thường và một thực tập nhỏ để ta đọc rồi sống được.</p>
+      <p>Hành trình đọc chậm 81 chương, theo nhịp phù hợp với mình. Mỗi bài giữ một ý chính, một ví dụ đời thường và một thực tập nhỏ để ta đọc rồi sống được.</p>
       <div class="ddk-stats"><strong>{chapters.length}<span>/81</span></strong><span>chương đã xuất bản</span><a href="#so-do">XEM SƠ ĐỒ →</a></div>
     </header>
 
@@ -34,9 +34,9 @@ const latestEnd = latestPosts.at(-1)?.data.chapter;
     </section>}
 
     <section id="so-do" class="chapter-map" aria-labelledby="so-do-title">
-      <div class="section-intro"><p class="eyebrow">SƠ ĐỒ 81 CHƯƠNG</p><h2 id="so-do-title">Đi từng chặng ba chương</h2><p>Mỗi hàng là một ngày xuất bản. Ô màu xanh đã có bài để đọc; ô viền mảnh là chương sắp đến.</p></div>
+      <div class="section-intro"><p class="eyebrow">SƠ ĐỒ 81 CHƯƠNG</p><h2 id="so-do-title">Đi từng chặng ba chương</h2><p>Mỗi hàng là một chặng đọc gồm ba chương liên tiếp. Ô màu xanh đã có bài để đọc; ô viền mảnh là chương sắp đến.</p></div>
       <div class="map-legend"><span><i class="done"></i> Đã xuất bản</span><span><i></i> Sắp xuất bản</span></div>
-      <ol class="chapter-graph">{groups.map((group, groupIndex) => <li><span class="day">NGÀY {String(groupIndex + 1).padStart(2, '0')}</span><div class="nodes">{group.map((chapter) => {
+      <ol class="chapter-graph">{groups.map((group, groupIndex) => <li><span class="day">CHẶNG {String(groupIndex + 1).padStart(2, '0')}</span><div class="nodes">{group.map((chapter) => {
         const post = published.get(chapter);
         return post ? <a class="node published" href={`/bai-viet/${post.id}`} title={post.data.title}> {chapter} </a> : <span class="node" title={`Chương ${chapter}`}>{chapter}</span>;
       })}</div><span class="range">Ch. {group[0]}–{group[2]}</span></li>)}</ol>

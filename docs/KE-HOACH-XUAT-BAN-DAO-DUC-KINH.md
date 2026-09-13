@@ -1,5 +1,7 @@
 # Kế Hoạch Xuất Bản Đạo Đức Kinh Dễ Hiểu
 
+> **Cập nhật 12/09/2026:** Phần lịch tháng 9 dưới đây được thay bằng [kế hoạch chung 6 bài/ngày](KE-HOACH-NOI-DUNG-THANG-09-2026.md), trong đó Đạo Đức Kinh có 1 bài/ngày. Chương 70–81 dự kiến viết vào 17–28/09; các hướng dẫn biên soạn và ghi chép tiến độ cũ được giữ để tham khảo. Ngày của bài hiện có không tự thay đổi.
+
 **Mục tiêu:** giới thiệu trọn bộ 81 chương *Đạo Đức Kinh* bằng tiếng Việt gần gũi, tôn trọng văn bản cổ nhưng không biến bài viết thành lời giảng khó tiếp cận.
 
 **Đối tượng đọc:** người mới tìm hiểu tư tưởng Lão Tử, người đang muốn sống chậm hơn, bớt căng thẳng và quan sát đời sống sâu hơn.
@@ -154,6 +156,14 @@
 - Sáu bài mới có nguyên văn theo bản Vương Bật trên Wikisource, phiên âm Hán Việt, bản dịch tiếng Việt tự biên soạn, diễn giải và thực tập. Nguồn và lưu ý văn bản được ghi trong từng bài.
 - Sơ đồ `/dao-duc-kinh#so-do` tự mở các ô chương 62–67 từ Content Collections. Mục “Ba chương mới nhất” lấy ba chương cuối đã có bài (65–67), kể cả khi đợt biên soạn kết thúc giữa một nhóm ba chương.
 - Phần tiếp theo bắt đầu từ **chương 68**. Ngày trên là lịch nội dung, không phải xác nhận đã triển khai lên website.
+
+## Tiến độ biên soạn cập nhật 12/09/2026
+
+- Đã bổ sung sáu bài hoàn chỉnh **chương 70–75**, tiếp nối chương 68–69 hiện có; chuỗi có nội dung cho **75/81 chương**.
+- Ngày nội dung theo kế hoạch chung mới: **70: 17/09**, **71: 18/09**, **72: 19/09**, **73: 20/09**, **74: 21/09**, **75: 22/09/2026**. Đây là lịch bài, không phải xác nhận đã triển khai lên website.
+- Mỗi bài có nguyên văn bản Vương Bật được đối chiếu trên Wikisource, Hán Việt, bản dịch tiếng Việt tự biên soạn, diễn giải, giới hạn khi vận dụng, một thực hành và liên kết đọc thêm. Chương 75 giữ rõ chữ “上” trong câu thứ ba của bản nguồn.
+- Sơ đồ `/dao-duc-kinh#so-do` tự mở ô **70–75** từ Content Collections; mục “Ba chương mới nhất” chuyển sang **73–75**. Nhãn hàng đổi từ “ngày” sang “chặng” để không gắn mỗi nhóm ba chương với một ngày xuất bản.
+- Phần tiếp theo bắt đầu từ **chương 76**; còn **6 chương (76–81)** để hoàn thành chuỗi.
 
 ## Chuỗi hỗ trợ xuất bản
 

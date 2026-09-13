@@ -1,5 +1,7 @@
 # Kế Hoạch Nội Dung Tháng 9/2026
 
+> **Cập nhật 12/09/2026:** Phần lịch tháng 9 dưới đây được thay bằng [kế hoạch chung 6 bài/ngày, 180 bài trong tháng](KE-HOACH-NOI-DUNG-THANG-09-2026.md). Giữ tài liệu này để tham khảo lịch cũ và tiến độ đã ghi; ngày của bài hiện có không tự thay đổi.
+
 **Giai đoạn:** 01/09/2026 – 30/09/2026
 
 **Nhịp xuất bản:** 2 bài/ngày, cùng thuộc một chuyên mục.

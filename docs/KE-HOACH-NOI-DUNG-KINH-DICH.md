@@ -1,5 +1,7 @@
 # Kế Hoạch Nội Dung Kinh Dịch — 30 Ngày
 
+> **Cập nhật 12/09/2026:** Phần lịch tháng 9 dưới đây được thay bằng [kế hoạch chung 6 bài/ngày](KE-HOACH-NOI-DUNG-THANG-09-2026.md), trong đó Kinh Dịch có 1 bài/ngày. Các hướng dẫn biên tập và ghi chép tiến độ cũ được giữ để tham khảo; ngày của bài hiện có không tự thay đổi.
+
 **Giai đoạn:** 22/08/2026 – 20/09/2026  
 **Chuyên mục:** `kinh-dich`  
 **Nhịp xuất bản:** 3 bài/ngày  
