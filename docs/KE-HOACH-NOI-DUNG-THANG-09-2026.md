@@ -5,6 +5,32 @@
 **Phân bổ:** mỗi ngày một bài cho mỗi chuyên mục; mỗi chuyên mục 30 bài.  
 **Trạng thái cập nhật 13/09/2026:** đã đối chiếu kho bài từ 01–13/09 và viết bổ sung 26 bài theo lựa chọn bù số lượng của người dùng. Cả sáu chuyên mục hiện có ít nhất 13 bài trong khoảng này; chưa xác nhận hoàn thành từng đề tài, nhịp đăng từng ngày hoặc triển khai lên website. Xem [báo cáo đối chiếu và danh sách bài bổ sung](DOI-CHIEU-NOI-DUNG-01-13-09-2026.md).
 
+**Cập nhật 14/09/2026:** đã biên tập và thêm vào kho đủ sáu bài chủ đề “Sai sót” theo lịch ngày 14/09, mỗi chuyên mục một bài, cùng đặt `date: "2026-09-14"`. Các chương Đạo Đức Kinh 61–63 có sẵn cùng ngày được giữ nguyên và không tính thay các đề tài này. Trạng thái triển khai website: chưa xác nhận.
+
+| Chuyên mục | Bài hoàn thành ngày 14/09 |
+|---|---|
+| Cuộc sống | [Sửa một lỗi công việc bằng một lời nhận trách nhiệm](../src/content/cuoc-song/sua-mot-loi-cong-viec-bang-mot-loi-nhan-trach-nhiem.md) |
+| Đạo & đời | [Xin lỗi cần đi cùng điều gì?](../src/content/dao-va-doi/xin-loi-can-di-cung-dieu-gi.md) |
+| Phật giáo | [Sám hối từ việc nhận lỗi đến sửa cách làm](../src/content/phat-giao/sam-hoi-tu-viec-nhan-loi-den-sua-cach-lam.md) |
+| Đạo Đức Kinh | [Giữ thể diện hay nhận sai: một câu hỏi khi đọc Lão Tử](../src/content/dao-duc-kinh/giu-the-dien-hay-nhan-sai-mot-cau-hoi-khi-doc-lao-tu.md) |
+| Kinh Dịch | [Quẻ Phục: thử lại một việc sau lần làm hỏng](../src/content/kinh-dich/que-phuc-thu-lai-mot-viec-sau-lan-lam-hong.md) |
+| Thiền & thực hành | [Viết ba dòng về một lỗi mà không tự mắng](../src/content/thien-va-thuc-hanh/viet-ba-dong-ve-mot-loi-ma-khong-tu-mang.md) |
+
+Ba bài kinh học có nguồn đối chiếu ngay trong nội dung; các bài chuyên đề không gắn `series` hoặc `chapter`. Sáu bài dùng tình huống riêng, có liên kết đọc thêm; bài Thiền có các bước thực hành cụ thể.
+
+**Cập nhật 16/09/2026:** đã biên soạn và thêm vào kho đủ **12 bài** cho hai ngày **15–16/09**, mỗi ngày một bài ở mỗi chuyên mục theo lịch dưới đây. Ngày trong frontmatter lần lượt là `2026-09-15` và `2026-09-16` theo yêu cầu viết bài cho hai ngày của người dùng; ngày hoàn thành biên soạn thực tế là **16/09/2026**. Các chương Đạo Đức Kinh đã có cùng ngày được giữ nguyên và không tính thay các bài chuyên đề này. Chưa xác nhận triển khai website.
+
+| Chuyên mục | 15/09 — Khác biệt | 16/09 — Tự chủ |
+|---|---|---|
+| Cuộc sống | [Khi hai thế hệ chọn hai cách sống](../src/content/cuoc-song/khi-hai-the-he-chon-hai-cach-song.md) | [Giữ lời hẹn với mình khi không ai nhắc](../src/content/cuoc-song/giu-loi-hen-voi-minh-khi-khong-ai-nhac.md) |
+| Đạo & đời | [Gần nhau mà vẫn được khác nhau](../src/content/dao-va-doi/gan-nhau-ma-van-duoc-khac-nhau.md) | [Kỷ luật nào giúp ta sống rộng rãi hơn?](../src/content/dao-va-doi/ky-luat-nao-giup-ta-song-rong-rai-hon.md) |
+| Phật giáo | [Tâm xả khi người thân có lựa chọn riêng](../src/content/phat-giao/tam-xa-khi-nguoi-than-co-lua-chon-rieng.md) | [Giới như sự tự nguyện chăm sóc hành vi](../src/content/phat-giao/gioi-nhu-su-tu-nguyen-cham-soc-hanh-vi.md) |
+| Đạo Đức Kinh | [Mềm trong cách nói, rõ trong điều cần giữ](../src/content/dao-duc-kinh/mem-trong-cach-noi-ro-trong-dieu-can-giu.md) | [Tự thắng trong một thói quen muốn bỏ](../src/content/dao-duc-kinh/tu-thang-trong-mot-thoi-quen-muon-bo.md) |
+| Kinh Dịch | [Quẻ Khuê: tìm một việc vẫn có thể cùng làm](../src/content/kinh-dich/que-khue-tim-mot-viec-van-co-the-cung-lam.md) | [Quẻ Hằng: duy trì thói quen qua một tuần xáo trộn](../src/content/kinh-dich/que-hang-duy-tri-thoi-quen-qua-mot-tuan-xao-tron.md) |
+| Thiền & thực hành | [Nghe một ý kiến khác và ghi lại điều đã hiểu](../src/content/thien-va-thuc-hanh/nghe-mot-y-kien-khac-va-ghi-lai-dieu-da-hieu.md) | [Làm một việc thường bị trì hoãn trong năm phút](../src/content/thien-va-thuc-hanh/lam-mot-viec-thuong-bi-tri-hoan-trong-nam-phut.md) |
+
+Sáu bài kinh học có nguồn đối chiếu trực tiếp và phân biệt văn bản với liên hệ hiện đại: AN 5.161 và AN 5.57 (tâm xả, trách nhiệm hành động), AN 8.39 (giữ giới), Đạo Đức Kinh chương 78 và 33, Chu Dịch quẻ 38 và 32. Cả 12 bài là chuyên đề độc lập, không gắn `series` hoặc `chapter`; mỗi bài có tình huống riêng và liên kết đọc thêm, hai bài Thiền có các bước thực hành rõ ràng.
+
 Đây là lịch biên soạn chung thay cho phần lịch tháng 9 trong ba kế hoạch trước: [lịch nội dung 30 ngày](KE-HOACH-NOI-DUNG-30-NGAY.md), [Đạo Đức Kinh](KE-HOACH-XUAT-BAN-DAO-DUC-KINH.md) và [Kinh Dịch](KE-HOACH-NOI-DUNG-KINH-DICH.md). Các hướng dẫn chuyên môn và ghi chép tiến độ trong tài liệu cũ vẫn dùng để tham khảo; không cộng thêm nhịp 2 + 3 + 3 bài/ngày vào lịch này.
 
 Kế hoạch được lập ngày 12/09/2026 cho toàn tháng theo yêu cầu. Các ngày 01–11/09 là phần kế hoạch hồi tố để đối chiếu hoặc viết bù, không phải xác nhận đã đăng. Lịch này không thay đổi ngày, đường dẫn hay nội dung bài đã có. Nếu triển khai từ ngày 12/09, phần còn lại gồm 19 ngày, tương ứng 114 vị trí bài; phần 66 vị trí đầu tháng được theo dõi riêng, không dồn vào định mức hằng ngày.
@@ -102,7 +128,22 @@ Sáu vị trí Đạo Đức Kinh từ 17–22/09 đã có bài hoàn chỉnh tr
 | 21/09/2026 | 74 | [Suy ngẫm về hình phạt và quyền lực](../src/content/dao-duc-kinh/chuong-74-suy-ngam-ve-hinh-phat-va-quyen-luc.md) |
 | 22/09/2026 | 75 | [Nhìn gánh nặng phía sau sự kiệt sức](../src/content/dao-duc-kinh/chuong-75-nhin-ganh-nang-phia-sau-su-kiet-suc.md) |
 
-Sơ đồ có nội dung cho **75/81 chương**; phần còn lại của chuỗi là **76–81**, theo lịch dự kiến 23–28/09.
+Tại mốc 12/09, sơ đồ có nội dung cho **75/81 chương**. Sáu chương còn lại đã được hoàn thành trong đợt 14/09 dưới đây.
+
+## Hoàn thành chuỗi Đạo Đức Kinh ngày 14/09/2026
+
+Theo yêu cầu viết tiếp cho đủ chuỗi, đã biên soạn sáu chương cuối, đưa kho bài lên **81/81 chương**. Giữ ngày bài theo lịch 23–28/09; đây là nội dung hoàn thành trước lịch, chưa xác nhận triển khai lên website. Các bài chuyên đề ngày 29–30/09 vẫn là đề tài riêng.
+
+| Ngày theo lịch | Chương | Bài hoàn chỉnh |
+|---|---:|---|
+| 23/09/2026 | 76 | [Mềm để còn khả năng đổi thay](../src/content/dao-duc-kinh/chuong-76-mem-de-con-kha-nang-doi-thay.md) |
+| 24/09/2026 | 77 | [Bớt nơi dư, bù nơi thiếu](../src/content/dao-duc-kinh/chuong-77-bot-noi-du-bu-noi-thieu.md) |
+| 25/09/2026 | 78 | [Nhận phần khó về mình](../src/content/dao-duc-kinh/chuong-78-nhan-phan-kho-ve-minh.md) |
+| 26/09/2026 | 79 | [Phần còn lại sau một cuộc hòa giải](../src/content/dao-duc-kinh/chuong-79-phan-con-lai-sau-mot-cuoc-hoa-giai.md) |
+| 27/09/2026 | 80 | [Đủ đầy trong một đời sống gần gũi](../src/content/dao-duc-kinh/chuong-80-du-day-trong-mot-doi-song-gan-gui.md) |
+| 28/09/2026 | 81 | [Lời chân thật, việc làm không tranh](../src/content/dao-duc-kinh/chuong-81-loi-chan-that-viec-lam-khong-tranh.md) |
+
+Sơ đồ `/dao-duc-kinh#so-do` tự mở đủ 81 chương từ Content Collections, ghi rõ đã đủ bài và giới thiệu ba chương cuối 79–81. Các bài mới thuộc series `dao-duc-kinh-de-hieu`, với `chapter` từ 76 đến 81.
 
 ## Quy trình viết mỗi ngày
 

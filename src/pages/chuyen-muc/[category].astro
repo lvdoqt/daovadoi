@@ -29,6 +29,7 @@ function formatDate(dateStr: string) {
       <p class="eyebrow">CHUYÊN MỤC</p>
       <h1>{category.name}</h1>
       <p>{category.description}</p>
+      {category.slug === 'dao-va-doi' && <p><a class="text-link" href="/trang-tu">TRANG TỬ · XEM CÂY SƠ ĐỒ <span aria-hidden="true">→</span></a></p>}
     </header>
     <div class="category-list">
       {categoryPosts.map((post, index) => (

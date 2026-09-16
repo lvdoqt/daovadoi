@@ -5,7 +5,7 @@ const SITE_URL = 'https://daodoivn.com';
 
 export async function GET({ site }: { site: URL | undefined }) {
   const base = (site ?? new URL(SITE_URL)).toString().replace(/\/$/, '');
-  const staticPages = ['/', '/gioi-thieu', '/huong-dan', '/sitemap', '/quy-dinh', '/lien-he', '/dao-duc-kinh', '/kinh-dich', '/video'];
+  const staticPages = ['/', '/gioi-thieu', '/huong-dan', '/sitemap', '/quy-dinh', '/lien-he', '/dao-duc-kinh', '/kinh-dich', '/trang-tu', '/video'];
   const posts = await getCollection('blog');
   const entries = [
     ...staticPages.map((path) => ({ path })),

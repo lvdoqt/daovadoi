@@ -9,6 +9,8 @@ const chapters = posts
   .sort((a, b) => (a.data.chapter ?? 0) - (b.data.chapter ?? 0));
 const published = new Map(chapters.map((post) => [post.data.chapter, post]));
 const chapterNumbers = Array.from({ length: 81 }, (_, index) => index + 1);
+const availableCount = chapterNumbers.filter((chapter) => published.has(chapter)).length;
+const isComplete = availableCount === chapterNumbers.length;
 const groups = Array.from({ length: 27 }, (_, index) => chapterNumbers.slice(index * 3, index * 3 + 3));
 const latestPosts = chapters.slice(-3);
 const latestStart = latestPosts[0]?.data.chapter;
@@ -21,7 +23,7 @@ const latestEnd = latestPosts.at(-1)?.data.chapter;
       <p class="eyebrow">ĐỌC CHẬM 81 CHƯƠNG</p>
       <h1>Đạo Đức Kinh<br /><em>dễ hiểu, gần đời.</em></h1>
       <p>Hành trình đọc chậm 81 chương, theo nhịp phù hợp với mình. Mỗi bài giữ một ý chính, một ví dụ đời thường và một thực tập nhỏ để ta đọc rồi sống được.</p>
-      <div class="ddk-stats"><strong>{chapters.length}<span>/81</span></strong><span>chương đã xuất bản</span><a href="#so-do">XEM SƠ ĐỒ →</a></div>
+      <div class="ddk-stats"><strong>{availableCount}<span>/81</span></strong><span>{isComplete ? 'đã đủ 81 chương để đọc' : 'chương đã có bài'}</span><a href="#so-do">XEM SƠ ĐỒ →</a></div>
     </header>
 
     <section class="guides" aria-label="Bài nhập môn">
@@ -29,13 +31,13 @@ const latestEnd = latestPosts.at(-1)?.data.chapter;
     </section>
 
     {latestPosts.length > 0 && <section class="today" aria-labelledby="hom-nay">
-      <div><p class="eyebrow">ĐỌC TIẾP · CHƯƠNG {latestStart}{latestStart !== latestEnd && `–${latestEnd}`}</p><h2 id="hom-nay">{latestPosts.length === 3 ? 'Ba chương mới nhất' : 'Chương mới nhất'}</h2></div>
+      <div><p class="eyebrow">{isComplete ? 'KHÉP MỘT LƯỢT ĐỌC' : 'ĐỌC TIẾP'} · CHƯƠNG {latestStart}{latestStart !== latestEnd && `–${latestEnd}`}</p><h2 id="hom-nay">{isComplete ? 'Ba chương cuối' : latestPosts.length === 3 ? 'Ba chương mới nhất' : 'Chương mới nhất'}</h2></div>
       <div class="today-list">{latestPosts.map((post) => <a href={`/bai-viet/${post.id}`}><span>CH.{post.data.chapter}</span><strong>{post.data.title}</strong><i>→</i></a>)}</div>
     </section>}
 
     <section id="so-do" class="chapter-map" aria-labelledby="so-do-title">
-      <div class="section-intro"><p class="eyebrow">SƠ ĐỒ 81 CHƯƠNG</p><h2 id="so-do-title">Đi từng chặng ba chương</h2><p>Mỗi hàng là một chặng đọc gồm ba chương liên tiếp. Ô màu xanh đã có bài để đọc; ô viền mảnh là chương sắp đến.</p></div>
-      <div class="map-legend"><span><i class="done"></i> Đã xuất bản</span><span><i></i> Sắp xuất bản</span></div>
+      <div class="section-intro"><p class="eyebrow">SƠ ĐỒ 81 CHƯƠNG</p><h2 id="so-do-title">Đi từng chặng ba chương</h2><p>{isComplete ? 'Đã có đủ 81 chương trong 27 chặng đọc. Mỗi ô mở một bài đầy đủ; bạn có thể đi theo thứ tự hoặc chọn chương gần với câu hỏi của mình.' : 'Mỗi hàng là một chặng đọc gồm ba chương liên tiếp. Ô màu xanh đã có bài để đọc; ô viền mảnh là chương sắp đến.'}</p></div>
+      <div class="map-legend"><span><i class="done"></i> Đã có bài</span>{!isComplete && <span><i></i> Sắp có bài</span>}</div>
       <ol class="chapter-graph">{groups.map((group, groupIndex) => <li><span class="day">CHẶNG {String(groupIndex + 1).padStart(2, '0')}</span><div class="nodes">{group.map((chapter) => {
         const post = published.get(chapter);
         return post ? <a class="node published" href={`/bai-viet/${post.id}`} title={post.data.title}> {chapter} </a> : <span class="node" title={`Chương ${chapter}`}>{chapter}</span>;
@@ -43,7 +45,7 @@ const latestEnd = latestPosts.at(-1)?.data.chapter;
     </section>
 
     <section class="all-chapters" aria-labelledby="danh-sach-title">
-      <p class="eyebrow">DANH SÁCH ĐÃ ĐĂNG</p><h2 id="danh-sach-title">Mở một chương để bắt đầu</h2>
+      <p class="eyebrow">{isComplete ? 'ĐỦ 81 CHƯƠNG' : 'DANH SÁCH CHƯƠNG ĐÃ CÓ'}</p><h2 id="danh-sach-title">Mở một chương để bắt đầu</h2>
       {chapters.length > 0 ? <div class="chapter-cards">{chapters.map((post) => <a href={`/bai-viet/${post.id}`}><span>CHƯƠNG {String(post.data.chapter).padStart(2, '0')}</span><h3>{post.data.title}</h3><p>{post.data.excerpt}</p><b>ĐỌC CHƯƠNG →</b></a>)}</div> : <p>Ba chương đầu sẽ sớm được mở tại đây.</p>}
     </section>
   </main>

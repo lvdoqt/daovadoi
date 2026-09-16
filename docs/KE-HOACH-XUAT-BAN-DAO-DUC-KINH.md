@@ -1,5 +1,7 @@
 # Kế Hoạch Xuất Bản Đạo Đức Kinh Dễ Hiểu
 
+> **Hoàn thành biên soạn 14/09/2026:** kho bài đã đủ **81/81 chương**, bổ sung chương 76–81 theo yêu cầu hoàn tất chuỗi. Sơ đồ mở đủ 81 ô, hiển thị trạng thái hoàn thành và giới thiệu ba chương cuối 79–81. Ngày bài 76–81 giữ theo lịch 23–28/09/2026; ngày biên soạn và ngày bài được theo dõi riêng. Chưa xác nhận triển khai lên website. Các mốc tiến độ bên dưới là lịch sử biên soạn.
+
 > **Cập nhật 12/09/2026:** Phần lịch tháng 9 dưới đây được thay bằng [kế hoạch chung 6 bài/ngày](KE-HOACH-NOI-DUNG-THANG-09-2026.md), trong đó Đạo Đức Kinh có 1 bài/ngày. Chương 70–81 dự kiến viết vào 17–28/09; các hướng dẫn biên soạn và ghi chép tiến độ cũ được giữ để tham khảo. Ngày của bài hiện có không tự thay đổi.
 
 **Mục tiêu:** giới thiệu trọn bộ 81 chương *Đạo Đức Kinh* bằng tiếng Việt gần gũi, tôn trọng văn bản cổ nhưng không biến bài viết thành lời giảng khó tiếp cận.
@@ -164,6 +166,14 @@
 - Mỗi bài có nguyên văn bản Vương Bật được đối chiếu trên Wikisource, Hán Việt, bản dịch tiếng Việt tự biên soạn, diễn giải, giới hạn khi vận dụng, một thực hành và liên kết đọc thêm. Chương 75 giữ rõ chữ “上” trong câu thứ ba của bản nguồn.
 - Sơ đồ `/dao-duc-kinh#so-do` tự mở ô **70–75** từ Content Collections; mục “Ba chương mới nhất” chuyển sang **73–75**. Nhãn hàng đổi từ “ngày” sang “chặng” để không gắn mỗi nhóm ba chương với một ngày xuất bản.
 - Phần tiếp theo bắt đầu từ **chương 76**; còn **6 chương (76–81)** để hoàn thành chuỗi.
+
+## Tiến độ biên soạn cập nhật 14/09/2026
+
+- Đã bổ sung **76–81**, đủ một bài cho mỗi chương từ **1 đến 81** trong series `dao-duc-kinh-de-hieu`.
+- Sáu bài có toàn văn theo bản Vương Bật trên Wikisource, Hán Việt, bản dịch mới, diễn giải thuật ngữ, tình huống riêng, giới hạn khi vận dụng, thực hành và liên kết đọc tiếp. Các cách đọc cần lưu ý được nêu rõ: “mộc cường tắc binh” (76), “tư triệt” (79), “thập bách chi khí” (80), cách diễn nghĩa các cặp đối lập (81).
+- Sơ đồ `/dao-duc-kinh#so-do` đủ 27 chặng, 81 liên kết; bỏ chú thích chương sắp có khi đã hoàn thành. Chương 75 nối tới 76, chương cuối dẫn về chương 1 và sơ đồ; điều hướng trước/sau tiếp tục lấy theo số chương.
+- Ngày bài theo lịch: **76: 23/09**, **77: 24/09**, **78: 25/09**, **79: 26/09**, **80: 27/09**, **81: 28/09/2026**. Hoàn thành biên soạn cả sáu ngày **14/09/2026**.
+- Chuỗi 81 chương đã đủ nội dung; các đề tài tổng kết và đọc lại ngày 29–30/09 là bài chuyên đề riêng trong kế hoạch tháng.
 
 ## Chuỗi hỗ trợ xuất bản
 

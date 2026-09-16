@@ -2,6 +2,7 @@
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { categories } from '../../data/posts';
+import { trangTuLessonCount } from '../../data/trang-tu';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -27,7 +28,8 @@ const displayDate = `${d}.${m}.${y}`;
 const allPosts = await getCollection('blog');
 const isDaoDucKinhSeries = post.data.series === 'dao-duc-kinh-de-hieu';
 const isKinhDichSeries = post.data.series === 'kinh-dich-64-que';
-const isGuidedSeries = isDaoDucKinhSeries || isKinhDichSeries;
+const isTrangTuSeries = post.data.series === 'trang-tu-doc-va-song';
+const isGuidedSeries = isDaoDucKinhSeries || isKinhDichSeries || isTrangTuSeries;
 const relatedPosts = allPosts
   .filter((p) => isGuidedSeries ? p.data.series === post.data.series : p.data.category === post.data.category)
   .sort((a, b) => isGuidedSeries
@@ -36,7 +38,8 @@ const relatedPosts = allPosts
 const idx = relatedPosts.findIndex((p) => p.id === post.id);
 const prevPost = isGuidedSeries ? relatedPosts[idx - 1] : relatedPosts[idx + 1];
 const nextPost = isGuidedSeries ? relatedPosts[idx + 1] : relatedPosts[idx - 1];
-const seriesPath = isDaoDucKinhSeries ? '/dao-duc-kinh' : '/kinh-dich';
+const seriesPath = isTrangTuSeries ? '/trang-tu' : isDaoDucKinhSeries ? '/dao-duc-kinh' : '/kinh-dich';
+const seriesIndexLabel = isTrangTuSeries ? 'Sơ đồ Trang Tử' : 'Sơ đồ bài viết';
 const seriesLabel = isDaoDucKinhSeries ? 'ĐẠO ĐỨC KINH DỄ HIỂU · CHƯƠNG' : 'KINH DỊCH DỄ HIỂU · QUẺ';
 ---
 
@@ -63,14 +66,19 @@ const seriesLabel = isDaoDucKinhSeries ? 'ĐẠO ĐỨC KINH DỄ HIỂU · CHƯ
       <a href="/kinh-dich">Xem sơ đồ 64 quẻ →</a>
     </aside>}
 
+    {isTrangTuSeries && <aside class="series-box">
+      <p class="eyebrow">TRANG TỬ · ĐỌC ĐỂ RỘNG LÒNG, SỐNG ĐỂ TỰ DO · BÀI {post.data.chapter}/{trangTuLessonCount}</p>
+      <a href={`${seriesPath}#so-do`}>Xem cây sơ đồ Trang Tử →</a>
+    </aside>}
+
     <nav class="article-nav">
       {prevPost
         ? <a href={`/bai-viet/${prevPost.id}`}>← Bài trước</a>
-        : <a href={isGuidedSeries ? seriesPath : `/chuyen-muc/${post.data.category}`}>← {isGuidedSeries ? 'Sơ đồ bài viết' : catName}</a>
+        : <a href={isGuidedSeries ? seriesPath : `/chuyen-muc/${post.data.category}`}>← {isGuidedSeries ? seriesIndexLabel : catName}</a>
       }
       {nextPost
         ? <a href={`/bai-viet/${nextPost.id}`}>Bài tiếp theo →</a>
-        : <a href={isGuidedSeries ? seriesPath : '/'}>{isGuidedSeries ? 'Xem sơ đồ bài viết →' : 'Về trang chủ →'}</a>
+        : <a href={isGuidedSeries ? seriesPath : '/'}>{isGuidedSeries ? (isTrangTuSeries ? 'Sơ đồ Trang Tử →' : 'Xem sơ đồ bài viết →') : 'Về trang chủ →'}</a>
       }
     </nav>
   </main>

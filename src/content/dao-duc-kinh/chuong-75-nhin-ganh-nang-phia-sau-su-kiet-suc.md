@@ -58,4 +58,4 @@ Viết ra ba việc gần đây mình nhờ người khác. Bên cạnh mỗi vi
 
 Cuốn lịch trên tủ lạnh có thể vẫn kín, nhưng tên người nhận việc đã được chia đều hơn theo khả năng. Một lời nói dịu sẽ dễ xuất hiện hơn khi người đang mỏi được bớt đi một gánh cụ thể.
 
-Đọc cùng [chương 74: Suy ngẫm về hình phạt và quyền lực](/bai-viet/dao-duc-kinh/chuong-74-suy-ngam-ve-hinh-phat-va-quyen-luc) hoặc trở về [sơ đồ 81 chương Đạo Đức Kinh](/dao-duc-kinh#so-do).
+Đọc cùng [chương 74: Suy ngẫm về hình phạt và quyền lực](/bai-viet/dao-duc-kinh/chuong-74-suy-ngam-ve-hinh-phat-va-quyen-luc), đọc tiếp [chương 76: Mềm để còn khả năng đổi thay](/bai-viet/dao-duc-kinh/chuong-76-mem-de-con-kha-nang-doi-thay) hoặc trở về [sơ đồ 81 chương Đạo Đức Kinh](/dao-duc-kinh#so-do).
