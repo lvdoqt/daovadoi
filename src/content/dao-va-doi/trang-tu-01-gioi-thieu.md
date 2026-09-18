@@ -42,11 +42,16 @@ Loạt dùng *Trang Tử và Nam Hoa Kinh* do **Nguyễn Hiến Lê giới thi�
 
 Các đoạn kể trong blog là diễn ý bằng lời của người viết. Khi có cách hiểu khác nhau, bài sẽ nêu điểm liên quan thay vì làm như văn bản chỉ cho phép một câu trả lời. Mục tiêu gần nhất là đọc có căn cứ và còn muốn hỏi thêm.
 
-## Bốn bài để bắt đầu
+## Các bài đã có trong hành trình
 
 1. **Giới thiệu Trang Tử: mở thêm một cách nhìn đời** — bài bạn đang đọc.
 2. [Trang Chu và sách Trang Tử: con người, giai thoại, văn bản](/bai-viet/dao-va-doi/trang-tu-02-con-nguoi-va-van-ban) — phân biệt điều sử liệu ghi với câu chuyện được kể.
 3. [Cánh chim Bằng và những chân trời khác nhau](/bai-viet/dao-va-doi/trang-tu-03-canh-chim-bang) — xem lại thước đo và điều kiện của một hành trình.
 4. [Cây lớn không dùng được: nhìn lại chữ hữu ích](/bai-viet/dao-va-doi/trang-tu-04-cay-lon-khong-dung-duoc) — hỏi về phần đời không dễ quy thành công dụng.
+5. [Tề vật luận: khi điều mình thấy chưa phải toàn cảnh](/bai-viet/dao-va-doi/trang-tu-05-te-vat-luan) — nhận ra tiêu chuẩn đang dẫn một cuộc bất đồng.
+6. [Giấc mộng bướm: điều gì làm nên cái tôi?](/bai-viet/dao-va-doi/trang-tu-06-giac-mong-buom) — giữ câu hỏi về sự chắc chắn và biến hóa.
+7. [Người đầu bếp Đinh: làm việc bằng sự hiểu nghề](/bai-viet/dao-va-doi/trang-tu-07-nguoi-dau-bep-dinh) — nhìn sự thành thạo qua khả năng chậm lại ở chỗ khó.
+
+Xem [sơ đồ 16 bài Trang Tử](/trang-tu#so-do) để theo dõi các chặng đang được viết tiếp.
 
 Trước khi sang bài tiếp, có thể giữ một câu hỏi bên lề sách: điều nào mình đã quen xem là hiển nhiên? Chưa cần bỏ niềm tin ấy. Chỉ cần để nó có cơ hội được nhìn từ một phía khác.

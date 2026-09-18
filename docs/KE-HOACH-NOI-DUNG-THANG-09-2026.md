@@ -35,6 +35,23 @@ Sáu bài kinh học có nguồn đối chiếu trực tiếp và phân biệt v
 
 Kế hoạch được lập ngày 12/09/2026 cho toàn tháng theo yêu cầu. Các ngày 01–11/09 là phần kế hoạch hồi tố để đối chiếu hoặc viết bù, không phải xác nhận đã đăng. Lịch này không thay đổi ngày, đường dẫn hay nội dung bài đã có. Nếu triển khai từ ngày 12/09, phần còn lại gồm 19 ngày, tương ứng 114 vị trí bài; phần 66 vị trí đầu tháng được theo dõi riêng, không dồn vào định mức hằng ngày.
 
+## Tiến độ ngày 17–18/09, cập nhật 18/09/2026
+
+Đã viết thêm **10 bài**, hoàn thành đủ **12 vị trí đề tài** cho hai ngày 17–18/09 theo lịch. Hai bài Đạo Đức Kinh chương 70–71 đã có sẵn và được dùng đúng vị trí, không tính là bài mới. Các bài quẻ Hoán và quẻ Tiết có sẵn cùng ngày 18/09 không thay thế hai đề tài Bí và Quán trong lịch này.
+
+Mười bài mới có `date` lần lượt là `2026-09-17` và `2026-09-18` theo yêu cầu viết cho hai ngày của người dùng; ngày biên soạn thực tế là **18/09/2026**. Các bài đều là chuyên đề độc lập, không gắn `series` hoặc `chapter`.
+
+| Chuyên mục | 17/09 — Điều giản dị | 18/09 — Chưa biết |
+|---|---|---|
+| Cuộc sống | [Những việc nhỏ khiến một ngày trở nên đáng nhớ](../src/content/cuoc-song/nhung-viec-nho-khien-mot-ngay-tro-nen-dang-nho.md) | [Nói ‘tôi chưa rõ’ trong một cuộc trò chuyện](../src/content/cuoc-song/noi-toi-chua-ro-trong-mot-cuoc-tro-chuyen.md) |
+| Đạo & đời | [Sống sâu trong phần đời không nổi bật](../src/content/dao-va-doi/song-sau-trong-phan-doi-khong-noi-bat.md) | [Sự chắc chắn có khi làm ta ngừng lắng nghe](../src/content/dao-va-doi/su-chac-chan-co-khi-lam-ta-ngung-lang-nghe.md) |
+| Phật giáo | [Thiểu dục trong những lựa chọn thường ngày](../src/content/phat-giao/thieu-duc-trong-nhung-lua-chon-thuong-ngay.md) | [Chánh kiến và thói quen xem lại nhận định](../src/content/phat-giao/chanh-kien-va-thoi-quen-xem-lai-nhan-dinh.md) |
+| Đạo Đức Kinh — đã có | [Chương 70: Mang điều hiểu được vào cách sống](../src/content/dao-duc-kinh/chuong-70-mang-dieu-hieu-duoc-vao-cach-song.md) | [Chương 71: Để chỗ cho điều mình chưa biết](../src/content/dao-duc-kinh/chuong-71-de-cho-cho-dieu-minh-chua-biet.md) |
+| Kinh Dịch | [Quẻ Bí: trình bày một việc đẹp mà vẫn giữ điều thật](../src/content/kinh-dich/que-bi-trinh-bay-mot-viec-dep-ma-van-giu-dieu-that.md) | [Quẻ Quán: quan sát thêm trước khi đưa ra nhận xét](../src/content/kinh-dich/que-quan-quan-sat-them-truoc-khi-dua-ra-nhan-xet.md) |
+| Thiền & thực hành | [Pha một tách trà và chú ý từng động tác](../src/content/thien-va-thuc-hanh/pha-mot-tach-tra-va-chu-y-tung-dong-tac.md) | [Tách điều nhìn thấy khỏi điều mình suy đoán](../src/content/thien-va-thuc-hanh/tach-dieu-nhin-thay-khoi-dieu-minh-suy-doan.md) |
+
+Bốn bài kinh học mới dẫn nguồn trực tiếp trong nội dung: AN 8.30 và AN 4.28 về thiểu dục, biết đủ; MN 9 về chánh kiến; Chu Dịch quẻ 22 và 20. Phần liên hệ hiện đại được phân biệt với nội dung văn bản. Hai bài thực hành có trình tự cụ thể và câu hỏi tự quan sát. Mỗi bài có liên kết đọc thêm phù hợp. Chưa xác nhận triển khai website.
+
 ## Phân công nội dung theo chuyên mục
 
 | Chuyên mục | Slug | Số bài | Góc viết riêng | Độ dài gợi ý |

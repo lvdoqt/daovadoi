@@ -50,4 +50,4 @@ Lời cuối đoạn gợi cây tránh được búa rìu vì không hợp công
 
 Hôm nay, chọn một việc mình yêu thích nhưng thường thấy cần biện minh. Thử dành cho nó một khoảng thời gian vừa sức, rồi quan sát trải nghiệm trước khi hỏi thành quả. Có thể điều đáng giữ hiện ra rất bình thường: mình đã nhìn một chiếc lá lâu hơn và muốn trở lại trang giấy vào ngày mai.
 
-Đọc lại [Cánh chim Bằng và những chân trời khác nhau](/bai-viet/dao-va-doi/trang-tu-03-canh-chim-bang), hoặc trở về [bài giới thiệu và mục lục Trang Tử](/bai-viet/dao-va-doi/trang-tu-01-gioi-thieu). Bốn bài đầu dừng ở đây, với một câu hỏi còn mở: ngoài điều có thể lấy ra sử dụng, ta có thể gặp nhau bằng cách nào?
+Đọc lại [Cánh chim Bằng và những chân trời khác nhau](/bai-viet/dao-va-doi/trang-tu-03-canh-chim-bang), tiếp sang [Tề vật luận: khi điều mình thấy chưa phải toàn cảnh](/bai-viet/dao-va-doi/trang-tu-05-te-vat-luan), hoặc trở về [bài giới thiệu và mục lục Trang Tử](/bai-viet/dao-va-doi/trang-tu-01-gioi-thieu). Trước khi sang chặng mới, còn một câu hỏi để mang theo: ngoài điều có thể lấy ra sử dụng, ta có thể gặp nhau bằng cách nào?

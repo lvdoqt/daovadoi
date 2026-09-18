@@ -1,12 +1,12 @@
 # Kế hoạch nội dung Trang Tử — Đọc để rộng lòng, sống để tự do
 
-Ngày lập: 13/09/2026. **Cập nhật 14/09/2026:** đã biên soạn và đưa vào kho **4/16 bài**, gồm giới thiệu và ba bài mở đầu theo yêu cầu người dùng. Cả bốn đặt ngày 14/09/2026. Chưa xác nhận triển khai website; phần còn lại của lịch vẫn là dự kiến.
+Ngày lập: 13/09/2026. **Cập nhật 18/09/2026:** đã biên soạn và đưa vào kho **7/16 bài**. Bốn bài đầu đặt ngày 14/09/2026; ba bài tiếp theo, số 5–7, đặt ngày 18/09/2026 theo yêu cầu viết tiếp của người dùng. Chưa xác nhận triển khai website; phần còn lại của lịch vẫn là dự kiến.
 
 ## 1. Mục tiêu và phạm vi
 
 Xây dựng loạt nhập môn Trang Tử dành cho người đọc đã đi cùng Kinh Dịch và Đạo Đức Kinh, đồng thời bảo đảm người mới có thể bắt đầu từ bất kỳ bài nào. Trọng tâm là cách nhìn, ngôn ngữ, tự do và những giới hạn của sự hiểu biết; mỗi bài mở ra một câu hỏi cụ thể trong đời sống.
 
-Mùa đầu gồm **16 bài**. Đề xuất ban đầu là một bài mỗi tuần, bắt đầu sau hai loạt hiện tại. Theo yêu cầu ngày 14/09/2026, triển khai ngay bốn bài đầu; chưa gán lịch cho bài 5–16. Đây là loạt riêng, không thay lịch sáu bài/ngày của tháng 9/2026.
+Mùa đầu gồm **16 bài**. Đề xuất ban đầu là một bài mỗi tuần, bắt đầu sau hai loạt hiện tại. Theo yêu cầu ngày 14/09/2026, triển khai ngay bốn bài đầu; ngày 18/09 viết tiếp bài 5–7. Chưa gán lịch cho bài 8–16. Đây là loạt riêng, không thay lịch sáu bài/ngày của tháng 9/2026.
 
 Đây là tuyển đọc: đi qua cả bảy thiên Nội thiên và chọn thêm hai thiên Ngoại thiên. Mùa đầu không đặt mục tiêu diễn giải trọn bộ 33 thiên. Bản truyền hiện hành chia thành Nội thiên 1–7, Ngoại thiên 8–22 và Tạp thiên 23–33; vấn đề tác giả và quá trình hình thành văn bản cần được trình bày thận trọng. [Nguồn: Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/zhuangzi/).
 
@@ -112,6 +112,18 @@ Một bài đạt yêu cầu khi có nguồn truy ngược được, phân biệ
 | 4 | [Cây lớn không dùng được: nhìn lại chữ hữu ích](../src/content/dao-va-doi/trang-tu-04-cay-lon-khong-dung-duoc.md) | Tiêu dao du, đối thoại cuối với Huệ Tử |
 
 Đã có phiếu nguồn và dàn ý riêng cho cả bốn. Mỗi bài tách diễn ý văn bản với liên hệ hiện đại, có nguồn và liên kết đọc tiếp. Bài 1 làm cửa vào loạt; nút trước/sau giữ người đọc trong series Trang Tử. Sau bài 4, bước tiếp theo là bài 5 về Tề vật luận; chưa viết trong đợt này.
+
+## Tiến độ ngày 18/09/2026
+
+Đã bổ sung ba bài theo đúng thứ tự, đưa kho lên **7/16 bài**. Ngày biên soạn và `date` của ba bài là `2026-09-18`; series `trang-tu-doc-va-song`, `chapter` 5–7. Số bài không phải số thiên nguyên tác.
+
+| Bài | Nội dung đã biên soạn | Văn bản trọng tâm |
+|---|---|---|
+| 5 | [Tề vật luận: khi điều mình thấy chưa phải toàn cảnh](../src/content/dao-va-doi/trang-tu-05-te-vat-luan.md) | Thiên 2: thành tâm, bỉ thị và đạo khu |
+| 6 | [Giấc mộng bướm: điều gì làm nên cái tôi?](../src/content/dao-va-doi/trang-tu-06-giac-mong-buom.md) | Thiên 2: đoạn mộng bướm cuối thiên |
+| 7 | [Người đầu bếp Đinh: làm việc bằng sự hiểu nghề](../src/content/dao-va-doi/trang-tu-07-nguoi-dau-bep-dinh.md) | Thiên 3: Bào Đinh, chú ý khi gặp chỗ khó và dưỡng sinh |
+
+Đã lập [phiếu nguồn và dàn ý bài 05–07](NGUON-VA-DAN-Y-TRANG-TU-05-07.md), cập nhật mục lục bài giới thiệu và liên kết từ bài 4. Sơ đồ `/trang-tu#so-do` và điều hướng series tự nhận ba bài mới từ Content Collections. Bước tiếp theo là bài 8, **Tâm trai: bước vào cuộc gặp với lòng còn chỗ trống**. Chưa xác nhận triển khai website.
 
 ## 8. Nguồn đối chiếu ban đầu
 
