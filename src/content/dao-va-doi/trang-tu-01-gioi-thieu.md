@@ -51,6 +51,9 @@ Các đoạn kể trong blog là diễn ý bằng lời của người viết. K
 5. [Tề vật luận: khi điều mình thấy chưa phải toàn cảnh](/bai-viet/dao-va-doi/trang-tu-05-te-vat-luan) — nhận ra tiêu chuẩn đang dẫn một cuộc bất đồng.
 6. [Giấc mộng bướm: điều gì làm nên cái tôi?](/bai-viet/dao-va-doi/trang-tu-06-giac-mong-buom) — giữ câu hỏi về sự chắc chắn và biến hóa.
 7. [Người đầu bếp Đinh: làm việc bằng sự hiểu nghề](/bai-viet/dao-va-doi/trang-tu-07-nguoi-dau-bep-dinh) — nhìn sự thành thạo qua khả năng chậm lại ở chỗ khó.
+8. [Tâm trai: bước vào cuộc gặp với lòng còn chỗ trống](/bai-viet/dao-va-doi/trang-tu-08-tam-trai) — chuẩn bị lắng nghe trước một cuộc nói chuyện khó.
+9. [Đức sung phù: gặp con người phía sau vẻ ngoài](/bai-viet/dao-va-doi/trang-tu-09-duc-sung-phu) — xem lại nhãn dán đang quyết định ai được lắng nghe.
+10. [Đại tông sư: khi đời sống đổi hình](/bai-viet/dao-va-doi/trang-tu-10-dai-tong-su) — chừa chỗ cho nỗi buồn giữa những biến chuyển không thể giữ y nguyên.
 
 Xem [sơ đồ 16 bài Trang Tử](/trang-tu#so-do) để theo dõi các chặng đang được viết tiếp.
 

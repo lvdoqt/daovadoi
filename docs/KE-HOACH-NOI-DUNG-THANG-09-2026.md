@@ -52,6 +52,21 @@ Mười bài mới có `date` lần lượt là `2026-09-17` và `2026-09-18` th
 
 Bốn bài kinh học mới dẫn nguồn trực tiếp trong nội dung: AN 8.30 và AN 4.28 về thiểu dục, biết đủ; MN 9 về chánh kiến; Chu Dịch quẻ 22 và 20. Phần liên hệ hiện đại được phân biệt với nội dung văn bản. Hai bài thực hành có trình tự cụ thể và câu hỏi tự quan sát. Mỗi bài có liên kết đọc thêm phù hợp. Chưa xác nhận triển khai website.
 
+## Tiến độ ngày 20/09, cập nhật 20/09/2026
+
+Đã hoàn thành đủ sáu vị trí của ngày **20/09 — Can đảm**. Năm bài chuyên đề dưới đây được biên soạn ngày 20/09; bài Đạo Đức Kinh chương 73 đã có sẵn, đúng `date: "2026-09-20"`, nên dùng cho vị trí theo lịch. Các bài chuyên đề không gắn `series` hoặc `chapter`.
+
+| Chuyên mục | Bài hoàn thành ngày 20/09 |
+|---|---|
+| Cuộc sống | [Mở lời về một chuyện mình vẫn né tránh](../src/content/cuoc-song/mo-loi-ve-mot-chuyen-minh-van-ne-tranh.md) |
+| Đạo & đời | [Có những bước lùi cần nhiều can đảm](../src/content/dao-va-doi/co-nhung-buoc-lui-can-nhieu-can-dam.md) |
+| Phật giáo | [Vô úy thí từ một sự giúp đỡ vừa khả năng](../src/content/phat-giao/vo-uy-thi-tu-mot-su-giup-do-vua-kha-nang.md) |
+| Đạo Đức Kinh — đã có | [Cân nhắc trước một hành động táo bạo](../src/content/dao-duc-kinh/chuong-73-can-nhac-truoc-mot-hanh-dong-tao-bao.md) |
+| Kinh Dịch | [Quẻ Đại Tráng: kiểm tra giới hạn trước khi nhận việc lớn](../src/content/kinh-dich/que-dai-trang-kiem-tra-gioi-han-truoc-khi-nhan-viec-lon.md) |
+| Thiền & thực hành | [Nhận biết hơi thở tự nhiên trước một cuộc nói chuyện khó](../src/content/thien-va-thuc-hanh/nhan-biet-hoi-tho-tu-nhien-truoc-mot-cuoc-noi-chuyen-kho.md) |
+
+Bài Phật giáo dẫn AN 4.184 để định vị gợi ý về việc che chở người đang sợ hãi; bài Kinh Dịch dẫn văn bản quẻ Đại Tráng và tách phần liên hệ hiện đại. Bài Thiền có năm bước ngắn, đồng thời nêu rõ thực hành không thay thế an toàn và ranh giới. Chưa xác nhận triển khai website.
+
 ## Phân công nội dung theo chuyên mục
 
 | Chuyên mục | Slug | Số bài | Góc viết riêng | Độ dài gợi ý |
