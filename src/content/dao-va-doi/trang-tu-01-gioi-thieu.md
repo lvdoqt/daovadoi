@@ -54,6 +54,9 @@ Các đoạn kể trong blog là diễn ý bằng lời của người viết. K
 8. [Tâm trai: bước vào cuộc gặp với lòng còn chỗ trống](/bai-viet/dao-va-doi/trang-tu-08-tam-trai) — chuẩn bị lắng nghe trước một cuộc nói chuyện khó.
 9. [Đức sung phù: gặp con người phía sau vẻ ngoài](/bai-viet/dao-va-doi/trang-tu-09-duc-sung-phu) — xem lại nhãn dán đang quyết định ai được lắng nghe.
 10. [Đại tông sư: khi đời sống đổi hình](/bai-viet/dao-va-doi/trang-tu-10-dai-tong-su) — chừa chỗ cho nỗi buồn giữa những biến chuyển không thể giữ y nguyên.
+11. [Tọa vong: nới lỏng những điều ta nhận là mình](/bai-viet/dao-va-doi/trang-tu-11-toa-vong) — tạm đặt các nhãn quen thuộc xuống để nhìn rộng hơn.
+12. [Hỗn Độn: khi lòng tốt muốn sửa mọi thứ](/bai-viet/dao-va-doi/trang-tu-12-hon-don) — hỏi điều người khác cần trước khi làm theo chuẩn của mình.
+13. [Thu thủy: bước ra khỏi khoảng trời quen thuộc](/bai-viet/dao-va-doi/trang-tu-13-thu-thuy) — nhận giới hạn của góc nhìn để tiếp tục học.
 
 Xem [sơ đồ 16 bài Trang Tử](/trang-tu#so-do) để theo dõi các chặng đang được viết tiếp.
 

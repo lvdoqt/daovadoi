@@ -67,6 +67,21 @@ Bốn bài kinh học mới dẫn nguồn trực tiếp trong nội dung: AN 8.3
 
 Bài Phật giáo dẫn AN 4.184 để định vị gợi ý về việc che chở người đang sợ hãi; bài Kinh Dịch dẫn văn bản quẻ Đại Tráng và tách phần liên hệ hiện đại. Bài Thiền có năm bước ngắn, đồng thời nêu rõ thực hành không thay thế an toàn và ranh giới. Chưa xác nhận triển khai website.
 
+## Tiến độ ngày 22/09, cập nhật 22/09/2026
+
+Đã hoàn thành đủ sáu vị trí của ngày **22/09 — Bớt gánh nặng**. Năm bài chuyên đề dưới đây được biên soạn ngày 22/09; bài Đạo Đức Kinh chương 75 đã có sẵn, đúng `date: "2026-09-22"`, nên dùng cho vị trí theo lịch. Các bài chuyên đề không gắn `series` hoặc `chapter`.
+
+| Chuyên mục | Bài hoàn thành ngày 22/09 |
+|---|---|
+| Cuộc sống | [Đừng giao thêm việc chỉ vì một người luôn nhận lời](../src/content/cuoc-song/dung-giao-them-viec-chi-vi-mot-nguoi-luon-nhan-loi.md) |
+| Đạo & đời | [Nhìn hoàn cảnh trước khi trách một con người](../src/content/dao-va-doi/nhin-hoan-canh-truoc-khi-trach-mot-con-nguoi.md) |
+| Phật giáo | [Duyên khởi qua một bữa cơm thường ngày](../src/content/phat-giao/duyen-khoi-qua-mot-bua-com-thuong-ngay.md) |
+| Đạo Đức Kinh — đã có | [Nhìn gánh nặng phía sau sự kiệt sức](../src/content/dao-duc-kinh/chuong-75-nhin-ganh-nang-phia-sau-su-kiet-suc.md) |
+| Kinh Dịch | [Quẻ Đại Quá: xem lại sức chịu đựng của một nhóm làm việc](../src/content/kinh-dich/que-dai-qua-xem-lai-suc-chiu-dung-cua-mot-nhom-lam-viec.md) |
+| Thiền & thực hành | [Vẽ vòng tròn những việc mình đang gánh](../src/content/thien-va-thuc-hanh/ve-vong-tron-nhung-viec-minh-dang-ganh.md) |
+
+Bài Phật giáo dẫn SN 12.61 để đặt duyên khởi trong mạch văn bản, còn bài Kinh Dịch dẫn quẻ Đại Quá và tách phần liên hệ hiện đại khỏi ý nghĩa dự đoán. Bài Thiền có các bước thực hành cụ thể cùng lưu ý an toàn. Mỗi bài có liên kết đọc thêm phù hợp. Chưa xác nhận triển khai website.
+
 ## Phân công nội dung theo chuyên mục
 
 | Chuyên mục | Slug | Số bài | Góc viết riêng | Độ dài gợi ý |

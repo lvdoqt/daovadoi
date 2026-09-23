@@ -1,6 +1,6 @@
-# Kế hoạch nội dung Trang Tử — Đọc để rộng lòng, sống để tự do
+﻿# Kế hoạch nội dung Trang Tử — Đọc để rộng lòng, sống để tự do
 
-Ngày lập: 13/09/2026. **Cập nhật 18/09/2026:** đã biên soạn và đưa vào kho **7/16 bài**. Bốn bài đầu đặt ngày 14/09/2026; ba bài tiếp theo, số 5–7, đặt ngày 18/09/2026 theo yêu cầu viết tiếp của người dùng. Chưa xác nhận triển khai website; phần còn lại của lịch vẫn là dự kiến.
+Ngày lập: 13/09/2026. **Cập nhật 18/09/2026:** đã biên soạn và đưa vào kho **13/16 bài**. Bốn bài đầu đặt ngày 14/09/2026; ba bài tiếp theo, số 5–7, đặt ngày 18/09/2026 theo yêu cầu viết tiếp của người dùng. Chưa xác nhận triển khai website; phần còn lại của lịch vẫn là dự kiến.
 
 ## 1. Mục tiêu và phạm vi
 
@@ -124,6 +124,18 @@ Một bài đạt yêu cầu khi có nguồn truy ngược được, phân biệ
 | 7 | [Người đầu bếp Đinh: làm việc bằng sự hiểu nghề](../src/content/dao-va-doi/trang-tu-07-nguoi-dau-bep-dinh.md) | Thiên 3: Bào Đinh, chú ý khi gặp chỗ khó và dưỡng sinh |
 
 Đã lập [phiếu nguồn và dàn ý bài 05–07](NGUON-VA-DAN-Y-TRANG-TU-05-07.md), cập nhật mục lục bài giới thiệu và liên kết từ bài 4. Sơ đồ `/trang-tu#so-do` và điều hướng series tự nhận ba bài mới từ Content Collections. Bước tiếp theo là bài 8, **Tâm trai: bước vào cuộc gặp với lòng còn chỗ trống**. Chưa xác nhận triển khai website.
+
+## Tiến độ ngày 23/09/2026
+
+Đã bổ sung ba bài theo đúng thứ tự, đưa kho lên **13/16 bài**. Ngày biên soạn và `date` của ba bài là `2026-09-23`; series `trang-tu-doc-va-song`, `chapter` 11–13. Số bài không phải số thiên nguyên tác.
+
+| Bài | Nội dung đã biên soạn | Văn bản trọng tâm |
+|---|---|---|
+| 11 | [Tọa vong: nới lỏng những điều ta nhận là mình](../src/content/dao-va-doi/trang-tu-11-toa-vong.md) | Đại tông sư, thiên 6: đoạn Nhan Hồi nói tọa vong |
+| 12 | [Hỗn Độn: khi lòng tốt muốn sửa mọi thứ](../src/content/dao-va-doi/trang-tu-12-hon-don.md) | Ứng đế vương, thiên 7: truyện Thúc, Hốt và Hỗn Độn |
+| 13 | [Thu thủy: bước ra khỏi khoảng trời quen thuộc](../src/content/dao-va-doi/trang-tu-13-thu-thuy.md) | Thu thủy, thiên 17: Hà Bá gặp Bắc Hải Nhược |
+
+Đã lập [phiếu nguồn và dàn ý bài 11–13](NGUON-VA-DAN-Y-TRANG-TU-11-13.md), cập nhật mục lục bài giới thiệu; sơ đồ `/trang-tu#so-do` và điều hướng series tự nhận các bài mới từ Content Collections. Bài 13 chỉ dẫn về bài đã có và sơ đồ, không tạo liên kết đến bài 14 chưa xuất bản. Chưa xác nhận triển khai website.
 
 ## 8. Nguồn đối chiếu ban đầu
 
