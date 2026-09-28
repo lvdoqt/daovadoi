@@ -82,6 +82,36 @@ Bài Phật giáo dẫn AN 4.184 để định vị gợi ý về việc che ch�
 
 Bài Phật giáo dẫn SN 12.61 để đặt duyên khởi trong mạch văn bản, còn bài Kinh Dịch dẫn quẻ Đại Quá và tách phần liên hệ hiện đại khỏi ý nghĩa dự đoán. Bài Thiền có các bước thực hành cụ thể cùng lưu ý an toàn. Mỗi bài có liên kết đọc thêm phù hợp. Chưa xác nhận triển khai website.
 
+## Tiến độ ngày 27/09, cập nhật 28/09/2026
+
+Đã hoàn thành đủ sáu vị trí của ngày **27/09 — Niềm vui gần gũi**. Năm bài chuyên đề dưới đây được biên soạn ngày 28/09/2026 với `date: "2026-09-27"` theo yêu cầu viết bài cho ngày 27/09 của người dùng; bài Đạo Đức Kinh chương 80 đã có sẵn, đúng `date: "2026-09-27"`, nên dùng cho vị trí theo lịch. Các bài chuyên đề không gắn `series` hoặc `chapter`.
+
+| Chuyên mục | Bài hoàn thành ngày 27/09 |
+|---|---|
+| Cuộc sống | [Một buổi gặp mặt không cần chuẩn bị cầu kỳ](../src/content/cuoc-song/mot-buoi-gap-mat-khong-can-chuan-bi-cau-ky.md) |
+| Đạo & đời | [Hạnh phúc có cần nhiều điều kiện đến thế?](../src/content/dao-va-doi/hanh-phuc-co-nhieu-dieu-kien-den-the.md) |
+| Phật giáo | [Hỷ trước niềm vui bình dị của người khác](../src/content/phat-giao/hy-truoc-niem-vui-binh-di-cua-nguoi-khac.md) |
+| Đạo Đức Kinh — đã có | [Đủ đầy trong một đời sống gần gũi](../src/content/dao-duc-kinh/chuong-80-du-day-trong-mot-doi-song-gan-gui.md) |
+| Kinh Dịch | [Quẻ Tỷ: nuôi một mối gắn bó bằng việc gặp nhau đều đặn](../src/content/kinh-dich/que-ty-nuoi-mot-moi-gan-bo-bang-viec-gap-nhau-deu-dan.md) |
+| Thiền & thực hành | [Ngắm ánh sáng đổi trên một góc nhà](../src/content/thien-va-thuc-hanh/gam-anh-sang-doi-tren-mot-goc-nha.md) |
+
+Bài Phật giáo dẫn MN 62 (lời dạy với Rāhula về pháp môn hỷ và *arati*) để đặt nội dung trong mạch văn bản, tách phần liên hệ hiện đại khỏi phần trích. Bài Kinh Dịch dẫn quẻ từ quẻ Tỷ theo bản Chu Dịch và dùng hình tượng nước trên đất để suy xét cách nuôi mối gắn bó, không đoán kết quả. Bài Thiền có năm bước thực hành ngắn. Mỗi bài có liên kết đọc thêm phù hợp. Chưa xác nhận triển khai website.
+
+## Tiến độ ngày 28/09, cập nhật 28/09/2026
+
+Đã hoàn thành đủ sáu vị trí của ngày **28/09 — Chân thành**. Năm bài chuyên đề dưới đây được biên soạn ngày 28/09/2026 với `date: "2026-09-28"`; bài Đạo Đức Kinh chương 81 đã có sẵn, đúng `date: "2026-09-28"`, nên dùng cho vị trí theo lịch. Các bài chuyên đề không gắn `series` hoặc `chapter`.
+
+| Chuyên mục | Bài hoàn thành ngày 28/09 |
+|---|---|
+| Cuộc sống | [Nói một lời cảm ơn không cần trau chuốt](../src/content/cuoc-song/noi-mot-loi-cam-on-khong-can-trau-chuot.md) |
+| Đạo & đời | [Lời hứa nhỏ và lòng tin lâu dài](../src/content/dao-va-doi/loi-hua-nho-va-long-tin-lau-dai.md) |
+| Phật giáo | [Giữ lời trong những việc rất bình thường](../src/content/phat-giao/giu-loi-trong-nhung-viec-rat-binh-thuong.md) |
+| Đạo Đức Kinh — đã có | [Lời chân thật, việc làm không tranh](../src/content/dao-duc-kinh/chuong-81-loi-chan-that-viec-lam-khong-tranh.md) |
+| Kinh Dịch | [Quẻ Trung Phu: kiểm tra khoảng cách giữa lời nói và việc làm](../src/content/kinh-dich/que-trung-phu-kiem-tra-khoang-cach-giua-loi-noi-va-viec-lam.md) |
+| Thiền & thực hành | [Đọc lại một lời hứa và chọn bước thực hiện gần nhất](../src/content/thien-va-thuc-hanh/doc-lai-mot-loi-hua-va-chon-buoc-thuc-hien-gan-nhat.md) |
+
+Bài Phật giáo dẫn DN 31 (Trung Bộ, bản dịch trên SuttaCentral) về người bạn đội lốt kẻ thù hay hứa mà không làm, tách phần văn bản khỏi phần liên hệ hiện đại. Bài Kinh Dịch dẫn quẻ từ quẻ Trung Phu và đại tượng “trạch thượng hữu phong” theo bản Chu Dịch, dùng việc đối chiếu hai cột “đã nói — đã làm” để soi lại tình thế, không phán kết quả tương lai. Bài Thiền có năm bước thực hành với lời hứa đang treo. Mỗi bài có liên kết đọc thêm phù hợp. Chưa xác nhận triển khai website.
+
 ## Phân công nội dung theo chuyên mục
 
 | Chuyên mục | Slug | Số bài | Góc viết riêng | Độ dài gợi ý |
