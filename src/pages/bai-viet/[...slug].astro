@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleThumbnail from '../../components/ArticleThumbnail.astro';
 import { categories } from '../../data/posts';
 import { trangTuLessonCount } from '../../data/trang-tu';
 
@@ -51,6 +52,10 @@ const seriesLabel = isDaoDucKinhSeries ? 'ĐẠO ĐỨC KINH DỄ HIỂU · CHƯ
       <p class="article-lead">{post.data.excerpt}</p>
     </header>
 
+    <div class="article-hero-art" aria-hidden="true">
+      <ArticleThumbnail post={post} variant="hero" />
+    </div>
+
     <article class="article-body prose">
       <Content />
     </article>
@@ -85,6 +90,14 @@ const seriesLabel = isDaoDucKinhSeries ? 'ĐẠO ĐỨC KINH DỄ HIỂU · CHƯ
 </BaseLayout>
 
 <style>
+.article-hero-art {
+  max-width: 68ch;
+  margin: 2rem auto 0;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(45, 63, 55, 0.08);
+  aspect-ratio: 16 / 7;
+}
 .prose {
   max-width: 68ch;
   margin: 0 auto;

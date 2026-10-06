@@ -1,0 +1,256 @@
+---
+import { getThumbnailData } from '../data/thumbnailHelper';
+
+interface Props {
+  post?: any;
+  title?: string;
+  slugOrId?: string;
+  category?: string;
+  tags?: string[];
+  thumbnail?: string;
+  variant?: 'thumb' | 'card' | 'hero';
+  class?: string;
+}
+
+const {
+  post,
+  title = post?.data?.title ?? '',
+  slugOrId = post?.id ?? '',
+  category = post?.data?.category ?? '',
+  tags = post?.data?.tags ?? [],
+  thumbnail = post?.data?.thumbnail,
+  variant = 'thumb',
+  class: className = '',
+} = Astro.props;
+
+const data = getThumbnailData(title, slugOrId, category, tags, thumbnail);
+const isExternalImage = thumbnail && (thumbnail.startsWith('http') || thumbnail.startsWith('/') || thumbnail.includes('.'));
+---
+
+<div class:list={['article-thumb', `theme-${data.theme}`, `variant-${variant}`, className]} aria-hidden="true">
+  {isExternalImage ? (
+    <img src={thumbnail} alt={`Ảnh minh họa cho ${title}`} loading="lazy" />
+  ) : (
+    <svg viewBox="0 0 160 112" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <!-- Nền -->
+      <rect width="160" height="112" fill={data.bg} />
+
+      {/* 1. Màn hình / Điện thoại / Khoảng ngắt */}
+      {data.theme === 'phone' && (
+        <g>
+          <circle cx="126" cy="30" r="26" fill={data.highlight} opacity="0.5" />
+          <path d="M126 18 L116 34 H136 Z" fill={data.accent} />
+          <path d="M126 34 V70 M118 70 H134" stroke={data.primary} stroke-width="2" stroke-linecap="round" />
+          <rect x="0" y="70" width="160" height="42" fill={data.secondary} opacity="0.25" />
+          <line x1="0" y1="70" x2="160" y2="70" stroke={data.primary} stroke-width="1.5" />
+          <rect x="36" y="58" width="46" height="25" rx="4" fill={data.primary} />
+          <rect x="39" y="61" width="40" height="19" rx="2" fill={data.secondary} opacity="0.3" />
+          <line x1="77" y1="70" x2="80" y2="70" stroke={data.highlight} stroke-width="2" stroke-linecap="round" />
+          <path d="M26 24 A11 11 0 0 0 36 37 A13 13 0 0 1 26 24" fill={data.accent} />
+        </g>
+      )}
+
+      {/* 2. Trà / Tách trà / Nước ấm */}
+      {data.theme === 'tea' && (
+        <g>
+          <circle cx="118" cy="38" r="26" fill={data.highlight} opacity="0.75" />
+          <line x1="0" y1="84" x2="160" y2="84" stroke={data.primary} stroke-width="1.5" />
+          <ellipse cx="65" cy="85" rx="30" ry="6" fill={data.secondary} opacity="0.8" />
+          <path d="M44 64 C44 81, 86 81, 86 64 Z" fill={data.accent} />
+          <ellipse cx="65" cy="64" rx="21" ry="5" fill={data.highlight} opacity="0.6" />
+          <path d="M58 56 Q53 44, 60 34 T58 20" stroke={data.secondary} stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.8" />
+          <path d="M68 53 Q75 42, 69 32 T73 18" stroke={data.secondary} stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.65" />
+          <path d="M102 84 Q116 75, 128 80 Q118 84, 102 84 Z" fill={data.primary} />
+          <path d="M114 79 Q124 69, 134 71 Q124 77, 114 79 Z" fill={data.primary} opacity="0.85" />
+        </g>
+      )}
+
+      {/* 3. Dòng nước / Cá / Thu thủy */}
+      {data.theme === 'water' && (
+        <g>
+          <circle cx="116" cy="34" r="22" fill={data.highlight} opacity="0.85" />
+          <path d="M0 62 Q40 50, 80 62 T160 62 V112 H0 Z" fill={data.secondary} opacity="0.45" />
+          <path d="M0 76 Q40 66, 80 76 T160 76 V112 H0 Z" fill={data.primary} opacity="0.75" />
+          <path d="M0 64 Q45 36, 90 64" stroke={data.primary} stroke-width="2.5" fill="none" />
+          <path d="M52 86 Q64 80, 76 86 Q64 92, 52 86 Z" fill={data.accent} />
+          <polygon points="47,82 54,86 47,90" fill={data.accent} />
+          <ellipse cx="110" cy="82" rx="14" ry="4" fill={data.highlight} opacity="0.5" />
+        </g>
+      )}
+
+      {/* 4. Cánh chim Bằng / Bầu trời / Cái lớn & nhỏ */}
+      {data.theme === 'bird' && (
+        <g>
+          <circle cx="122" cy="36" r="24" fill={data.highlight} opacity="0.85" />
+          <path d="M0 78 Q45 64, 90 76 T160 74 V112 H0 Z" fill={data.secondary} opacity="0.4" />
+          <path d="M0 90 Q50 78, 105 88 T160 86 V112 H0 Z" fill={data.primary} opacity="0.7" />
+          <path d="M28 46 Q56 18, 86 38 Q60 36, 48 52 Z" fill={data.primary} />
+          <path d="M86 38 Q116 18, 142 46 Q118 42, 94 48 Z" fill={data.primary} />
+          <circle cx="86" cy="40" r="4.5" fill={data.accent} />
+          <path d="M22 74 Q30 68, 36 72 Q30 76, 22 74 Z" fill={data.accent} />
+        </g>
+      )}
+
+      {/* 5. Cây cối / Rừng / Gốc cây lớn */}
+      {data.theme === 'tree' && (
+        <g>
+          <circle cx="44" cy="38" r="22" fill={data.highlight} opacity="0.8" />
+          <path d="M0 86 Q60 68, 160 88 V112 H0 Z" fill={data.secondary} opacity="0.45" />
+          <path d="M0 96 Q90 78, 160 98 V112 H0 Z" fill={data.primary} opacity="0.65" />
+          <path d="M102 92 Q105 65, 100 52 Q92 40, 78 36 M100 52 Q112 38, 126 34 M102 60 Q118 52, 134 56" stroke={data.primary} stroke-width="3.5" fill="none" stroke-linecap="round" />
+          <circle cx="76" cy="35" r="9" fill={data.secondary} opacity="0.85" />
+          <circle cx="126" cy="33" r="11" fill={data.accent} opacity="0.8" />
+          <circle cx="102" cy="42" r="14" fill={data.primary} opacity="0.7" />
+          <circle cx="134" cy="55" r="7" fill={data.secondary} opacity="0.9" />
+          <circle cx="64" cy="46" r="3.5" fill={data.accent} opacity="0.7" />
+        </g>
+      )}
+
+      {/* 6. Núi non / Lối mòn / Bước chân */}
+      {data.theme === 'mountain' && (
+        <g>
+          <circle cx="118" cy="34" r="20" fill={data.highlight} opacity="0.85" />
+          <path d="M20 78 L65 32 L110 78 Z" fill={data.secondary} opacity="0.5" />
+          <path d="M0 88 L50 48 L105 92 L160 54 L160 112 L0 112 Z" fill={data.primary} />
+          <path d="M72 112 Q80 98, 75 92 Q70 86, 78 82" stroke={data.accent} stroke-width="2.5" fill="none" stroke-dasharray="3 3" />
+        </g>
+      )}
+
+      {/* 7. Thiền / Hơi thở / Enso */}
+      {data.theme === 'meditation' && (
+        <g>
+          <circle cx="80" cy="50" r="34" stroke={data.primary} stroke-width="4.5" fill="none" stroke-dasharray="190 20" stroke-linecap="round" opacity="0.85" />
+          <ellipse cx="80" cy="74" rx="20" ry="7" fill={data.secondary} />
+          <ellipse cx="80" cy="62" rx="15" ry="5.5" fill={data.accent} />
+          <ellipse cx="80" cy="52" rx="10" ry="4.5" fill={data.primary} />
+          <path d="M62 86 Q80 78, 98 86 Q80 94, 62 86 Z" fill={data.highlight} opacity="0.75" />
+        </g>
+      )}
+
+      {/* 8. Mộng bướm / Biến hóa */}
+      {data.theme === 'butterfly' && (
+        <g>
+          <circle cx="52" cy="46" r="26" fill={data.highlight} opacity="0.75" />
+          <path d="M0 88 Q40 76, 80 88 T160 86 V112 H0 Z" fill={data.secondary} opacity="0.35" />
+          <path d="M96 38 C90 26, 110 22, 106 36 C116 28, 122 42, 108 42 Z" fill={data.accent} />
+          <path d="M106 36 C100 46, 112 52, 106 44 Z" fill={data.accent} opacity="0.85" />
+          <path d="M64 54 C58 44, 76 40, 72 52 C80 46, 86 58, 74 58 Z" fill={data.primary} opacity="0.65" />
+        </g>
+      )}
+
+      {/* 9. Bánh xe / Người thợ / Bàn giao */}
+      {data.theme === 'craft' && (
+        <g>
+          <line x1="0" y1="88" x2="160" y2="88" stroke={data.primary} stroke-width="1.5" />
+          <circle cx="70" cy="58" r="26" stroke={data.primary} stroke-width="3" fill="none" />
+          <circle cx="70" cy="58" r="7" fill={data.accent} />
+          <circle cx="70" cy="58" r="18" stroke={data.secondary} stroke-width="1.5" stroke-dasharray="4 4" fill="none" />
+          <line x1="70" y1="32" x2="70" y2="84" stroke={data.primary} stroke-width="2" />
+          <line x1="44" y1="58" x2="96" y2="58" stroke={data.primary} stroke-width="2" />
+          <line x1="52" y1="40" x2="88" y2="76" stroke={data.primary} stroke-width="1.5" />
+          <line x1="52" y1="76" x2="88" y2="40" stroke={data.primary} stroke-width="1.5" />
+          <path d="M110 48 Q130 48, 140 70" stroke={data.accent} stroke-width="2.5" fill="none" stroke-linecap="round" />
+          <circle cx="140" cy="72" r="4.5" fill={data.highlight} />
+        </g>
+      )}
+
+      {/* 10. Ngọn đèn / Ánh sáng / Dừng lại */}
+      {data.theme === 'lantern' && (
+        <g>
+          <circle cx="80" cy="46" r="32" fill={data.highlight} opacity="0.25" />
+          <circle cx="80" cy="46" r="20" fill={data.highlight} opacity="0.45" />
+          <line x1="80" y1="0" x2="80" y2="24" stroke={data.secondary} stroke-width="1.5" />
+          <rect x="66" y="24" width="28" height="38" rx="7" fill={data.accent} />
+          <line x1="66" y1="36" x2="94" y2="36" stroke={data.primary} stroke-width="1" />
+          <line x1="66" y1="50" x2="94" y2="50" stroke={data.primary} stroke-width="1" />
+          <ellipse cx="80" cy="24" rx="8" ry="2" fill={data.primary} />
+          <ellipse cx="80" cy="62" rx="8" ry="2" fill={data.primary} />
+          <line x1="80" y1="62" x2="80" y2="84" stroke={data.highlight} stroke-width="2" stroke-linecap="round" />
+        </g>
+      )}
+
+      {/* 11. Thiện hữu / Lắng nghe / Đối thoại */}
+      {data.theme === 'listening' && (
+        <g>
+          <circle cx="62" cy="54" r="30" fill={data.accent} opacity="0.35" />
+          <circle cx="98" cy="54" r="30" fill={data.secondary} opacity="0.35" />
+          <circle cx="80" cy="54" r="14" fill={data.highlight} opacity="0.65" />
+          <path d="M35 98 Q40 60, 36 28" stroke={data.primary} stroke-width="2" fill="none" />
+          <path d="M38 60 Q48 52, 54 54 Q46 62, 38 60 Z" fill={data.primary} opacity="0.8" />
+          <path d="M125 98 Q120 62, 124 30" stroke={data.primary} stroke-width="2" fill="none" />
+          <path d="M122 56 Q112 48, 106 50 Q114 58, 122 56 Z" fill={data.secondary} />
+        </g>
+      )}
+
+      {/* 12. Góc nhà / Đồ dùng / Gọn gàng */}
+      {data.theme === 'home' && (
+        <g>
+          <polygon points="0,0 55,0 125,112 70,112" fill={data.highlight} opacity="0.35" />
+          <rect x="25" y="70" width="110" height="6" fill={data.accent} rx="1" />
+          <path d="M48 56 Q44 68, 52 70 H58 Q66 68, 62 56 Z" fill={data.primary} />
+          <path d="M55 56 Q52 40, 58 32 M55 45 Q62 42, 65 44" stroke={data.secondary} stroke-width="1.5" fill="none" stroke-linecap="round" />
+          <rect x="80" y="58" width="36" height="5" rx="2" fill={data.secondary} opacity="0.85" />
+          <rect x="78" y="63" width="40" height="7" rx="2" fill={data.primary} opacity="0.75" />
+        </g>
+      )}
+
+      {/* 13. Hoa sen / Tâm từ / Lòng tốt */}
+      {data.theme === 'lotus' && (
+        <g>
+          <ellipse cx="80" cy="85" rx="55" ry="12" fill="none" stroke={data.secondary} stroke-width="1.2" opacity="0.6" />
+          <ellipse cx="80" cy="85" rx="35" ry="8" fill="none" stroke={data.secondary} stroke-width="1" opacity="0.4" />
+          <ellipse cx="44" cy="84" rx="22" ry="7" fill={data.primary} opacity="0.85" />
+          <path d="M80 38 C70 54, 72 74, 80 82 C88 74, 90 54, 80 38 Z" fill={data.accent} />
+          <path d="M80 48 C64 58, 62 76, 76 82 C72 72, 72 60, 80 48 Z" fill={data.highlight} opacity="0.85" />
+          <path d="M80 48 C96 58, 98 76, 84 82 C88 72, 88 60, 80 48 Z" fill={data.highlight} opacity="0.85" />
+          <circle cx="80" cy="52" r="3" fill="#ffffff" opacity="0.9" />
+        </g>
+      )}
+
+      {/* 14. Kinh Dịch / Quẻ / Âm Dương / Đạo Đức Kinh */}
+      {data.theme === 'iching' && (
+        <g>
+          <circle cx="80" cy="56" r="38" stroke={data.primary} stroke-width="2" fill="none" />
+          <circle cx="80" cy="56" r="34" fill={data.secondary} opacity="0.15" />
+          <path d="M80 18 A19 19 0 0 1 80 56 A19 19 0 0 0 80 94 A38 38 0 0 1 80 18 Z" fill={data.primary} opacity="0.25" />
+          <line x1="56" y1="42" x2="104" y2="42" stroke={data.primary} stroke-width="3" stroke-linecap="round" />
+          <line x1="56" y1="52" x2="76" y2="52" stroke={data.accent} stroke-width="3" stroke-linecap="round" />
+          <line x1="84" y1="52" x2="104" y2="52" stroke={data.accent} stroke-width="3" stroke-linecap="round" />
+          <line x1="56" y1="62" x2="104" y2="62" stroke={data.primary} stroke-width="3" stroke-linecap="round" />
+          <line x1="56" y1="72" x2="76" y2="72" stroke={data.accent} stroke-width="3" stroke-linecap="round" />
+          <line x1="84" y1="72" x2="104" y2="72" stroke={data.accent} stroke-width="3" stroke-linecap="round" />
+        </g>
+      )}
+
+      {/* 15. Hai cách nhìn / Lưỡng hành / Cân bằng */}
+      {data.theme === 'balance' && (
+        <g>
+          <line x1="15" y1="56" x2="145" y2="56" stroke={data.secondary} stroke-width="1.5" stroke-dasharray="2 3" opacity="0.6" />
+          <path d="M80 56 C60 26, 32 36, 44 64 C52 82, 80 68, 80 56 Z" fill={data.primary} opacity="0.8" />
+          <path d="M80 56 C100 86, 128 76, 116 48 C108 30, 80 44, 80 56 Z" fill={data.accent} opacity="0.8" />
+          <circle cx="80" cy="56" r="9" fill={data.highlight} />
+          <circle cx="80" cy="56" r="4" fill={data.primary} />
+        </g>
+      )}
+    </svg>
+  )}
+</div>
+
+<style>
+.article-thumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.article-thumb svg,
+.article-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .25s ease, filter .25s ease;
+}
+</style>
