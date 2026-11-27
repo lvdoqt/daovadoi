@@ -9,6 +9,7 @@ export const categories: Category[] = [
   { slug: 'dao-duc-kinh',       name: 'Đạo Đức Kinh',      description: 'Đọc Lão Tử bằng một tâm thế cởi mở và hiện đại.' },
   { slug: 'kinh-dich',          name: 'Kinh Dịch',         description: 'Quan sát biến đổi để nhận ra thời điểm và hướng đi.' },
   { slug: 'thien-va-thuc-hanh', name: 'Thiền & thực hành', description: 'Các thực hành nuôi dưỡng sự có mặt trong đời thường.' },
+  { slug: 'giao-duc',         name: 'Giáo dục',          description: 'Nhìn lại việc học và dạy qua dòng lịch sử thế giới, để hiểu lớp học hôm nay rõ hơn.' },
 ];
 
 // Bài viết không còn khai báo thủ công ở đây.

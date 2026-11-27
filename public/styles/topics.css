@@ -1,1 +1,8 @@
-.topic-grid{grid-template-columns:repeat(6,1fr)}@media(max-width:720px){.topic-grid{grid-template-columns:1fr 1fr}}
+.topic-grid{grid-template-columns:repeat(4,1fr)}
+.topic:nth-child(4n+1){border-left:1px solid var(--line)}
+.topic:nth-child(n+5){border-top:1px solid var(--line)}
+@media(max-width:720px){
+  .topic-grid{grid-template-columns:1fr 1fr}
+  .topic:nth-child(2n+1){border-left:1px solid var(--line)}
+  .topic:nth-child(n+3){border-top:1px solid var(--line)}
+}

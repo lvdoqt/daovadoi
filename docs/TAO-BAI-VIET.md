@@ -15,7 +15,8 @@ src/content/
 ├── phat-giao/          # Phật giáo (con đường tỉnh thức)
 ├── dao-duc-kinh/       # Đạo Đức Kinh (Lão Tử, vô vi, bất tranh)
 ├── kinh-dich/          # Kinh Dịch (quan sát biến đổi, âm dương)
-└── thien-va-thuc-hanh/ # Thiền & thực hành (tọa thiền, hơi thở)
+├── thien-va-thuc-hanh/ # Thiền & thực hành (tọa thiền, hơi thở)
+└── giao-duc/           # Giáo dục (nhìn lại việc học và dạy qua lịch sử thế giới)
 ```
 
 > **Quy tắc đặt tên tệp:** Sử dụng chữ thường, không dấu, nối nhau bằng dấu gạch ngang (ví dụ: `mot-ngay-khong-voi.md`, `tam-binh-van-su-binh.md`). Tên tệp sẽ trở thành đường dẫn (slug) của bài viết: `/bai-viet/<category>/<ten-tep>`.
@@ -61,7 +62,7 @@ Nội dung chi tiết của phần thứ nhất. Bạn có thể sử dụng cá
 | `title` | **Có** | Chuỗi ký tự | Tiêu đề hiển thị của bài viết |
 | `excerpt` | **Có** | Chuỗi ký tự | Tóm tắt ngắn xuất hiện ở trang chủ, thẻ bài viết, SEO |
 | `date` | **Có** | `YYYY-MM-DD` | Ngày đăng bài (ví dụ: `"2026-08-21"`) |
-| `category` | **Có** | Khóa chuyên mục | Phải là 1 trong 6 mã: `cuoc-song`, `dao-va-doi`, `phat-giao`, `dao-duc-kinh`, `kinh-dich`, `thien-va-thuc-hanh` |
+| `category` | **Có** | Khóa chuyên mục | Phải là 1 trong 7 mã: `cuoc-song`, `dao-va-doi`, `phat-giao`, `dao-duc-kinh`, `kinh-dich`, `thien-va-thuc-hanh`, `giao-duc` |
 
 ---
 
